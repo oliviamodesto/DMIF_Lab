@@ -1,0 +1,46 @@
+---
+title: "Confronto"
+author: "Olivia Modesto"
+date: "2025-02-12"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Confronto query Blockchain
+
+L'obbiettivo di questo progetto è confrontare le diverse soluzioni per estrarre informazioni dalla blockchain. Queste soluzioni sono poi applicate ad un caso di studio.
+
+## Blockchain Explorers
+
+Interfaccie pubbliche per ottenere informazioni specifiche.\
+Etherscan\
+Blockchair\
+
+## Blockchain APIs
+
+Interfaccie che permettono di interrogare la Blockchain in modo programmatico.\
+Etherscan API\
+Alchemy\
+Infura\
+Bitquery\
+
+## Piattaforme tipo SQL
+
+Permettono di interrogare la Blockchain con comandi SQL.\
+Dune Analytics\
+Google Big Query\
+
+## Nodo Blockchain
+
+Creare un nodo per interrogare la Blockchain.
+
+## Librerie Web3
+
+Permettono interazioni con la Blockchain.
+
+```{r cars}
+summary(cars)
+```
