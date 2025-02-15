@@ -3,44 +3,241 @@ title: "Confronto"
 author: "Olivia Modesto"
 date: "2025-02-12"
 output: html_document
+bibliography: C:/Program Files/RStudio/resources/app/bin/quarto/share/projects/book/references.bib
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Confronto query Blockchain
+# Confronto query Blockchain
 
-L'obbiettivo di questo progetto è confrontare le diverse soluzioni per estrarre informazioni dalla blockchain. Queste soluzioni sono poi applicate ad un caso di studio.
+L'obbiettivo di questo progetto è confrontare le diverse soluzioni possibili per estrarre informazioni dalla blockchain. Per confrontarle sono state applicate ad un caso di studio. Il caso di studio riguarda il crollo del progetto Terra-Luna.
+In particolare, si cerca di utilizzare le soluzioni per ricostruire la sequenza di eventi.\
+Le soluzioni studiate per estrarre informazioni dalla blockchain sono: Blockchain Explorers, Blockchain APIs, Piattaforme tipo SQL, Nodo Blockchain, Librerie Web3.
 
-## Blockchain Explorers
+#### Blockchain Explorers
 
-Interfaccie pubbliche per ottenere informazioni specifiche.\
-Etherscan\
-Blockchair\
+I Blockchain Explorers forniscono interfaccie pubbliche che permettono di ottenere informazioni specifiche. Due esempi di interfaccie sono Etherscan e Blockchair.
 
-## Blockchain APIs
+#### Blockchain APIs
 
-Interfaccie che permettono di interrogare la Blockchain in modo programmatico.\
-Etherscan API\
-Alchemy\
-Infura\
-Bitquery\
+Le Blockchain APIs forniscono interfaccie che permettono di interrogare la Blockchain in modo programmatico. Quattro esempi di interfaccie sono Etherscan API, Alchemy, Infura e Bitquery.
 
-## Piattaforme tipo SQL
+#### Piattaforme tipo SQL
 
-Permettono di interrogare la Blockchain con comandi SQL.\
-Dune Analytics\
-Google Big Query\
+Queste piattaforme permettono di interrogare la Blockchain con comandi SQL. Due esempi di piattaforme sono Dune Analytics e Google Big Query.
 
-## Nodo Blockchain
+#### Nodo Blockchain
 
-Creare un nodo per interrogare la Blockchain.
+Creare un nodo sulla blockchain permette di accedere ai dati in tempo reale.  per interrogare la Blockchain.
 
-## Librerie Web3
+#### Librerie Web3
 
-Permettono interazioni con la Blockchain.
+Queste librerie forniscono funzioni che permettono interazioni con la Blockchain.
 
 ```{r cars}
 summary(cars)
+
+date1 <- "2025-02-12"
+date2 <- "2022-05-27"
+difftime(as.Date(date1), as.Date(date2), units="days")
+
 ```
+
+## Terra-Luna
+
+Che cos'è il Terra-Luna? Come funziona ?\
+Terra è una stablecoin algoritmica.\
+Una stablecoin algoritmica non ha collaterale associto. L'algoritmo funge da banca centrale.\
+
+Luna è la sua counterweight e ne assorbe la volatilità.\
+
+Ci sono due pool: la Terra pool e la Luna pool. La Terra pool può espandere e contrarsi.\
+
+Quando Terra ha un prezzo elevato rispetto al peg, questo significa che la domanda per la stablecoin è più elevata della supply. Quindi il protocollo minta Terra e brucia Luna.\
+
+Quando Terra ha un prezzo basso rispetto al peg, questo significa che la domanda per la stablecoin è più bassa della supply. Quindi il protocollo brucia Terra e minta Luna.\
+
+Market capitalization, or "market cap," represents the total dollar market value of a company's outstanding shares of stock. Investors use this figure to determine a company's size instead of sales or total asset value. In an acquisition, the market cap helps determine whether a takeover candidate represents a good value for the acquirer.
+
+
+Che cos'è una stablecoin?\
+Le vendite?\
+
+Cos'è una stablecoin ? Cosa significa che una stablecoin è più grade di un'altra ?\
+
+
+Che cos'è la pressione di vendita ?\
+Che cos' la liquidity pool?\
+Che cos'è il depegging ?\
+
+## Caso di studio
+
+Il caso di studio si basa sull'articolo Tracing Transactions Across Cryptocurrency Ledgers.\
+Questo articolo si poneva l'obiettivo verificare se è possibile tracciare spostamenti di somme di cryptovalute tra diverse piattaforme. Lo studio non verrà replicato interamente.\
+Si prova a ripercorrere il crollo Terra-Luna.\
+La sequenza di eventi di interesse è la seguente, basata sull'articolo.\
+La sequenza di eventi va dal 3 Aprile fino al 27 Maggio. Di questa sequenza di eventi, ci interessa ricostruire gli eventi dal 3 Aprile fino al 12 Maggio compreso.
+Gli eventi dal 13 Maggio 2022 non sono di interesse.\
+
+3 Aprile 2022 : Evento di vendita anomalo di UST. Dovrebbe essere sufficiente esaminare i dati delle transazioni.\
+
+19 Aprile 2022 : Evento di vendita anomalo di UST. Dovrebbe essere sufficiente esaminare i dati delle transazioni.\
+
+20 Aprile 2022 : UST diventa la terza stablecoin più grande con 18 miliardi di capitalizzazione. Bisogna confrontare UST con altre stablecoin oppure cercare se esiste una classifica.\
+
+5 Maggio 2022 : Inizia una forte e persistente pressione di vendita su BTC e LUNA. Come si manifesta ?\
+
+7 Maggio 2022 : Accordo per acquistare un grande numero di UST per BTC riducendo la liquidità nella pool. Simultaneamente un elevato numero di token UST sono messi in vendita. Questo causa il primo UST depegging, sotto $0.99. Dove vedere accordo ? Le vendite di UST ? Il depegging ?\
+
+8 Maggio 2022 : UST perde il proprio peg contro il dollaro scendendo a $0.99 e la fondazione Luna utilizza i fondi di riserva per sostenere la currency. Dove vedere il peg ? 
+
+9 Maggio 2022 : UST continua a scendere a $0.35. I clienti cercano di vendere le proprie riserve per uscire dal mercato. Questo è l'evento di crash. Dove vedere il peg ? Le vendite ?
+
+10 Maggio 2022 : La Luna Foundation Guard vende le sue riserve di Bitcoin (BTC) per cercare di restaurare il peg. Dove si vede il peg ?\
+
+12 Maggio 2022 : LUNA è crollata del 99%. Dove si vede ? \
+
+13 Maggio 2022 : Terra sospende temporaneamente il suo Blockchain trading. Binance sospende LUNA trading.\
+
+25 Maggio 2022 : Proposta per il lancio della blockchain Terra 2.0 è ufficiale.\
+
+27 Maggio 2022 : Terra 2.0 è live. Il token LUNA è diventato il token Luna CLassic (LUNC). La stablecoin UST è diventato USTC.
+
+## Con Etherscan
+
+Si replica parte dello studio visto nell'articolo Anatomy of a Stablecoin's failure: the Terra-Luna case.\
+
+## Il white paper
+
+Si può consultare la white paper Terra ?\
+Si può consultare la white paper Luna ?\
+Etherscan fornisce dei link alle pagine ospitanti il whitepaper. 
+Le pagine dedicate a Wrapped LUNC e a Wrapped USCT forniscono dei link puntanti alla stessa pagina del Terra Whitepaper. Nel momento in cui sono state visitate (14 Febbraio 2025) la pagina ospitante \
+
+![](images\Etherscan_WLUNC_whitepaper.png){height=50%, width=50%}
+![](images\Etherscan_USTC_whitepaper.png){height=50%, width=50%}
+
+![](images\Etherscan_WLUNC_whitepaper2.png){height=50%, width=50%}
+![](images\Etherscan_USTC_whitepaper2.png){height=50%, width=50%}
+![](images\Etherscan_WLUNC_whitepaper3.png){height=50%, width=50%}
+![](images\Etherscan_USTC_whitepaper3.png){height=50%, width=50%}
+
+
+Si può consultare la white paper BTC ?\
+
+## Public trades
+
+Si possono analizzare i public trades ?\
+
+## Prices
+Lo storico dei prezzi è visualizzabile ma i dati non sono scaricabili.\
+Nella pagina dedicata ai token esiste la voce Analytics, dove è possibile visualizzare i dati dello storico sottoforma di un plot. L'immagine dei plot è scarcabile in diversi formati.\
+
+![](images\wrapped-lunc-token-histo.png){height=50%, width=50%}
+![](images\wrapped-ustc-token-histo.png){height=50%, width=50%}
+
+## Transazioni
+
+I dati riguradanti le transazioni sono visualizzabili e scaricabili in formato csv. Senza l'API si possono scaricare al massimo 5000 righe nel csv. E' possibile specificare l'intervallo di tempo con precisione in termini di giorni. Quindi se ci sono più di 5000 operazioni in un giorno ci saranno dati non scaricabili.\
+\
+E' stato possibile quindi scaricare i dati e importarli in R per svolgere un'attività di analisi.\
+Vengono prodotti dei plot.\
+Riguardo le transazioni sono fornite le seguenti informazioni:\
+ - Transaction Hash\
+ - Blockno\
+ - UnixTimestamp\
+ - DateTime (UTC)\
+ - From\
+ - To\
+ - Quantity\
+ - Method\
+ 
+```{r etherscan_raw}
+
+#etherscan_raw <- read.csv("export-token-0xd2877702675e6ceb975b4a1dff9fb7baf4c91ea9.csv")
+
+
+
+```
+
+
+
+Riguardo il mercato, sono visualizzabili i dati attuali ma non lo storico della currency specifica. Inoltre è fornita una classifica delle stablecoin.
+L'unico storico disponibile è quello di Ether.\
+
+![](images\Etherscan_USTC_stablecoin.png){height=50%, width=50%}
+
+![](images\Etherscan_USTC_stablecoin2.png){height=50%, width=50%}
+
+![](images\Etherscan_USTC_stablecoin3.png){height=50%, width=50%}
+
+![](images\Etherscan_USTC_stablecoin4.png){height=50%, width=50%}
+
+5 Maggio 2022 : Inizia una forte e persistente pressione di vendita su BTC e LUNA. Come si manifesta ?\
+
+Per dimostrare la forte e persistente pressione di vendita Anatomy of a Stablecoin Failure utilizza i hourly closing prices di LUNA, UST e BTC. Etherscan però mette a disposizione i closing prices giornalieri, e quindi un'analisi dettegliata come quella presentata non è stata possibile.\
+
+
+
+
+E' possibile consultare il grafo per vedere l'andamento del peg. Sono riportati i dati raccolti dal 8 Maggio fino al 12. Questi sembrerebbero contraddire gli eventi del 9 Maggio.
+
+Il crollo di luna invece corrsiponde con la timeline.
+
+
+
+10 Maggio 2022 : La Luna Foundation Guard vende le sue riserve di Bitcoin (BTC) per cercare di restaurare il peg. Dove si vede il peg ?\
+
+Su Etherscan attualmente (15 FEb 2025) esiste un address che ha come nome pubblico Luna Foundation Guard.
+Le loro transazioni sono scaricabili su csv. Ci sono 97 transazioni. 
+I dati delle loro attività sono resi disponibili
+
+## Eth
+
+Si può consultare il protocollo LUNA-UST?\
+Si possono plottare i closing prices?\
+Si possono calcolare i plot-returns ?\
+
+Si può visualizzare il hearding behavior ?\
+
+Senza account.\
+
+Digitato LUNC nella barra di ricerca.\
+
+Le transazioni vanno fino a 66 giorni fa (13/02).\
+
+E' possibile visualizzare il contratto.\
+
+Fornisce una Time series: Token Contract Overview.\
+
+Fornisce una Time series del prezzo storico del Token.\
+
+E' possibile scaricare i dati e ottenere informazioni a riguardo.\
+
+Non è possibile scaricare i dati riguardanti il costo storico.\
+
+Si possono scaricare 5000 righe alla volta (snapshot un po' piccolo, in una giornata ci possono essere 
+più di 5000 operazioni)\
+
+Per più di 5000 righe serve Etherscan API
+
+
+Blockchair non ha i dati su Terra-Luna.\
+
+## Etherscan API
+
+## DUNE 
+
+Dune da accesso tramite API.\
+
+E' possibile estrarre i dati tramite sintassi SQL.
+
+## Web3
+
+## Risultati
+
+## Bibliografia
+
+https://www.investopedia.com/terms/m/marketcapitalization.asp\
