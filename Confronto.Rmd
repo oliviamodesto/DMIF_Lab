@@ -555,17 +555,13 @@ Dato che la precisione dei closing prices è più elevata è possibile verificar
 Nell'articolo sono indicati alcuni eventi specifici di interesse: 05 May 2022 12:00, 07 May 2022 22:00, 09 May 2022 14:00, 11 May 2022 10:00. \
 Si riportano i closing prices di quei momenti. \
 
-![05 May 2022 12:00](images\dune_workspace_pressure_May_5.png){height=70%, width=70%}
+![](images\dune_workspace_pressure_May_5.png){height=70%, width=70%}
 
-![07 May 2022 22:00](images\dune_workspace_pressure_May_7.png){height=70%, width=70%}
+![](images\dune_workspace_pressure_May_7.png){height=70%, width=70%}
 
-![09 May 2022 14:00](images\dune_workspace_pressure_May_9.png){height=70%, width=70%}
+![](images\dune_workspace_pressure_May_9.png){height=70%, width=70%}
 
-![11 May 2022 10:00](images\dune_workspace_pressure_May_11.png){height=70%, width=70%}
-
-&Egrave; possibile focalizzarsi su un intervallo di tempo specifico. \
-
-![05 May 2022 12:00](images\dune_workspace_pressure_May_5_interval.png){height=70%, width=70%}
+![](images\dune_workspace_pressure_May_11.png){height=70%, width=70%}
 
 <!-- DUNE -->
 #### Luna Foundation Guard

@@ -78,28 +78,7 @@ ggplot(transactions_April19, aes(x=index, y=value_set)) +
 #
 #
 #
-#20th April 2022
-
-#eth_raw_April20 <- read.csv("etherscan/WrappedLUNC_April19_April21.csv")
-#eth_raw_April20 <- data.frame(eth_raw_April20)
-
-#transactions_April20 <- get_transaction(eth_raw_April20)
-
-#ggplot(transactions_April20, aes(x=index, y=value_set)) +
-#  geom_line() +
-#  geom_point()
-
-
-#5th May 2022
-#7th May 2022
-#8th May 2022
-#9th May 2022
-#10th May 2022
-#12th May 2022
-#13th May 2022 
-#25th May 2022
-#27th May 2022
-
+# 3rd April 2022
 ust_raw_April3 <- read.csv("etherscan/WrappedUSTC_April3.csv")
 ust_raw_April3 <- data.frame(ust_raw_April3)
 

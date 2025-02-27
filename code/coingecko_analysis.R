@@ -1,8 +1,8 @@
 # coingecko data
 
 #
-# Analizza 
-# 234 - 598
+#
+#
 # ustc-usd-max
 
 ustc_prices <- read.csv("coingecko/ustc-usd-max.csv")
@@ -16,7 +16,8 @@ ggplot(ustc_prices, aes(x=snapped_at, y=price)) +
   ggtitle("Wrapped USTC Token Historical Price")
 
 #
-
+#
+#
 # lunc-usd-max
 
 lunc_prices <- read.csv("coingecko/lunc-usd-max.csv")
