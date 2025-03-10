@@ -231,7 +231,7 @@ Il link *Token Transfers* propone un elenco di trasferimenti di token ERC-20 [ag
 *NFTs* offre link a risorse riguardanti i NFT. \
 ![](images\Etherscan_menu_3.png)
 
-Il link *Top NFTs* propone un elenco di collezioni NFT disponibili sulla piattaforma Ethereum ordinati in base al Volume. \
+Il link *Top NFTs* propone un elenco di collezioni NFT disponibili sulla piattaforma Ethereum ordinati in base al Volume [che cos'è il Volume?]. \
 \
 Il link *Top Mints* propone un elenco di ?? . \
 \
@@ -270,7 +270,7 @@ Il link *Knowledge Base* propone la documentazione [..] . \
 ![](images\Etherscan_code_reader2.png){height=60%, width=60%}
 
 
-*Verify Contracts* : permette di verificare e pubblicare codice sirgente di un smart contract. \
+*Verify Contracts* : permette di verificare e pubblicare codice sorgente di un smart contract. \
 
 ![](images\Etherscan_verify_contract.png){height=60%, width=60%}
 
@@ -758,7 +758,81 @@ internal_transactions = "https://api.etherscan.io/api
 
 Queste piattaforme permettono di interrogare la Blockchain con comandi SQL. Due esempi di piattaforme SQL sono Dune Analytics e Google Big Query. La piattaforma studiata è Dune Analytics. \
 Dune Analytics mette a disposizione i dati sottoforma di tabelle consultabili traminte query SQL. &Egrave; possibile creare nuove query da zero oppure duplicare e modificare query già esistenti tramite il fork. \
+
+- la homepage \
+- create \
+- library \
+- discover \
+- metrics \
+
 Dune Analytics non permette di scaricare i dati se l'account non è a pagamento. \
+
+
+La pagina dune.com/home \
+
+![](images\dune_home.png){height=60%, width=60%}
+
+Lanciando la app si arriva alla pagina Discover. \
+\
+In alto a sinistra c'è il menu a tendina: *Create*, *Library*, *Discover*, *Metrics*. \
+\
+*Create* \
+
+![](images\dune_menu_create.png)
+*New query* \
+*New dashboard* \
+*Upload a dataset* \
+*Submit a contact* \
+*API endpoints* \
+*Create Team* \
+
+
+*Library* \
+
+![](images\dune_menu_library.png)
+
+*Discover* \
+
+![](images\dune_menu_discovery.png)
+
+*Metrics* \
+
+![](images\dune_menu_metrics.png)
+*Dune index* \
+*Transaction fees* \
+*transfer volume* \
+*transaction count* \
+
+
+In alto al centro c'è la barra di ricerca. \
+
+![](images\dune_search.png){height=60%, width=60%}
+
+
+In alto a destra c'è *Pricing*, *Echo* e *Docs*. \
+\
+A sinistra ci sono *Categories*, *Feeds* e *Show*. \
+
+![](images\dune_left.png){height=60%, width=60%}
+
+Queste voci permettono di cercare all'interno di Dune Analytics. *Categories* permette di scelgliere cosa cercare. *Feeds* permette di filtrare i risultati in qualche modo. *Show* permette di scegliere se vedere query, dashboard o entrambe.\
+Al centro ci sono i risultati visualizzati. 
+\
+![](images\dune_homepage.png){height=60%, width=60%}
+
+Per creare query bisogna passare alla pagina create. Per visualizzare le proprie query bisogna passare alla pagina Library. \
+\
+Metrics [chiedi ] \
+Le pagine sono intuitiva da utilizzare. \
+Dune offre una documentazione completa. \
+Complessivamente Dune utilizza un linguaggio accessibile. \
+\
+Con le query: \
+- esiste assistente AI per il codice \
+- aiuta nella creazione delle query o modifiche \
+- mostra messaggi di errore leggibili \
+
+
 
 ![](images\dune_workspace_example.png){height=60%, width=60%}
 
@@ -780,41 +854,11 @@ Dune permette di visualizzare i dati in diverse forme grafiche. &Egrave; possibi
 
 #### Usabilità
 
-La pagina dune.com/home \
-
-![](images\dune_home.png){height=60%, width=60%}
-
-Lanciando la app si arriva alla pagina Discover. \
-\
-In alto a sinistra c'è il menu a tendina. \
-In alto al centro c'è la barra di ricerca. \
-In alto a destra c'è pricing, echo e docs. \
-\
-A sinistra ci sono Categories, Feeds e Show. \
-Queste voci permettono di cercare all'interno di Dune Analytics. Categories permette di scelgliere cosa cercare. Feeds permette di filtrare i risultati in qualche modo. Show permette di scegliere se vedere query, dashboard o entrambe.\
-Al centro ci sono i risultati visualizzati. 
-\
-
-
-![](images\dune_homepage.png){height=60%, width=60%}
-
-Per creare query bisogna passare alla pagina create. Per visualizzare le proprie query bisogna passare alla pagina Library. \
-\
-Metrics [chiedi ] \
-Le pagine sono intuitiva da utilizzare. \
-Dune offre una documentazione completa. \
-Complessivamente Dune utilizza un linguaggio accessibile. \
-\
-Con le query: \
-- esiste assistente AI per il codice \
-- aiuta nella creazione delle query o modifiche \
-- mostra messaggi di errore leggibili \
-
-[ la tabella è compressa ingrandendo, UNico modo per visualizzare la tabella è di fare zoom out! dato che non si possono scaricare, non è comodo] \
+[ la tabella è compressa ingrandendo, unico modo per visualizzare la tabella è di fare zoom out! dato che non si possono scaricare, non è comodo] \
 
 #### Risorse disponibili 
 
-Dune suppora numerose blockchain. \
+Dune supporta numerose blockchain. \
 
 I dati sono organizzati in tabelle. \
 
