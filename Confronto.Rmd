@@ -173,23 +173,160 @@ Si confrontano le piattaforme e la libreria utilizzando i parametri sopra menzio
 
 ### Blockchain Explorers : Etherscan
 
-I Blockchain Explorers forniscono interfacce pubbliche che permettono di ottenere informazioni sui dati della blockchain. L'interfaccia studiata è Etherscan. Etherscan offre numerose funzionalità, come strumenti di tracking, interazione con gli smart contracts e un blockchain explorer. [@docsetherscan]
+I Blockchain Explorers forniscono interfacce pubbliche che permettono di ottenere informazioni sui dati della blockchain. L'interfaccia studiata è Etherscan. Etherscan offre numerose funzionalità, come  blockchain explorer, piattaforma per l'analisi dei dati sulla catena Ethereum e interazione con gli smart contracts. [@docsetherscan]
 
-![](images\Etherscan_homepage.png) <!-- {height=40%, width=40%} -->
+![](images\Etherscan_homepage.png)
+
+La homepage mostra in primo piano le informazioni più importanti riguardo alla cryptovaluta ETH: il prezzo, il numero totale di transazioni, il prezzo medio del gas, il market cap, l'ultimo blocco confermato in modo definitivo, l'ultimo blocco non confermato in modo definitivo.\
+Sotto a questa parte ci sono le ultime transazioni completate e gli ultimi blocchi minati.\
+In alto a sinistra c'è una barra di ricerca. Con questa si possono cercare token, wallet, singoli blocchi e altro utilizzando gli indirizzi, le hash oppure i nomi pubblici. \
+\
+&Egrave; possibile filtrare questi risultati in base al tipo di oggetto cercato: \
+
+![](images\Etherscan_filtro.png)
+
+
+Sono svolte tre prove con la barra di ricerca. Se la chiave di ricerca ha un solo risultato, Etherscan porta direttamente alla sua pagina. Se la chiave di ricerca ha molteplici risultati, Etherscan propone una pagina in cui sono elencati i risultati ottenuti. Inoltre in questa pagina viene proposto un secondo filtro. Questo permette di scegliere tra token, indirizzi e nomi di dominio. \
+\
+![](images\Etherscan_search_results.png)
+
+\
+Le parole chiave cercate sono *Luna*, *LUNC*, e l'indirizzo esadecimale del contratto del token LUNC. Per ognuna di queste parole sono provati tutti i filtri proposti nella barra di ricerca. Quello che emerge è che utilizzare i filtri non cambia i risultati ottenuti. Con le parole *Luna* e *LUNC* sono proposti sempre gli stessi risultati. Con l'indirizzo esadecimale Etherscan porta direttamente alla pagina del contratto. \
+Invece, il filtro proposto nella pagina dei risultati sembra effettivamente funzionare, riducendo il numero di risultati in base all'opzione selezionata. \
+\
+In alto a destra c'è il menù principale. Questo ha sei voci: *Blockchain*, *Token*, *NFTs*, *Resources*, *Developers*, *More*. Queste sei offrono dei link agli strumenti e risorse disponibili.
+\
+*Blockchain* offre link a risorse riguardanti transazioni e blocchi. \
+![](images\Etherscan_menu_1.png)
+
+Il link *Transactions* porta ad una pagina in cui sono elencate tutte le transazioni avvenute. Il link *Pending Transactions* collega ad una pagina in cui sono propone tutte le transazioni in attesa. Inoltre questa pagina propone un link alla pending transaction pool. \
+In modo simile link *Contract Internal Transactions* propone l'elenco di tutte le transazioni interne. Su Etherscan per transazioni interne si intende quei trasferimenti avvenuti eseguendo un contratto [@stackexchange]. \
+Il link *Beacon Deposits* propone gli eth2 Beacon Chain deposits. Attualmente la Beacon Chain è una rete peer-to-peer che si occupa dello strato di consenso. La Beacon Chain permette di utilizzare la proof-of-stake su Etherscan [@roadmapethereum]. *Beacon Deposits* propone i depositi effettuati per lo staking. \
+Il link *Beacon Withdrawals* propone i Processed Beacon Chain Withdrawals. Ai validatori è permesso ritirare i loro staked ETH dalla Beacon Chain. Questa pagina traccia questi spostamenti. \
+Il link *View Blobs* propone le transazioni di tipo *blob*. Le transazioni *blob* sono state introdotte per permettere transazioni con grandi quantità di dati che persistono nel beacon node per un breve periodo di tempo [@eip4844]. Questi dati non sono accessibili dalla Ethereum Virtual Machine. Si può accedere al loro commitment [@eip4844ethereum]. \
+
+Il link *AA Transactions* propone due pagine: AA Transactions e Bundle Transaction. \
+
+
+Il link *View Blocks* porta ad una pagina in cui sono elencati tutti i blocchi della catena Ethereum. \
+
+Il link *Forked Blocks* porta ad una pagina in cui sono elencati tutti i forked blocks [cosa sono i forked blocks]. Questo elenco esclude i blocchi forked a causa di "Chain Reorganization" [@stackexchange2]. \
+
+
+
+Il link *Uncles* porta ad una pagina in cui sono elencati tutti i blocchi detti *Uncles*. Questi sono blocchi validi che non sono parte della principale catena di Ethereum perché sono stati sottoposti troppo tardi [@stackexchange2]. \
+
+
+Il link *Top Accounts* propone un classifica degli account ordinati in base al proprio bilancio in ETH. \
+
+Il link *Verified Contracts* propone l'elenco dei smart contracts verificati [@smartcontracts].\
+\
+*Token* offre link ai risorse riguardanti i token più popolari.\
+![](images\Etherscan_menu_2.png)
+
+Il link *Top Tokens* propone un elenco di tutti i token ERC-20 [aggiungi dettagli] . \
+
+Il link *Token Transfers* propone un elenco di trasferimenti di token ERC-20 [aggiungi dettagli].  \
+
+*NFTs* offre link a risorse riguardanti i NFT. \
+![](images\Etherscan_menu_3.png)
+
+Il link *Top NFTs* propone un elenco di collezioni NFT disponibili sulla piattaforma Ethereum ordinati in base al Volume. \
+\
+Il link *Top Mints* propone un elenco di ?? . \
+\
+Il link *Latest Trades* propone un elenco di trades di NFT.  \
+
+Il link *Latest Transfers* propone un elenco di trasferimenti di NFT.  \
+[differenza ?]
+
+Il link *Latest Mints* propone un elenco di mint di NFT. \
+\
+*Resources* offre link a vari servizi come le chat e la newsletter. \
+![](images\Etherscan_menu_4.png)
+
+Il link *Charts And Stats* propone una serie di grafici [..] .\
+
+Il link *Top Statistics* propone un riassunto dei dati disponibili sulla piattaforma [..] . \
+
+Il link *Leaderboard* propone una classifica dei filtri creati dagli utenti [..] . \
+
+Il link *Directory* propone un elenco di risorse organizzate in base al contenuto [..] . \
+
+Il link *Newsletter* propone la newsletter di Etherscan [..] . \
+
+Il link *Knowledge Base* propone la documentazione [..] . \
+
+*Developers* offre link a risorse per sviluppatori. \
+![](images\Etherscan_menu_5.png)
+
+*API Plans* : pricing plans e link alla documentazione dell'API. \
+
+*API Documentation* : link alla documentazione dell'API.  \
+
+*Code Reader* : propone un AI che interpreta il codice di uno smart contract e risponde a domande su di esso. \
+
+![](images\Etherscan_code_reader.png){height=40%, width=40%}
+![](images\Etherscan_code_reader2.png){height=60%, width=60%}
+
+
+*Verify Contracts* : permette di verificare e pubblicare codice sirgente di un smart contract. \
+
+![](images\Etherscan_verify_contract.png){height=60%, width=60%}
+
+*Similar Contract Search* : permette di cercare contratti con codice simile a quello di un contratto specificato. \
+
+![](images\Etherscan_similar_contract_search.png){height=60%, width=60%}
+
+*Smart Contract Search* : Search Smart Contract source codes on Etherscan and filter by contract & deployer addresses, creation date, block number and more. \
+
+![](images\Etherscan_smart_contract_search.png){height=60%, width=60%}
+
+*Contract Diff Checker* : confronta due contratti. \
+
+![](images\Etherscan_contract_diff_checker.png)
+
+*Vyper Online Compiler* : compilatore online di codice Vyper.  \
+
+*Bytecode to Opcode* : attempts to decode the low level Contract Bytecodes to Opcodes. \
+
+*Broadcast Transaction* : This page allows you to paste a Signed Raw Transaction in hex format (i.e. characters 0-9, a-f) and broadcast it over the Ethereum network.\
+\
+*More* offre link a servizi miscellanei. \
+![](images\Etherscan_menu_6.png)
+
+La voce *More* ha tre voci principali : *Tools*, *Explore*, *Services*. \
+[alcuni di questi sono ridondanti ?]
+*Tools* propone : \
+*Input Data Decoder* : Interpret and analyze data sent to Ethereum smart contracts. \
+*Unit Converter* : Ether or ETH is often used in different denominations of its currency, such as Wei for interacting with smart contracts and Gwei for calculating gas prices. \
+*CSV Export* : permette di scaricare dati. \
+*Account Balance Checker* : You can look up the historical balance of an account's Ether or Tokens at a specific block number or date. \
+\
+*Explore* propone : \
+*Gas Tracker* propone tracking di gas. \
+*DEX Tracker* propone le pagine Transactions e Trading Pairs. \
+*Node Tracker* Node Tracker shows statistics of detected nodes running on the network. Statistics include the top 10 countries with the highest number of nodes, daily total nodes and node type by clients and OS. \
+*Label Cloud* propone Label Word Cloud. \
+*Domain Name Lookup* lookup dei Domain Name. \
+
+*Services* propone : \
+*Token Approvals* : Review and revoke your token approvals for any dApp. \
+*Verified Signature* : View, sign and verify message signatures using an Ethereum address. \
+*Input Data Messages (IDM)* : Decentralized communication on Ethereum. \
+*Advanced Filter* : \
+*Blockscan Chat* : \
+
 
 <!-- Etherscan -->
 #### Usabilità
 
 L'usabilità di Etherscan è stata valutata utilizzando in parte i punti di Nielsen. \
-\
-La piattaforma Etherscan è composta da svariate pagine. Si accede alla piattaforma tramite la pagina home. La pagina home in particolare indica chiaramente agli utenti in che direzione procedere per svolgere l'attività di interesse. Essa offre direttamente informazioni riguardo alla cryptovaluta ETH, mentre per altre attività ci sono dei menù a tendina e una barra di ricerca. \
-\
 Etherscan utilizza una terminologia che presuppone che gli utenti abbiano conoscenze nel campo della finanza e delle cryptovalute. Esso propone informazioni dettagliate in modo chiaro e ordinato e presuppone che gli utenti sappiano interpretarle. \
-Se ci sono delle possibili ambiguità riguardo delle voci, allora vengono indicati degli *i* che forniscono informazioni aggiuntive. \
-\
-&Egrave; possibile andare avanti e indietro nelle pagine. Come già accennato, esiste una porzione della pagina che rimane sempre uguale. Questa contiene la barra di ricerca e il logo di Etherscan: cliccando sul logo si ritorna alla home page. \
-\
-Complessivamente, Etherscan ha una elevata usabilità.
+Ci sono dei tooltip che spiegano come sono calcolati certi parametri o il significato di certe voci.\
+Le informazioni che si possono trovare sono molto estese e molto complete, ed è molto facile accedere ad esse. \
+La barra di ricerca e il logo di Etherscan sono riproposti su ogni pagina. Cliccando sul logo si ritorna alla homepage. \
+Complessivamente, Etherscan ha un'ottima usabilità.
 
 #### Risorse disponibili
 
@@ -202,119 +339,24 @@ Etherscan fornisce accesso a quattro catene blockchain: \
 - **Holesky Testnet**: di questa catena sono fornite informazioni riguardo i singoli blocchi, le gas fee, le transazioni, le cryptovalute e i wallet supportati. Della catena blockchain è offerto l'intero storico, dal blocco 0x0. \
 
 
-
-Inoltre è possibile accedere alla documentazione ufficiale di Etherscan. 
+Etherscan si focalizza sull'ecosistema Ethereum. Volendo informazioni su altre blockchain occorre rivolgersi ad altre piattaforme.\
+\
+Dal sito è possibile accedere alla documentazione ufficiale di Etherscan. \
+\
+[cosa si può scaricare ? cosa non si può scaricare ? ]
 
 #### Costi
 
 Etherscan offre cinque piani tariffari (aggiornato al 5 Marzo 2025). Quello che cambia in base al piano riguarda principalmente il numero di chiamate API, a quali endpoint è possibile accedere, e il tipo di supporto a cui si può accedere.
 
-![](images\Etherscan_plan.png) <!-- {height=40%, width=40%} -->
+![](images\Etherscan_plan.png)
 
-Si visualizzano i costi in termini assoluti: \
-
-```{r etherscan_api, echo = FALSE, result=TRUE, warning=FALSE}
-
-cost_in_dollar <- c(0, 199, 299, 399, 899)
-
-call_per_sec <- c(5, 10, 20, 30, 30)
-
-calls_per_day <- c( 100000, 200000, 500000, 1000000, 1500000)
-
-etherscan_api <- cost_in_dollar
-
-etherscan_api <- data.frame(etherscan_api)
-
-etherscan_api$call_per_sec <- call_per_sec
-
-etherscan_api$calls_per_day <- calls_per_day
-
-colnames(etherscan_api) <- c("cost", "per_sec", "per_day")
-
-rownames(etherscan_api) <- c("FREE", "STANDARD", "ADVANCED", "PROFESSIONAL", "PRO_PLUS")
-
-
-ggplot(etherscan_api, aes(x=c(0, 1, 2, 3, 4), y=cost)) +
-  geom_line() +
-  geom_point() +
-  xlab("") +
-  ylab("cost per months in dollars") +
-  scale_x_continuous(label =  c("FREE", "STANDARD", "ADVANCED", "PROFESSIONAL", "PRO_PLUS"))
-
-
-ggplot(etherscan_api, aes(x=c(0, 1, 2, 3, 4), y=per_sec)) +
-  geom_line() +
-  geom_point() +
-  xlab("") +
-  ylab("calls per second") +
-  scale_x_continuous(label =  c("FREE", "STANDARD", "ADVANCED", "PROFESSIONAL", "PRO_PLUS"))
-
-ggplot(etherscan_api, aes(x=c(0, 1, 2, 3, 4), y=per_day)) +
-  geom_line() +
-  geom_point() +
-  xlab("") +
-  ylab("calls per second") +
-  scale_x_continuous(label =  c("FREE", "STANDARD", "ADVANCED", "PROFESSIONAL", "PRO_PLUS"))
-
-
-```
-
-Come variano i costi delle singole chiamate al secondo ? Si riportano : \
-\
-differenza costo tariffe consecutive / differenza numero chiamate tariffe consecutive \
-
-```{r cost_sec, echo = FALSE, result=TRUE, warning=FALSE}
-
-standard_cost_sec <- etherscan_api$cost[2]/( etherscan_api$per_sec[2] - etherscan_api$per_sec[1] )
-
-advanced_cost_sec <- ( etherscan_api$cost[3] - etherscan_api$cost[2] )/( etherscan_api$per_sec[3] - etherscan_api$per_sec[2] )
-
-professional_cost_sec <- ( etherscan_api$cost[4] - etherscan_api$cost[3] )/( etherscan_api$per_sec[4] - etherscan_api$per_sec[3] )
-
-cost_sec <- c(0, standard_cost_sec, advanced_cost_sec, professional_cost_sec) 
-cost_sec <- data.frame(cost_sec)
-
-ggplot(cost_sec, aes(x=c(0, 1, 2, 3), y=cost_sec)) +
-  geom_line() +
-  geom_point() +
-  xlab("") +
-  ylab("costo per chiamate aggiuntive") +
-  scale_x_continuous(label =  c("FREE", "STANDARD", "ADVANCED", "PROFESSIONAL"))
-
-```
-
-Come variano i costi delle singole chiamate al giorno ? Si riportano : \
-\
-differenza costo tariffe consecutive / differenza numero chiamate tariffe consecutive \
-
-```{r advanced_cost_day, echo = FALSE, result=TRUE, warning=FALSE}
-
-
-standard_cost_day <- etherscan_api$cost[2]/( etherscan_api$per_day[2] - etherscan_api$per_day[1] )
-
-advanced_cost_day <- ( etherscan_api$cost[3] - etherscan_api$cost[2] )/( etherscan_api$per_day[3] - etherscan_api$per_day[2] )
-
-
-professional_cost_day <- ( etherscan_api$cost[4] - etherscan_api$cost[3] )/( etherscan_api$per_day[4] - etherscan_api$per_day[3] )
-
-pro_professional_cost_day <- ( etherscan_api$cost[5] - etherscan_api$cost[4] )/( etherscan_api$per_day[5] - etherscan_api$per_day[4] )
-
-
-cost_day <- c(0, standard_cost_day, advanced_cost_day, professional_cost_day, pro_professional_cost_day) 
-
-cost_day <- data.frame(cost_day)
-
-ggplot(cost_day, aes(x=c(0, 1, 2, 3, 4), y=cost_day)) +
-  geom_line() +
-  geom_point() +
-  xlab("") +
-  ylab("costo per chiamate aggiuntive") +
-  scale_x_continuous(label =  c("FREE", "STANDARD", "ADVANCED", "PROFESSIONAL", "PRO_PLUS"))
-
-```
 
 Esiste un set di API endpoints sempre disponibile. Questo viene esteso con ulteriori funzioni nei piani a pagamento. \
-Il community support risulta sempre disponibile. A pagamento esiste anche il escalated support.
+Il community support risulta sempre disponibile. A pagamento esiste anche il escalated support. \
+Come si vede dalla figura sopra anche l'account gratuito offre una gamma completa di funzionalità.\
+\
+Complessivamente, Etherscan è un'ottima piattaforma limitatamente all'universo Ethereum.
 
 #### Il caso di studio
 
@@ -452,6 +494,11 @@ Su Etherscan attualmente (15 Feb 2025) esiste un address che ha come nome pubbli
 Questi dati riguardano solo le attività sulla blockchain Ethereum. Di conseguenza, non è stato possibile verificare l'evento di vendite del 10 Maggio. \
 
 ![](images\Etherscan_LunaFoundationGuardReserveWallet.png){height=60%, width=60%}
+
+#### Considerazioni finali
+
+Le informazioni cercate riguardante l'universo Etherscan sono state trovate facilmente utilizzando la barra di ricerca. Per utilizzarla è sufficiente conoscere i nomi pubblici dei token cercati e del wallet cercato. \
+Le uniche informazioni mancanti sono quelle dello storico del market cap di token non ETH. \
 
 ### Blockchain APIs : Etherscan API
 
@@ -719,18 +766,67 @@ Dune permette di visualizzare i dati in diverse forme grafiche. &Egrave; possibi
 
 ![](images\dune_workspace_example_2.png){height=60%, width=60%}
 
-&Egrave; possibile conoscere le tabelle disponibili ricercandole tramite la barra di ricerca. Di ogni tabella è possibile visualizzare informazini dettagliate e un'anteprima. \
+&Egrave; possibile conoscere le tabelle di dati disponibili ricercandole tramite la barra di ricerca. Di ogni tabella è possibile visualizzare informazini dettagliate e un'anteprima. \
+[ fai esempi di catene disponibili ]
 
 ![](images\dune_workspace_example_3.png){height=60%, width=60%}
 ![](images\dune_workspace_example_4.png){height=60%, width=60%}
 ![](images\dune_workspace_example_5.png){height=60%, width=60%}
+
+[ che dati sono disponibili che mancano in Etherscan ? che dati mancano che sono disponibili su Etherscan ?]
+
+
 <!-- DUNE -->
 
 #### Usabilità
 
+La pagina dune.com/home \
+
+![](images\dune_home.png){height=60%, width=60%}
+
+Lanciando la app si arriva alla pagina Discover. \
+\
+In alto a sinistra c'è il menu a tendina. \
+In alto al centro c'è la barra di ricerca. \
+In alto a destra c'è pricing, echo e docs. \
+\
+A sinistra ci sono Categories, Feeds e Show. \
+Queste voci permettono di cercare all'interno di Dune Analytics. Categories permette di scelgliere cosa cercare. Feeds permette di filtrare i risultati in qualche modo. Show permette di scegliere se vedere query, dashboard o entrambe.\
+Al centro ci sono i risultati visualizzati. 
+\
+
+
+![](images\dune_homepage.png){height=60%, width=60%}
+
+Per creare query bisogna passare alla pagina create. Per visualizzare le proprie query bisogna passare alla pagina Library. \
+\
+Metrics [chiedi ] \
+Le pagine sono intuitiva da utilizzare. \
+Dune offre una documentazione completa. \
+Complessivamente Dune utilizza un linguaggio accessibile. \
+\
+Con le query: \
+- esiste assistente AI per il codice \
+- aiuta nella creazione delle query o modifiche \
+- mostra messaggi di errore leggibili \
+
+[ la tabella è compressa ingrandendo, UNico modo per visualizzare la tabella è di fare zoom out! dato che non si possono scaricare, non è comodo] \
+
 #### Risorse disponibili 
 
+Dune suppora numerose blockchain. \
+
+I dati sono organizzati in tabelle. \
+
+Le informazioni raccolte sono quelle disponibili su blockchain. Di conseguenza informazioni come il market cap [ cerca tabella ] oppure il whitepaper non sono direttamente disponibili. \
+
 #### Costi
+
+Dune offre quattro piani tariffari (aggiornato al 5 Marzo 2025), che riguardano l'API: \
+
+![](images\Dune_plan.png)
+
+Come si può vedere, ci sono differenze significative tra le risorse, la quantità di risorse e i servizi messi a disposizione con ogni piano [aggiungi dettagli]. \
 
 #### Il caso di studio
 
@@ -808,6 +904,14 @@ Il wallet utilizzato dal Luna Foundation Guard era sconosciuto. Per individuarlo
 Quindi è stata creata una query SQL su Dune che cerca nelle tabelle dedicate alla catena Bitcoin. In questo modo è stato possibile osservare una vendita di 28206 BTC il 10 Maggio 2022 avvenuta con questo wallet. \
 
 ![](images\dune_workspace_LunaFoundationGuard.png){height=70%, width=70%}
+
+#### Considerazioni finali
+
+Dune propone un'interfaccia intuitiva e facile da usare. \
+
+Per formulare query sono richieste competenze di SQL. \
+
+Fornisce supporto alla programmazione.
 
 <!-- WEB3 -->
 ### Librerie Web3
