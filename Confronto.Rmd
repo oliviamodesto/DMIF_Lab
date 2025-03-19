@@ -1,7 +1,7 @@
 ---
 title: "Confrontare diverse soluzioni"
 author: "Olivia Modesto"
-date: "2025-03-11"
+date: "2025-03-19"
 output:
   html_document:
     toc: true
@@ -54,7 +54,7 @@ Definiamo l'usabilità come la misura con cui un prodotto può essere usato da s
 Esistono più modi di valutare l'usabilità. I due metodi principali sono la valutazione euristica e la valutazione empirica. La valutazione euristica si basa su delle regole. La valutazione empirica coinvolge gli utenti [@cognitivegroup]. \
 In questa analisi è utilizzato un approcio euristico. La valutazione si basa in parte sulle dieci euristiche di Nielsen.
 
-#### Nielsen
+<!-- #### Nielsen -->
 
 Le euristiche di Nielsen nascono per valutare le decisioni prese nella progettazione e implementazione delle interfaccie utente. Con ogni euristica si valuta un aspetto diverso del sistema. Esse sono state definite negli anni 90 da Jacob Nielsen [@gamberini]. \ 
 Le dieci euristiche per il design delle interfaccie utente sono [@nngroup]: \
@@ -71,33 +71,30 @@ Le dieci euristiche per il design delle interfaccie utente sono [@nngroup]: \
 9. **Aiuta gli utenti a riconoscere, diagnosticare e recover dagli errori**: si valuta se i messaggi di errore sono comprensibili e aiutano a correggere gli errori. \
 10. **Supporto e documentazione**: si valuta se il sistema ha della documentazione disponibile. \
 
-
-Oltre alle euristiche di Nielsen sono state identificate alcune figure che potrebbero utilizzare le piattaforme analizzate. Sono state formulate delle domande specifiche in modo da inquadrare in modo preciso gli strumenti. \
-
+Come accennato nell'introduzione, la blockchain ha un'utenza diversificata e i diversi strumenti soddisfano le esigenze di utenze diverse. Oltre alle euristihe di Nielsen sono state identificate alcune figure che potrebbero utilizzare le piattaforme analizzate. Sono state formulate delle domande specifiche in modo da inquadrare in modo preciso gli strumenti. L'obbiettivo è identificare a che tipo di utenza è rivolta. \
 
 - **Utenti individuali**: un individuo, che gestisce la sua finanzia personale e fa piccoli investimenti. Questo utente vorrà poter monitorare le sue attività, prendere decisioni di inverstimento, portare avanti piccole operazioni. \
   - *Un utente può monitorare le sue attività ?* \
   Ovvero, può conoscere lo stato del proprio wallet e delle transazioni effettuate. \
   - *Un utente può ricercare informazioni utili per prendere decisioni di inverstimento ?* \
-  Se è possibile trovare informazioni considerate utili per prendere decisioni di investimento. Esempi di informazioni rilevanti per prendere decisioni sono il prezzo del gas e il costo di una operazione. \
+  Esempi di informazioni considerate utili per prendere decisioni sono il prezzo del gas e il costo di una operazione. \
   - *Un utente può utilizzare lo strumento per svolgere operazioni ?* \
-  Se è possibile completare una singola transazione dal proprio wallet direttamente sulla piattaforma o utilizzando la libreria. \
+  Ovvero, può completare una singola transazione dal proprio wallet direttamente sulla piattaforma o utilizzando la libreria. \
 
 
 - **Sviluppatori dApp**: Chi sviluppa dApp vorrà poter creare la dApp, lanciare la dApp, fare auditing/valutazione della dApp.
   - *Uno sviluppatore può creare una dApp ?* \
   Ovvero la piattaforma o libreria fornisce strumenti che possono essere direttamente utilizzati per creare una dApp. Esempi di strumenti sono un ambiente di sviluppo, compilatori oppure un linguaggio di programmazione. \
   - *Uno sviluppatore può lanciare la propria dApp ?* \
-  Se lo strumento permette di fare il deploy di una dApp sulla blockchain. \
+  Ovvero lo strumento permette di fare il deploy di una dApp sulla blockchain. \
   - *Uno sviluppatore può fare auditing/valutazione della propria dApp ?* \
-  Se lo strumento permette ad uno sviluppatore di svolgere attività di auditing o valutazione della propria dApp. Esempi di auditing o valutazioni sono [...] \
+  Esempi di auditing o valutazioni sono [...] \
 - **Sviluppatori di smart contract** : Chi scrive o fa auditing di smart contract avrà interesse a scrivere il codice, lanciare il codice, e verificare il codice. \
   - *Uno sviluppatore può scrivere uno smart contract ?* \
-  Se lo strumento fornisce strumenti per scrivere o compilare il codice di uno smart contract. \
+  Ovvero lo strumento fornisce strumenti per scrivere o compilare il codice di uno smart contract. \
   - *Uno sviluppatore può lanciare il proprio smart contract sulla blockchain ?* \
-  Se lo strumento permette di lanciare uno smart contract sulla blockchain. \
   - *Uno sviluppatore può verificare il codice del proprio smart contract ?* \
-  Se lo strumento permette di confrontare il bytecode presente sulla catena con il bytecode generato localmente. \
+  Ovvero lo strumento permette di confrontare il bytecode presente sulla catena con il bytecode generato localmente. \
   
 - **Minatori e Validatori** : chi fa mining e validazione di blocchi sulle catene supportate. Chi si occupa di minare e validare i blocchi vorrà poter monitorare la produzione di blocchi, confermare delle transazioni, monitorare la salute della rete, monitorare le attività della rete. \
   - *Un minatore o validatore può monitorare la produzione di blocchi ?* \
@@ -107,49 +104,34 @@ Oltre alle euristiche di Nielsen sono state identificate alcune figure che potre
   - *Un minatore o validatore può stimare la reward e la difficulty ?* \
   Lo strumento permette di stimare la reward e la difficulty di una operazioni di mining o validazione. \
   - *Un minatore o validatore ha accesso a strumenti per effettuare lo staking ?* \
-  Lo piattaforma o libreria fornisce mezzi per partecipare allo staking. \
   - *Un minatore o validatore ha accesso a strumenti per effettuare il mining ?* \
-  Lo piattaforma o libreria fornisce mezzi per partecipare allo mining. \
-  - *Un minatore o validatore può stimare il slashing risk ?* \
-  Lo strumento permette di ottenere informazioni sullo slashing risk in caso di penalità. \
+  - *Un minatore o validatore può stimare il slashing risk in caso di penalità ?* \
   - *Un minatore o validatore può conoscere la validator uptime ?* \
-  Lo strumento permette di conoscere la validator uptime. \
-  - *Un minatore o validatore può stimare la reward rate ?* \
-  Lo strumento permette di stimare la reward rate per la attività di mining. \
+  - *Un minatore o validatore può stimare la reward rate per la attività di mining?* \
   - *Un minatore o validatore può ottenere informazioni sulla liquidity ?* \
-  Lo strumento permette informazioni sulla liquidity. \
+  
   
 - **Analisti e ricercatori di cryptovalute** : ci sono due figure, gli analisti di mercato e i ricercatori di blockchain. Gli analisti vorrano poter monitorare i movimenti di mercato. I ricercatori di blockchain vorranno poter esplorare i dati della blockchain, analizzare le tendenze dei volumi delle transazioni, dei prezzi del gas, dei movimenti dei token. \
   - *Un analista può conoscere lo storico e il numero di incidenti o attacchi ?* \
   La piattaforma o libreria fornisce informazioni riguardanti il numero e lo storico di incidenti o attacchi. \
   - *Un analista può conoscere le dApp attive sulla blockchain ?* \
-  Lo strumento fornisce informazioni riguardanti il numero di dApp attive sulla blockchain. \
   - *Un analista può conoscere gli smart contracts attivi sulla blockchain ?* \
-  Lo strumento fornisce informazioni riguardanti i smart contract attivi sulle blockchain. \
   - *Un analista può conoscere strategic partnerships, collaborations, announcements, ?* \
   Lo strumento può ottenere informazioni riguardanti strategic partnership, collaborazioni o annunci riguardanti un progetto blockchain. \
   - *Un analista può interagire con soluzioni layer 2 ?* \
-  Lo strumento può interagire con soluzioni layer 2. \
   - *Un analista può conoscere i governance models utilizzati sulla blockchain ?* \
-  Lo strumento permettere ottenere informazioni riguardanti i governance models utilizzati sulla blockchain. \
+  
 
 - **Team di progetti (DeFi, NFT, Progetti Token)** : ci sono tre casi, le piattaforme di finanza decentralizzata, i creatori e le piattaforme di NFT, i team di ICO. Le piattaforme di finanza decentralizzata utilizzano Etherscan per monitorare la liquidità dei token, le transazioni e le statistiche dei pool di liquidità. Chi crea NFT vorrà poter creare l'NFT, fare mining, fare operazioni e monitorare lo stato. I team ICO vorranno poter lanciare i token o airdrop, monitorare la distribuzione dei token, verificare le interazioni con gli smart contract e gestire la tokenomica del progetto.
   - *Un team può monitorare la liquidità dei token ?* \
-  Lo strumento permette di ottenere informazioni riguardo la liquidità dei token. \
   - *Un team può conoscere le transazioni e le statistiche dei pool di liquidità ?* \
-  Lo strumento permette di ottenere informazioni riguardo le transazioni e le statistiche dei pool di liquidità. \
   - *Un team può creare l'NFT ?* \
-  Lo strumento permette di creare un NFT in qualche modo. \
   - *Un team può fare minting di NFT ?* \
-  Lo strumento permette di fare il minting di un NFT. \
   - *Un team può lanciare i token o airdrop ?* \
-  Lo strumento permette di lanciare token o airdrop. \
   - *Un team può monitorare la distribuzione dei token ?* \
-  Lo strumento permette di ottenere informazioni riguardo la distribuzione di un token. \
   - *Un team può verificare le interazioni con gli smart contract?* \
-  Lo strumento permette di verificare le interazioni con gli smart contract. \
   - *Un team può gestire la tokenomica del progetto ?* \
-  La piattaforma o libreria fornisce strumenti per gestire la tokenomica di un progetto. Per tokenomica si intende lo studio e l’analisi di aspetti economici di una crittovaluta o progetto blockchain. Esempi di informazioni sono il numero totale di token in circolazione, i meccanismi di distribuzione, i meccanismi di minting e burning. \
+  Per tokenomica si intende lo studio e l’analisi di aspetti economici di una crittovaluta o progetto blockchain. Esempi di informazioni sono il numero totale di token in circolazione, i meccanismi di distribuzione, i meccanismi di minting e burning. \
 
 - **Minatori e Validatori** : \ https://etherscan.io/ether-mining-calculator
 
@@ -175,9 +157,8 @@ Un altro parametro importante riguarda le risorse messe a disposizione dalle pia
   - se è possibile scaricare i dati su dispositivo.\
 
 
-### A chi è rivolto ?
+<!-- ### A chi è rivolto ? -->
 
-Come accennato nell'introduzione, la blockchain ha un'utenza diversificata e i diversi strumenti soddisfano le esigenze di utenze diverse. Per ciascuna piattaforma si cerca di identificare a che tipo di utenza è rivolta.
 
 ## Caso di studio
 
@@ -260,8 +241,8 @@ I Blockchain Explorers forniscono interfacce pubbliche che permettono di ottener
 
 ![](images\Etherscan_homepage.png)
 
-La homepage mostra in primo piano le informazioni più importanti riguardo alla cryptovaluta ETH: il prezzo, il numero totale di transazioni, il prezzo medio del gas, il market cap, l'ultimo blocco confermato in modo definitivo, l'ultimo blocco non confermato in modo definitivo.\
-Sotto a questa parte ci sono le ultime transazioni completate e gli ultimi blocchi minati.\
+La homepage mostra in primo piano le informazioni più importanti riguardo alla cryptovaluta ETH: il prezzo, il numero totale di transazioni, il prezzo medio del gas, il market cap, l'ultimo blocco confermato in modo definitivo, l'ultimo blocco non confermato in modo definitivo. \
+Sotto a questa parte ci sono le ultime transazioni completate e gli ultimi blocchi minati. \
 In alto a sinistra c'è una barra di ricerca. Con questa si possono cercare token, wallet, singoli blocchi e altro utilizzando gli indirizzi, le hash oppure i nomi pubblici. \
 \
 &Egrave; possibile specificare un criterio di ricerca: \
@@ -342,7 +323,7 @@ Il link *Top Statistics* propone un riassunto dei dati disponibili sulla piattaf
 *Token* propone classifiche dei token: in base ai mittenti, ai destinatari, e al numero di transazioni. *Network* propone classifiche degli account in base alla quantità di gas usato e al numero di transazioni. \
 *Hot Contracts* propone classifiche dei contratti. Il link *Leaderboard* propone una classifica dei filtri creati dagli utenti. Etherscan permette agli utenti di creare filtri per filtrare i dati disponibili e raffinare i risultati di ricerca [@advfilter]. L'interfaccia per creare filtri viene discussa più avanti. \
 **Come si può vedere, Etherscan fornisce una grandissima ricchezza di informazioni anche rielaborate, come classifiche, grafi e reputazione.** \
-Il link *Directory* propone un elenco di risorse al di fuori della piattaforma Etherscan organizzate in nove categorie. Le categorie sono: *Exchanges*, *Wallet*, *Listing and Prices*, *News and Forums*, *Events*, *Learning Resources*, *Smart Contracts*, *Mining*, *Others*. \
+<a id="directory" class="highlightable"></a> Il link *Directory* propone un elenco di risorse al di fuori della piattaforma Etherscan organizzate in nove categorie. Le categorie sono: *Exchanges*, *Wallet*, *Listing and Prices*, *News and Forums*, *Events*, *Learning Resources*, *Smart Contracts*, *Mining*, *Others*. \
 
 ![](images\Etherscan_directory.png)
 
@@ -393,7 +374,7 @@ Quello che emerge è che [...] \
 
 ![](images\Etherscan_contract_diff_checker.png)
 
-La pagina *Vyper Online Compiler* propone un compilatore online di linguaggio Vyper. &Egrave; possibile specificare la versione da utilizzare. La pagina *Bytecode to Opcode* propone una pagina dove è possibile decodificare il bytecode di basso livello a opcode. La pagina *Broadcast Transaction* propone una pagina dove è possibile trasmettere una Signed Raw Transaction su Ethereum. La transazione deve essere specificata in formato esadecimale. Il link *More* offre link a servizi miscellanei. La voce *More* ha tre voci principali : *Tools*, *Explore*, *Services*. \
+<a id="vyper-compiler"></a>La pagina *Vyper Online Compiler* propone un compilatore online di linguaggio Vyper. &Egrave; possibile specificare la versione da utilizzare. La pagina *Bytecode to Opcode* propone una pagina dove è possibile decodificare il bytecode di basso livello a opcode. La pagina *Broadcast Transaction* propone una pagina dove è possibile trasmettere una Signed Raw Transaction su Ethereum. La transazione deve essere specificata in formato esadecimale. Il link *More* offre link a servizi miscellanei. La voce *More* ha tre voci principali : *Tools*, *Explore*, *Services*. \
 
 ![](images\Etherscan_menu_6.png)
 
@@ -431,30 +412,23 @@ Il filtro *Type* permette di specificare che tipo di transazione visualizzare. I
 L'usabilità di Etherscan è stata valutata utilizzando in parte i punti di Nielsen. \
 Etherscan utilizza una terminologia che presuppone che gli utenti abbiano conoscenze nel campo della finanza e delle cryptovalute. Esso propone informazioni dettagliate in modo chiaro e ordinato e presuppone che gli utenti sappiano interpretarle. \
 Ci sono dei tooltip che spiegano come sono calcolati certi parametri o il significato di certe voci.\
-Le informazioni che si possono trovare sono molto estese e molto complete, ed è molto facile accedere ad esse. \
-La barra di ricerca e il logo di Etherscan sono riproposti su ogni pagina. Cliccando sul logo si ritorna alla homepage. \
+Le informazioni che si possono trovare sono molto estese e molto complete, ed è molto facile accedere ad esse. Inoltre, Etherscan mette a disposizione una documentazione completa. \
+Il carico cognitivo non risulta eccessivo dato che le informazioni di interesse rimangono sullo schermo. La barra di ricerca e il logo di Etherscan sono riproposti su ogni pagina. Cliccando sul logo si ritorna alla homepage. \
 Complessivamente, Etherscan ha un'ottima usabilità.
-[DA AGGIORNARE]
-funzionalità per gli sviluppatori
-chi fa scambi molto completa
-
-
-Gli utenti : \
-
 
 - **Utenti individuali**: \
-  - *Un utente può monitorare le sue attività ?* Sì, è possibile tracciare le proprie transazioni, verficare i saldi, verficare lo status delle proprie transazioni. &Egrave; possibile cercare un wallet in base al suo hash e visualizzare le sue attività. Inoltre è possibile raffinare queste osservazioni con i filtri. \
-  - *Un utente può ricercare informazioni utili per prendere decisioni di inverstimento ?* Sì, e possibile ricercare informazioni su un token specifico prima di prendere una decisione di investimento. Inoltre ci sono informazioni riguardanti i prezzi del gas. Infine Etherscan fa da hub per altre piattaforme che potrebbero interessare l'utente. \
+  - *Un utente può monitorare le sue attività ?* Sì, è possibile tracciare le proprie transazioni, verficare i saldi, verficare lo status delle proprie transazioni. &Egrave; possibile cercare un wallet in base al suo hash e visualizzare le sue attività. Inoltre è possibile raffinare queste osservazioni con i filtri. [1](#my-sentence)\
+  - *Un utente può ricercare informazioni utili per prendere decisioni di inverstimento ?* Sì, e possibile ricercare informazioni su un token specifico prima di prendere una decisione di investimento. Inoltre ci sono informazioni riguardanti i prezzi del gas. Infine Etherscan fa da hub per altre piattaforme che potrebbero interessare l'utente. [2](#directory) \
   - *Un utente può utilizzare lo strumento per svolgere operazioni ?* No, non è possibile eseguire transazioni con il proprio wallet direttamente su Etherscan. \ 
   
   
 - **Sviluppatori**: \
   - *Uno sviluppatore può creare una dApp ?* No, Etherscan non ha un ambiente di sviluppo. \
   - *Uno sviluppatore può lanciare la propria dApp ?* No, non è possibile lanciare una dApp direttamente dal proprio account Etherscan. \
-  - *Uno sviluppatore può fare auditing/valutazione della propria dApp ?* Sì, è possibile svolgere debug di applicazioni decentralizzate.\
-  - *Uno sviluppatore può scrivere uno smart contract ?* Sì, Etherscan ha un compilatore online per il linguaggio Vyper. \
+  - *Uno sviluppatore può fare auditing/valutazione della propria dApp ?* Sì, è possibile svolgere debug di applicazioni decentralizzate. \
+  - *Uno sviluppatore può scrivere uno smart contract ?* Sì, Etherscan ha un compilatore online per il linguaggio Vyper. [4](#vyper-compiler) \
   - *Uno sviluppatore può lanciare il proprio smart contract sulla blockchain ?* No, non è possibile lanciare il codice di uno smart contract direttamente da Etherscan. \
-  - *Uno sviluppatore può verificare il codice del proprio smart contract ?* Sì, è possibile verificare il deploy di smart contract, è possibile ispezionare il codice. ulteriori strumenti per analisi del codice. &Egrave; possibile verficare interazioni con i contratti. \
+  - *Uno sviluppatore può verificare il codice del proprio smart contract ?* Sì, è possibile verificare il deploy di smart contract, è possibile ispezionare il codice. &Egrave; possibile verficare interazioni con i contratti. \
 
   
 - **Minatori e Validatori** : \
@@ -511,15 +485,8 @@ Dal sito è possibile accedere alla documentazione ufficiale di Etherscan. \
 
 #### Costi
 
-Etherscan offre cinque piani tariffari (aggiornato al 5 Marzo 2025). Quello che cambia in base al piano riguarda principalmente il numero di chiamate API, a quali endpoint è possibile accedere, e il tipo di supporto a cui si può accedere.
+La creazione di un account su Etherscan è completamente gratuita. Il servizi a pagamento riguardano la parte API. Questi sono discussi in dettaglio nella parte Etherscan API. 
 
-![](images\Etherscan_plan.png)
-
-
-Esiste un set di API endpoints sempre disponibile. Questo viene esteso con ulteriori funzioni nei piani a pagamento. \
-Il community support risulta sempre disponibile. A pagamento esiste anche il escalated support. \
-Come si vede dalla figura sopra anche l'account gratuito offre una gamma completa di funzionalità.\
-\
 Complessivamente, Etherscan è un'ottima piattaforma limitatamente all'universo Ethereum.
 
 #### Il caso di studio
@@ -666,15 +633,175 @@ Le uniche informazioni mancanti sono quelle dello storico del market cap di toke
 
 ### Etherscan API : una blockchain API
 
-Le Blockchain API forniscono interfacce che permettono di interrogare la Blockchain in modo programmatico. L'API studiata è Etherscan API. Etherscan API estende le funzionalità di Etherscan. Richiede la creazione di un account per essere utilizzata. Mediante il proprio account è possibile generare delle chiavi che consentono di effettuare query all'API tramite richieste HTTPS.\
+Le Blockchain API forniscono interfacce che permettono di interrogare la Blockchain in modo programmatico. L'API studiata è Etherscan API. Etherscan API estende le funzionalità di Etherscan. Richiede la creazione di un account per essere utilizzata. Mediante il proprio account è possibile generare delle chiavi che consentono di effettuare query all'API tramite richieste HTTPS. \
 Sono state scritte le query di interesse e i programmi Python per invocare queste query. I dati ottenuti sono poi stati analizzati in R in modo simile a quello visto finora.
+
+per creare chiavi è richiesta la creazione di un account. \
+
+bisogna accedere alla propria area personale. \
+
+Questa pagina propone un overview delle risorse e servizi utilizzati. \
+
+![](images\Etherscan_myaccount.png){height=60%, width=60%}
+
+la chiave API viene utilizzata direttamente negli url. \
+
+&Egrave; disponibile una documentazione completa. \
+
+Gli endpoints disponibili gratuitamente sono: \
+
+*Accounts* \
+- ottenere informazioni su specifici wallet conoscendo i loro hash address come il bilancio e il numero di transazioni. \
+- ottenere informazioni su transazioni interne in base all'indirizzo, hash o intervallo di blocchi. \
+- conoscendo l'indirizzo è possibile conscere il tipo di token trasferiti (ERC-20, ERC712 ERC1155). \
+- è possibile conoscere l'elenco di blocchi validati da un indirizzo specifico \
+- beacon chain withdrawal in base all'indirizzo oppure intervallo di blocchi \
+- get historical ether balance for a single address for blockno \
+
+*Contracts* \
+Get Contract ABI for Verified Contract Source Codes \
+Get Contract Source Code for Verified Contract Source Codes \
+Get Contract Creator and Creation Tx Hash \
+Verify Solidity Source Code \
+Verify Vyper Source Code \
+Check Source Code Verification Status \
+Verify Proxy Contract \
+Verifying Proxy Contract using cURL \
+Checking Proxy Contract Verification Submission Status using cURL \
+
+*Transactions* \
+Check Contract Execution Status \
+Check Transaction Receipt Status \
+
+*Blocks* \
+Get Block And Uncle Rewards by BlockNo \
+Get Estimated Block Countdown Time by BlockNo \
+Get Block Number by Timestamp \
+Get Daily Average Block Size \
+Get Daily Block Count and Rewards \
+Get Daily Block Rewards \
+Get Daily Average Time for A Block to be Included in the Ethereum Blockchain \
+Get Daily Uncle Block Count and Rewards \
+
+*Logs* \
+Get Event Logs by Address \
+Get Event Logs by Topics \
+Get Event Logs by Address filtered by Topics \
+
+*Geth/Parity Proxy* \
+
+*Tokens* \
+Get ERC20-Token TotalSupply by ContractAddress \
+Get ERC20-Token Account Balance for TokenContractAddress \
+Get Historical ERC20-Token TotalSupply by ContractAddress & BlockNo \
+Get Historical ERC20-Token Account Balance for TokenContractAddress by BlockNo \
+Get Token Holder List by Contract Address \
+Get Token Holder Count by Contract Address \
+Get Token Info by ContractAddress \
+Get Address ERC20 Token Holding \
+Get Address ERC721 Token Holding \
+Get Address ERC721 Token Inventory By Contract Address \
+
+*Gas Tracker* \
+Get Estimation of Confirmation Time \
+Get Gas Oracle \
+Get Daily Average Gas Limit \
+Get Ethereum Daily Total Gas Used \
+Get Daily Average Gas Price \
+
+*Stats* \
+Get Total Supply of Ether \
+Get Total Supply of Ether 2 \
+Get Ether Last Price \
+Get Ethereum Nodes Size \
+Get Total Nodes Count \
+Get Daily Network Transaction Fee \
+Get Daily New Address Count \
+Get Daily Network Utilization \
+Get Daily Average Network Hash Rate \
+Get Daily Transaction Count \
+Get Daily Average Network Difficulty \
+Get Ether Historical Price \
+
 
 <!-- Etherscan API -->
 #### Usabilità
 
+creare facilmente chiavi. \
+
+gli url si possono invocare direttamente nel browser. I risultati sono proposti su una pagina web. \
+
+Per scaricare e manipolare i dati è stato necessario creare un codice Python e i output sono salvati come JSON. \
+
+
+
+- **Utenti individuali**:
+  - *Un utente può monitorare le sue attività ?* \
+  - *Un utente può ricercare informazioni utili per prendere decisioni di inverstimento ?* \
+  - *Un utente può utilizzare lo strumento per svolgere operazioni ?* \
+
+
+- **Sviluppatori**:
+  - *Uno sviluppatore può creare una dApp ?* \
+  - *Uno sviluppatore può lanciare la propria dApp ?* \
+  - *Uno sviluppatore può fare auditing/valutazione della propria dApp ?* \
+  - *Uno sviluppatore può scrivere uno smart contract ?* \
+  - *Uno sviluppatore può lanciare il proprio smart contract sulla blockchain ?* \
+  - *Uno sviluppatore può verificare il codice del proprio smart contract ?* \
+  
+- **Minatori e Validatori** :
+  - *Un minatore o validatore può monitorare la produzione di blocchi ?* \
+  - *Un minatore o validatore può accedere alla mining pool ?* \
+  - *Un minatore o validatore può stimare la reward e la difficulty ?* \
+  - *Un minatore o validatore ha accesso a strumenti per effettuare lo staking ?* \
+  - *Un minatore o validatore ha accesso a strumenti per effettuare il mining ?* \
+  - *Un minatore o validatore può stimare il slashing risk ?* \
+  - *Un minatore o validatore può conoscere la validator uptime ?* \
+  - *Un minatore o validatore può stimare la reward rate ?* \
+  - *Un minatore o validatore può ottenere informazioni sulla liquidity ?* \
+  
+- **Analisti e ricercatori di cryptovalute** : 
+  - *Un analista può conoscere lo storico e il numero di incidenti o attacchi ?* \
+  - *Un analista può conoscere le dApp attive sulla blockchain ?* \
+  - *Un analista può conoscere gli smart contracts attivi sulla blockchain ?* \
+  - *Un analista può conoscere strategic partnerships, collaborations, announcements, ?* \
+  - *Un analista può interagire con soluzioni layer 2 ?* \
+  - *Un analista può conoscere i governance models utilizzati sulla blockchain ?* \
+
+- **Team di progetti (DeFi, NFT, Progetti Token)** :
+  - *Un team può monitorare la liquidità dei token ?* \
+  - *Un team può conoscere le transazioni e le statistiche dei pool di liquidità ?* \
+  - *Un team può creare l'NFT ?* \
+  - *Un team può fare minting di NFT ?* \
+  - *Un team può lanciare i token o airdrop ?* \
+  - *Un team può monitorare la distribuzione dei token ?* \
+  - *Un team può verificare le interazioni con gli smart contract?* \
+  - *Un team può gestire la tokenomica del progetto ?* \
+  
+
+
 #### Risorse disponibili 
 
+Stesse risorse disponibili con Etherscan. \
+
+Interazione diretta con la blockchain. \
+
+Ottenere un numero illimitato di entry (Etherscan ha un limite di 5000) . \
+
+
 #### Costi
+
+
+Etherscan offre cinque piani tariffari (aggiornato al 5 Marzo 2025). Quello che cambia in base al piano riguarda principalmente il numero di chiamate API, a quali endpoint è possibile accedere, e il tipo di supporto a cui si può accedere.
+
+![](images\Etherscan_plan.png)
+
+
+Esiste un set di API endpoints sempre disponibile. Questo viene esteso con ulteriori funzioni nei piani a pagamento. \
+Il community support risulta sempre disponibile. A pagamento esiste anche il escalated support. \
+Come si vede dalla figura sopra anche l'account gratuito offre una gamma completa di funzionalità.\
+\
+
 
 #### Il caso di studio
 
@@ -1014,49 +1141,49 @@ Gli utenti : \
 
 
 - **Utenti individuali**: \
-  *Questo utente può monitorare le sue attività ?* Sì, può consultare le tabelle, e i wallet \
-  *Prendere decisioni di inverstimento ?* Sì 
-  *Portare avanti piccole operazioni ?* No, si possono solo consultare i dati \ 
+  *Questo utente può monitorare le sue attività ?* Sì, è possibile invocare le tabelle contenenti informazioni di transazioni. Inoltre è possibile ricercare tabelle contenenti informazioni di wallet utilizzando le tabelle. \
+  *Un utente può ricercare informazioni utili per prendere decisioni di inverstimento ?* Sì, è possibile ricercare informazioni di interesse. \  
+  *Un utente può utilizzare lo strumento per svolgere operazioni ?* No, si possono solo consultare i dati.\ 
 
 - **Sviluppatori**: \
-  *creare la dApp ?* \
-  *lanciare la dApp ?* \
-  *fare auditing/valutazione della dApp ?* \
-  *scrivere il codice ?* \
-  *lanciare il codice ?* \
-  *verificare il codice ?* Tabelle disponibili \
+  *Uno sviluppatore può creare una dApp ?* No, Dune Analytics non fornisce un ambiente di sviluppo per dApp. \
+  *Uno sviluppatore può lanciare la propria dApp ?* No, Dune Analytics non lanciare una dApp. \
+  *Uno sviluppatore può fare auditing/valutazione della propria dApp ?* No, non è possibile svolgere auditing/valutazione della dApp.\
+  *Uno sviluppatore può scrivere uno smart contract ?* No, non è possibile scrivere o compilare un nuovo smart contract direttamente su Dune. \
+  *Uno sviluppatore può lanciare il proprio smart contract sulla blockchain ?* No, non è possibile lanciare un nuovo smart contract direttamente su Dune. \
+  *Uno sviluppatore può verificare il codice del proprio smart contract ?* Esistono tabelle come ethereum.creation_traces.code dove è possibile ottenere il bytecode di un contratto. \
   
 
 - **Minatori e Validatori** : \
-  *monitorare la produzione di blocchi ?* Sì,  \
-  *confermare delle transazioni ?* Sì \
-  *monitorare la salute della rete ?* .. \
-  *monitorare le attività della rete ?* Sì \
+  *Un minatore o validatore può monitorare la produzione di blocchi ?* Sì, è possibile monitorare la produzione di blocchi. \
+  *Un minatore o validatore può accedere alla mining pool ?* No, non è possibile accedere alle mining pools. \
+  *Un minatore o validatore può stimare la reward e la difficulty ?* &Egrave; possibile tracciare l'andamento della reward. \
+  *Un minatore o validatore ha accesso a strumenti per effettuare lo staking ?* No, non è possibile effettuare lo staking direttamente dalla piattaforma. \
+  *Un minatore o validatore ha accesso a strumenti per effettuare il mining ?* No, non è possibile effettuare il mining direttamente dalla piattaforma. \
+  *Un minatore o validatore può stimare il slashing risk ?* ... \
+  *Un minatore o validatore può conoscere la validator uptime ?* ... \
+  *Un minatore o validatore può stimare la reward rate ?* \
+  *Un minatore o validatore può ottenere informazioni sulla liquidity ?* \
+
 
 - **Analisti e ricercatori di cryptovalute** : \
-  *monitorare i movimenti di mercato ?* \
-  *esplorare i dati della blockchain ?* Sì\
-  *analizzare le tendenze dei volumi delle transazioni ?* Sì \
-  *prezzi del gas ?* Sì \
-  *movimenti dei token ?* Sì \ 
+  *Un analista può conoscere lo storico e il numero di incidenti o attacchi ?* &Egrave; possibile utilizzare i dati disponibili per ricostruire incidenti o attacchi. Inoltre Dune tiene traccia dei propri incidenti https://status.dune.com/incidents \
+  *Un analista può conoscere le dApp attive sulla blockchain ?* Sì, è possibile ottenere informazioni sulle dApp. \
+  *Un analista può conoscere gli smart contracts attivi sulla blockchain ?* Sì, è possibile ottenere informazioni sulle dApp. \
+  *Un analista può conoscere strategic partnerships, collaborations, announcements, ?* &Egrave; possibile ottenere alcune informazioni su questi argomenti. \
+  *Un analista può interagire con soluzioni layer 2 ?* No, non è possibile interagire direttamente con le soluzioni layer 2. \
+  *Un analista può conoscere i governance models utilizzati sulla blockchain ?* No, non è possibile conoscere i governance models utilizzati sulla blockchain. \
+
 
 - **Team di progetti (DeFi, NFT, Progetti Token)** : \
-  *monitorare la liquidità dei token ?* sì \
-  *le transazioni e le statistiche dei pool di liquidità ?* si \
-  *creare l'NFT ?* \
-  .. \
-  *fare minting ?* \
-  .. \
-  *fare operazioni e monitorare lo stato ?* sì \
-  .. \
-  *lanciare i token o airdrop ?* \
-  .. \
-  *monitorare la distribuzione dei token ?* sì \
-  .. \
-  *verificare le interazioni con gli smart contract?* sì \
-  .. \
-  *gestire la tokenomica del progetto ?* sì \
-  .. \
+  *Un team può monitorare la liquidità dei token ?* Sì \
+  *Un team può conoscere le transazioni e le statistiche dei pool di liquidità ?* Sì \
+  *Un team può creare l'NFT ?* No, non è possibile creare NFT. \
+  *Un team può fare minting di NFT ?* No, non è possibile effettuare minting di NFT. \
+  *Un team può lanciare i token o airdrop ?* No, non è possibile effettuare minting di NFT. \
+  *Un team può monitorare la distribuzione dei token ?* \
+  *Un team può verificare le interazioni con gli smart contract?* Sì \
+  *Un team può gestire la tokenomica del progetto ?* &Egrave; possibile ottenere informazioni riguardo la tokenomica del progetto. \
 
 
 #### Risorse disponibili 
@@ -1335,8 +1462,7 @@ code = web3.eth.get_code( LFG_ADDRESS )
 balance = web3.eth.get_balance( LFG_ADDRESS )
 ```
 
-  *Prendere decisioni di inverstimento ?* 
-  Prima di svolgere una transazione è possibile ottenere la stima del costo del gas [@aaron]: \
+  *Un utente può ricercare informazioni utili per prendere decisioni di inverstimento ?* Prima di svolgere una transazione è possibile ottenere la stima del costo del gas [@aaron]: \
 ```{py, eval = FALSE}
 transaction = {
     'nonce': web3.eth.get_transaction_count( <my address> ),
@@ -1352,13 +1478,15 @@ gas = web3.eth.estimate_gas(transaction)
 ```
   E&grave; possibile interagire con i contratti esistenti. Per fare ciò è necessario definire un ABI per il contratto di interesse. \
   Le informazioni sono disponibili, ma l'utente deve interpretarle e decidere da solo. Inoltre deve scrivere codice direttamente. \
-  *Portare avanti piccole operazioni ?* Sì, è possibile completare transazioni scrivendo un codice Python. \ 
+  *Un utente può utilizzare lo strumento per svolgere operazioni ?* Sì, è possibile completare transazioni scrivendo un codice Python. \ 
+  
+  
 - **Sviluppatori**: \
-  *creare la dApp ?* Sì, è possibile creare una dApp con il linguaggio Python e Web3.py risulta essere una libreria con funzionalità utili per questa implementazione. \
-  *lanciare la dApp ?* Sì, se la dApp è uno script di Python è sufficiente eseguire il codice sul proprio dispositivo per interagire con la catena. \
-  *fare auditing/valutazione della dApp ?* Sì, se la dApp è uno script di Python è possibile fare auditing dello script. \
-  *scrivere il codice (smart contract) ?* Non direttamente, i smart contract sono scritti in Solidity oppure Vyper. QUesti script possono essere compilati utilizzando Python [@smartcontract]. \
-  *lanciare il codice (smart contract) ?* Sì, è possibile compilare e lanciare uno smart contract utilizzando Python. La compilazione però non avviene con una funzione dalla libreria Web3 , bensì con la libreria solcx. Eseguire il deploy del contratto richiede una transazione. \
+  *Uno sviluppatore può creare una dApp ?* Sì, è possibile creare una dApp con il linguaggio Python e Web3.py risulta essere una libreria con funzionalità utili per questa implementazione. \
+  *Uno sviluppatore può lanciare la propria dApp ?* Sì, se la dApp è uno script di Python è sufficiente eseguire il codice sul proprio dispositivo per interagire con la catena. \
+  *Uno sviluppatore può fare auditing/valutazione della propria dApp ?* Sì, se la dApp è uno script di Python è possibile fare auditing dello script. \
+  *Uno sviluppatore può scrivere uno smart contract ?* Non direttamente, i smart contract sono scritti in Solidity oppure Vyper. QUesti script possono essere compilati utilizzando Python [@smartcontract]. \
+  *Uno sviluppatore può lanciare il proprio smart contract sulla blockchain ?* Sì, è possibile compilare e lanciare uno smart contract utilizzando Python. La compilazione però non avviene con una funzione dalla libreria Web3 , bensì con la libreria solcx. Eseguire il deploy del contratto richiede una transazione. \
 
 ```{py, eval = FALSE}
 from solcx import compile_source 
@@ -1368,36 +1496,38 @@ Greeter = w3.eth.contract(abi=abi, bytecode=bytecode)
 tx_hash = Greeter.constructor().transact()
 ```
 
-  *verificare il codice (smart contract) ?* Sì, è possibile verificare il codice. Verificare il codice richiede di compilare il codice dello smart contract localmente, scaricare il bytecode sulla catena, e confrontare i due.  E&grave; possibile compilare il codice, è possibile ottenere il bytecode con get_code() e si può scrivere uno script Python che confronta i due. \
+  *Uno sviluppatore può verificare il codice del proprio smart contract ?* Sì, è possibile verificare il codice. Verificare il codice richiede di compilare il codice dello smart contract localmente, scaricare il bytecode sulla catena, e confrontare i due.  E&grave; possibile compilare il codice, è possibile ottenere il bytecode con get_code() e si può scrivere uno script Python che confronta i due. \
+  
+  
 - **Minatori e Validatori** : \
-  *monitorare la produzione di blocchi ?* Sì, si possono invocare singoli blocchi, utilizzando il loro  numero oppure parole chiave ('latest', 'earliest', 'pending', 'safe', 'finalized'). \
-  *confermare delle transazioni ?* Sì, si possono cercare specifiche transazioni. Si possono filtrare transazioni utilizzando TransactionFilter. \
-  *monitorare la salute della rete ?* Sì, è possibile [come definire la salute di una blockchain] \
-  *monitorare le attività della rete ?* Sì, è possibile interagire con i blocchi e con i contratti. \
+  *Un minatore o validatore può monitorare la produzione di blocchi ?* Sì, si possono invocare singoli blocchi, utilizzando il loro  numero oppure parole chiave ('latest', 'earliest', 'pending', 'safe', 'finalized'). \
+  *Un minatore o validatore può accedere alla mining pool ?* \
+  *Un minatore o validatore può stimare la reward e la difficulty ?* \
+  *Un minatore o validatore ha accesso a strumenti per effettuare lo staking ?* \
+  *Un minatore o validatore ha accesso a strumenti per effettuare il mining ?* \
+  *Un minatore o validatore può stimare il slashing risk ?* \
+  *Un minatore o validatore può conoscere la validator uptime ?* \
+  *Un minatore o validatore può stimare la reward rate ?* \
+  *Un minatore o validatore può ottenere informazioni sulla liquidity ?* \
+
 - **Analisti e ricercatori di cryptovalute** : \
-  *monitorare i movimenti di mercato ?* Non direttamente, si possono ottenere parte dei dati di interesse, ma sta all'utente rielaborarli. \
-  *esplorare i dati della blockchain ?* Sì, si possono ottenere dati dei singoli blocchi. \
-  *analizzare le tendenze dei volumi delle transazioni ?* Non direttamente \
-  *prezzi del gas ?* Sì, estiste la Gas API. [ https://web3py.readthedocs.io/en/v4.10.0/gas_price.html#:~:text=The%20Gas%20Price%20API%20allows%20you%20to%20define,and%20returns%20a%20gas%20price%20%28denominated%20in%20wei%29. ]\
-  *movimenti dei token ?* Sì, si possono cercare transazioni. \ 
+  *Un analista può conoscere lo storico e il numero di incidenti o attacchi ?* \
+  *Un analista può conoscere le dApp attive sulla blockchain ?* \
+  *Un analista può conoscere gli smart contracts attivi sulla blockchain ?* \
+  *Un analista può conoscere strategic partnerships, collaborations, announcements, ?* \
+  *Un analista può interagire con soluzioni layer 2 ?* \
+  *Un analista può conoscere i governance models utilizzati sulla blockchain ?* \
+
+
 - **Team di progetti (DeFi, NFT, Progetti Token)** : \
-  *monitorare la liquidità dei token ?* No \
-  *le transazioni e le statistiche dei pool di liquidità ?* Forse \
-  .. \
-  *creare l'NFT ?* \
-  .. \
-  *fare minting ?* \
-  .. \
-  *fare operazioni e monitorare lo stato ?* \
-  .. \
-  *lanciare i token o airdrop ?* \
-  .. \
-  *monitorare la distribuzione dei token ?* \
-  .. \
-  *verificare le interazioni con gli smart contract?* \
-  .. \
-  *gestire la tokenomica del progetto ?* \
-  .. \
+  *Un team può monitorare la liquidità dei token ?* No \
+  *Un team può conoscere le transazioni e le statistiche dei pool di liquidità ?* Forse \
+  *Un team può creare l'NFT ?* \
+  *Un team può fare minting di NFT ?* \
+  *Un team può lanciare i token o airdrop ?* \
+  *Un team può monitorare la distribuzione dei token ?* \
+  *Un team può verificare le interazioni con gli smart contract?* \
+  *Un team può gestire la tokenomica del progetto ?* \
 
 
 #### Risorse disponibili 
@@ -1698,3 +1828,26 @@ le domande \
 
 ## Bibliografia
 
+<script>
+function highlightSentence(id) {
+    var element = document.getElementById(id);
+    element.classList.add('highlight');
+    // Scroll to the element
+    element.scrollIntoView({ behavior: 'smooth' });
+}
+
+// Optional: Remove highlight after a few seconds
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('my-sentence').addEventListener('click', function() {
+        setTimeout(function() {
+            document.getElementById('my-sentence').classList.remove('highlight');
+        }, 3000); // Remove highlight after 3 seconds
+    });
+});
+</script>
+
+<style>
+.highlight {
+    background-color: yellow;
+}
+</style>
