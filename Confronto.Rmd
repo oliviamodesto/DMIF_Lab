@@ -636,157 +636,192 @@ Le uniche informazioni mancanti sono quelle dello storico del market cap di toke
 Le Blockchain API forniscono interfacce che permettono di interrogare la Blockchain in modo programmatico. L'API studiata è Etherscan API. Etherscan API estende le funzionalità di Etherscan. Richiede la creazione di un account per essere utilizzata. Mediante il proprio account è possibile generare delle chiavi che consentono di effettuare query all'API tramite richieste HTTPS. \
 Sono state scritte le query di interesse e i programmi Python per invocare queste query. I dati ottenuti sono poi stati analizzati in R in modo simile a quello visto finora.
 
-per creare chiavi è richiesta la creazione di un account. \
-
-bisogna accedere alla propria area personale. \
-
-Questa pagina propone un overview delle risorse e servizi utilizzati. \
+Per creare chiavi è richiesta la creazione di un account. Accedendo alla propria area personale, è proposto un un overview delle risorse e servizi utilizzati. \
 
 ![](images\Etherscan_myaccount.png){height=60%, width=60%}
 
-la chiave API viene utilizzata direttamente negli url. \
 
-&Egrave; disponibile una documentazione completa. \
+Sotto la voce *API Dashboard* sono disponibili informazioni riguardo le proprie chiavi e statistiche riguardo il loro utilizzo.
 
-Gli endpoints disponibili gratuitamente sono: \
+![](images\Etherscan_API_dashboard.png){height=60%, width=60%}
 
-*Accounts* \
-- ottenere informazioni su specifici wallet conoscendo i loro hash address come il bilancio e il numero di transazioni. \
+La voce *Visit Stats* mette a disposizione statistiche riguardo le chiamate e *View Logs* fornisce i log delle chiamate. \
+
+La voce *Verfied Addresses* permette di associare al proprio account uno o più indirizzi Ethereum utilizzati per la creazione di smart contract. Una volta associati un utente può aggiornare le informazioni sul token del contratto stesso. \
+
+![](images\Etherscan_verified_addresses.png){height=60%, width=60%}
+
+La voce *Custom ABI* permette di aggiungere una propria ABI per un contratto non verificato. \
+
+![](images\Etherscan_custom_ABI.png){height=60%, width=60%}
+
+La chiave API si utilizza direttamente negli url. \
+
+Gli endpoints disponibili gratuitamente sono: *Accounts*, *Contracts*, *Transactions*, *Blocks*, *Logs*, *Geth/Parity Proxy*, *Tokens*, *Gas Tracker*, *Stats*. Li discutiamo uno ad uno.\
+
+L'endpoint *Accounts* permette di ottenere informazioni riguardo specifici account. Più precisamente:
+
+
+- <a id="user-wallet"></a> ottenere informazioni su specifici wallet conoscendo i loro hash address come il bilancio e il numero di transazioni. \
 - ottenere informazioni su transazioni interne in base all'indirizzo, hash o intervallo di blocchi. \
-- conoscendo l'indirizzo è possibile conscere il tipo di token trasferiti (ERC-20, ERC712 ERC1155). \
-- è possibile conoscere l'elenco di blocchi validati da un indirizzo specifico \
-- beacon chain withdrawal in base all'indirizzo oppure intervallo di blocchi \
-- get historical ether balance for a single address for blockno \
+- conscere il tipo di token trasferiti (ERC-20, ERC712, ERC1155) conoscendo l'indirizzo di trasferimento. \
+- è possibile conoscere l'elenco di blocchi validati da un indirizzo specifico. \
+- è possibile conoscere il beacon chain withdrawal in base all'indirizzo oppure intervallo di blocchi. \
+- è possibile ottenere lo storico del bilancio in ETH per un specifico indirizzo. \
 
-*Contracts* \
-Get Contract ABI for Verified Contract Source Codes \
-Get Contract Source Code for Verified Contract Source Codes \
-Get Contract Creator and Creation Tx Hash \
-Verify Solidity Source Code \
-Verify Vyper Source Code \
-Check Source Code Verification Status \
-Verify Proxy Contract \
-Verifying Proxy Contract using cURL \
-Checking Proxy Contract Verification Submission Status using cURL \
 
-*Transactions* \
-Check Contract Execution Status \
-Check Transaction Receipt Status \
+L'endpoint *Contracts* permette di ottenere informazioni riguardo gli smart contract. Più precisamente: \
 
-*Blocks* \
-Get Block And Uncle Rewards by BlockNo \
-Get Estimated Block Countdown Time by BlockNo \
-Get Block Number by Timestamp \
-Get Daily Average Block Size \
-Get Daily Block Count and Rewards \
-Get Daily Block Rewards \
-Get Daily Average Time for A Block to be Included in the Ethereum Blockchain \
-Get Daily Uncle Block Count and Rewards \
 
-*Logs* \
-Get Event Logs by Address \
-Get Event Logs by Topics \
-Get Event Logs by Address filtered by Topics \
+- ottenere l'ABI per un contratto verificato. \
+- ottenere il codice sorgente di un contratto verificato. \
+- ottenere la hash e il creatore del contratto. \
+- verificare un contratto scritto in Solidity oppure Vyper. \
+- controllare lo stato di verifica di un contratto. \
+- verificare un Proxy Contract utilizzando cURL. \
+- controllare lo stato di una richiesta di verifica di un Proxy Contract utilizzando cURL. \
 
-*Geth/Parity Proxy* \
+L'endpoint *Transactions* permette di ottenere informazioni riguardo delle transazioni. Più precisamente: \
 
-*Tokens* \
-Get ERC20-Token TotalSupply by ContractAddress \
-Get ERC20-Token Account Balance for TokenContractAddress \
-Get Historical ERC20-Token TotalSupply by ContractAddress & BlockNo \
-Get Historical ERC20-Token Account Balance for TokenContractAddress by BlockNo \
-Get Token Holder List by Contract Address \
-Get Token Holder Count by Contract Address \
-Get Token Info by ContractAddress \
-Get Address ERC20 Token Holding \
-Get Address ERC721 Token Holding \
-Get Address ERC721 Token Inventory By Contract Address \
 
-*Gas Tracker* \
-Get Estimation of Confirmation Time \
-Get Gas Oracle \
-Get Daily Average Gas Limit \
-Get Ethereum Daily Total Gas Used \
-Get Daily Average Gas Price \
+- controllare lo stato di esecuzione di un contratto. \
+- controllare lo stato di una transazione. \
 
-*Stats* \
-Get Total Supply of Ether \
-Get Total Supply of Ether 2 \
-Get Ether Last Price \
-Get Ethereum Nodes Size \
-Get Total Nodes Count \
-Get Daily Network Transaction Fee \
-Get Daily New Address Count \
-Get Daily Network Utilization \
-Get Daily Average Network Hash Rate \
-Get Daily Transaction Count \
-Get Daily Average Network Difficulty \
-Get Ether Historical Price \
+L'endpoint *Blocks* permette di ottenere informazioni riguardo ai blocchi. Più precisamente: \
+
+
+- ottenere il reward di un blocco, anche uncle, in base al numero. \
+- ottenere una stima del tempo rimasto prima che un blocco venga minato, in base al numero. \
+- ottenere il numero di un blocco conoscendo il timestamp. \
+- ottenere la dimesione media di un blocco in un intervallo di tempo specificato. \
+- ottenere il numero di blocchi giornalieri e il reward. \
+- ottenere la quantità di reward distribuita ai miner nell'intervallo di tempo specificato. \
+- ottenere il tempo medio impiegato per includere un blocco nella blockchain Ethereum. \
+- ottenere il numero di blocchi uncle giornalieri e il reward. \
+
+L'endpoint *Logs* permette di ottenere gli eventi di log. Più precisamente: \
+
+
+- ottenere gli event logs tramite un indirizzo. \
+- ottenere gli event logs tramite in base ai valori topic. \
+- ottenere gli event logs tramite un indirizzo e filtrando in base ai topic. \
+
+L'endpoint *Geth/Parity Proxy* \
+
+
+- eth_blockNumber \
+- eth_getBlockByNumber \
+- eth_getUncleByBlockNumberAndIndex \
+- eth_getBlockTransactionCountByNumber \
+- eth_getTransactionByHash \
+- eth_getTransactionByBlockNumberAndIndex \
+- eth_getTransactionCount \
+- eth_sendRawTransaction \
+- eth_getTransactionReceipt \
+- eth_call \
+- eth_getCode \
+- eth_getStorageAt \
+- eth_gasPrice \
+- eth_estimateGas \
+
+L'endpoint *Tokens* permette di ottenere informazioni riguardo ai token, con maggiore attenzione ai token ERC20. \
+
+
+- ottenere la total supply di token ERC20 in base all'indirizzo. \
+- ottenere il balance ERC20 in base all'indirizzo. \
+- ottenere la total supply storica di token ERC20 in base all'indirizzo e numero di blocco. \
+- ottenere il balance ERC20 storico in base all'indirizzo e numero di blocco. \
+- ottenere la lista di token holder in base all'indirizzo del contratto. \
+- ottenere il numero di token holder in base all'indirizzo del contratto. \
+- ottenere le informazioni riguardo il token in base all'indirizzo del contratto. \
+- ottenere l'indirizzo ERC20 Token Holding. \
+- ottenere l'indirizzo ERC721 Token Holding. \
+- ottenere l'indirizzo ERC721 Token Inventory By Contract Address. \
+
+L'endpoint *Gas Tracker* permette di ottenere informazioni riguardo al gas. Più precisamente:  \
+
+
+- ottenere una stima della confirmation time. \
+- ottenere il Gas Oracle. \
+- ottenere la media giornaliera del Gas Limit. \
+- ottenere il consumo giornaliero di gas utilizzato. \
+- ottenere il prezzo giornaliero medio dei gas. \
+
+L'endpoint *Stats* permette di ottenere informazioni riguardo ai stats. Più precisamente: \
+
+
+- ottenere la fornitura totale di Ether. \
+- ottenere la fornitura totale di Ether 2. \
+- ottenere l'ultimo prezzo di Ether. \
+- ottenere le dimensioni dei nodi Ethereum. \
+- ottenere il numero totale di nodi. \
+- ottenere la transaction fee giornaliera. \
+- ottenere la Daily New Address Count. \
+- ottenere l'utilizzo giornaliero della rete. \
+- ottenere la hash rate media giornaliera. \
+- ottenere il numero di transazioni giornaliero. \
+- ottenere la difficoltà media giornaliera. \
+- ottenere lo storico del prezzo Ether. \
 
 
 <!-- Etherscan API -->
 #### Usabilità
 
-creare facilmente chiavi. \
-
-gli url si possono invocare direttamente nel browser. I risultati sono proposti su una pagina web. \
-
-Per scaricare e manipolare i dati è stato necessario creare un codice Python e i output sono salvati come JSON. \
+&Egrave; possibile creare facilmente le chiavi API necessarie per utilizzare gli url. Gli url si possono invocare direttamente nel browser. I risultati sono proposti su una pagina web. Per scaricare e manipolare i dati è stato necessario creare un codice Python. L'output è salvato come JSON. \
+I campi degli url utilizzano nomi semplici e descrittivi. I messaggi di errore sono chiari ed efficaci. 
+Una volta inviata una chiamata non è possibile interromperla. Sono consumati crediti solo se la chiamata va a buon fine. I crediti consumati non si possono recuperare. \
 
 
+- **Utenti individuali**: \
+  - *Un utente può monitorare le sue attività ?* Sì, è possibile ottenere le informazioni di interesse. [100](#user-wallet) \
+  - *Un utente può ricercare informazioni utili per prendere decisioni di inverstimento ?* Sì, è possibile ottenere le informazioni di interesse. \
+  - *Un utente può utilizzare lo strumento per svolgere operazioni ?* No, non è possibile completare una transazione direttamente. \
 
-- **Utenti individuali**:
-  - *Un utente può monitorare le sue attività ?* \
-  - *Un utente può ricercare informazioni utili per prendere decisioni di inverstimento ?* \
-  - *Un utente può utilizzare lo strumento per svolgere operazioni ?* \
 
-
-- **Sviluppatori**:
-  - *Uno sviluppatore può creare una dApp ?* \
-  - *Uno sviluppatore può lanciare la propria dApp ?* \
-  - *Uno sviluppatore può fare auditing/valutazione della propria dApp ?* \
-  - *Uno sviluppatore può scrivere uno smart contract ?* \
-  - *Uno sviluppatore può lanciare il proprio smart contract sulla blockchain ?* \
-  - *Uno sviluppatore può verificare il codice del proprio smart contract ?* \
+- **Sviluppatori**: \
+  - *Uno sviluppatore può creare una dApp ?* Non direttemente, come visto prima Etherscan non fornisce un ambiente di sviluppo, però gli url possono essere utilizzati all'interno di un programma. \
+  - *Uno sviluppatore può lanciare la propria dApp ?* No, come con Etherscan, non è possibile lanciare una dApp dal proprio account. \
+  - *Uno sviluppatore può fare auditing/valutazione della propria dApp ?* No, come con Etherscan, non è possibile lancaire una dApp dal proprio account. . \
+  - *Uno sviluppatore può scrivere uno smart contract ?* No, non è possibile scrivere uno smart contract con Etherscan API. \
+  - *Uno sviluppatore può lanciare il proprio smart contract sulla blockchain ?* No, non è possibile lanciare uno smart contract. \
+  - *Uno sviluppatore può verificare il codice del proprio smart contract ?* Sì, è possibile verificare uno smart contract. \
   
-- **Minatori e Validatori** :
-  - *Un minatore o validatore può monitorare la produzione di blocchi ?* \
-  - *Un minatore o validatore può accedere alla mining pool ?* \
-  - *Un minatore o validatore può stimare la reward e la difficulty ?* \
-  - *Un minatore o validatore ha accesso a strumenti per effettuare lo staking ?* \
-  - *Un minatore o validatore ha accesso a strumenti per effettuare il mining ?* \
-  - *Un minatore o validatore può stimare il slashing risk ?* \
-  - *Un minatore o validatore può conoscere la validator uptime ?* \
-  - *Un minatore o validatore può stimare la reward rate ?* \
-  - *Un minatore o validatore può ottenere informazioni sulla liquidity ?* \
+- **Minatori e Validatori** : \
+  - *Un minatore o validatore può monitorare la produzione di blocchi ?* Sì, è possibile monitorare in modo dettagliato la produzione di blocchi. \
+  - *Un minatore o validatore può accedere alla mining pool ?* No, non è possibile accedere alla mining pool. \
+  - *Un minatore o validatore può stimare la reward e la difficulty ?* Sì, è possibile ottenere informazioni riguardo la reward e la difficulty. \
+  - *Un minatore o validatore ha accesso a strumenti per effettuare lo staking ?* No, non è possibile effettuare staking. \
+  - *Un minatore o validatore ha accesso a strumenti per effettuare il mining ?* No, non è possibile effettuare mining. \
+  - *Un minatore o validatore può stimare il slashing risk ?* No, non è possibile ottenere informazioni sullo slashing risk. \
+  - *Un minatore o validatore può conoscere la validator uptime ?* No, non è possibile ottenere informazioni sulla validator uptime. \
+  - *Un minatore o validatore può stimare la reward rate ?* Sì, è possibile ottenere informazioni riguardanti la reward. \
+  - *Un minatore o validatore può ottenere informazioni sulla liquidity ?* No, non sono disponibili informazioni riguardo la liquidity. \
   
-- **Analisti e ricercatori di cryptovalute** : 
-  - *Un analista può conoscere lo storico e il numero di incidenti o attacchi ?* \
-  - *Un analista può conoscere le dApp attive sulla blockchain ?* \
-  - *Un analista può conoscere gli smart contracts attivi sulla blockchain ?* \
-  - *Un analista può conoscere strategic partnerships, collaborations, announcements, ?* \
-  - *Un analista può interagire con soluzioni layer 2 ?* \
-  - *Un analista può conoscere i governance models utilizzati sulla blockchain ?* \
+- **Analisti e ricercatori di cryptovalute** : \
+  - *Un analista può conoscere lo storico e il numero di incidenti o attacchi ?* No, non sono disponibili informazioni su incidenti o attacchi. \
+  - *Un analista può conoscere le dApp attive sulla blockchain ?* No, non sono disponibili informazioni sulle dApp. \
+  - *Un analista può conoscere gli smart contracts attivi sulla blockchain ?* Sì, sono disponibili informazioni su smart contracts. \
+  - *Un analista può conoscere strategic partnerships, collaborations, announcements, ?* No, non sono disponibili informazioni a riguardo. \
+  - *Un analista può interagire con soluzioni layer 2 ?* No, non è possibile interagire con soluzioni layer 2 con questi endpoint. \
+  - *Un analista può conoscere i governance models utilizzati sulla blockchain ?* No, non sono disponibili informazioni a riguardo. \
 
-- **Team di progetti (DeFi, NFT, Progetti Token)** :
-  - *Un team può monitorare la liquidità dei token ?* \
-  - *Un team può conoscere le transazioni e le statistiche dei pool di liquidità ?* \
-  - *Un team può creare l'NFT ?* \
-  - *Un team può fare minting di NFT ?* \
-  - *Un team può lanciare i token o airdrop ?* \
-  - *Un team può monitorare la distribuzione dei token ?* \
-  - *Un team può verificare le interazioni con gli smart contract?* \
-  - *Un team può gestire la tokenomica del progetto ?* \
-  
+- **Team di progetti (DeFi, NFT, Progetti Token)** : \
+  - *Un team può monitorare la liquidità dei token ?* No, non sono disponibili informazioni a riguardo. \
+  - *Un team può conoscere le transazioni e le statistiche dei pool di liquidità ?* No, non sono disponibili informazioni a riguardo. \
+  - *Un team può creare l'NFT ?* No, non sono forniti strumenti per creare NFT. \
+  - *Un team può fare minting di NFT ?* No, non sono forniti strumenti per effettuare minting. \
+  - *Un team può lanciare i token o airdrop ?* No, non è possibile lanciare token o airdrop. \
+  - *Un team può monitorare la distribuzione dei token ?* Sì, è possibile monitorare la distribuzione dei token. \
+  - *Un team può verificare le interazioni con gli smart contract?* Sì, è possibile verificare le interazioni con gli smart contract. \
+  - *Un team può gestire la tokenomica del progetto ?* Sì, è possibile ottenere informazioni di interesse riguardo la tokenomica del progetto. \
+
 
 
 #### Risorse disponibili 
 
-Stesse risorse disponibili con Etherscan. \
+Dai API endpoint messi a disposizione, è possibile ottenere un numero illimitato di entry, tranne per alcuni endpoint che hanno un limite di 10000. \
 
-Interazione diretta con la blockchain. \
-
-Ottenere un numero illimitato di entry (Etherscan ha un limite di 5000) . \
+La documentazione è dettagliata. \
 
 
 #### Costi
@@ -797,10 +832,8 @@ Etherscan offre cinque piani tariffari (aggiornato al 5 Marzo 2025). Quello che 
 ![](images\Etherscan_plan.png)
 
 
-Esiste un set di API endpoints sempre disponibile. Questo viene esteso con ulteriori funzioni nei piani a pagamento. \
-Il community support risulta sempre disponibile. A pagamento esiste anche il escalated support. \
-Come si vede dalla figura sopra anche l'account gratuito offre una gamma completa di funzionalità.\
-\
+Esiste un set di API endpoints sempre disponibile. Questo viene esteso con ulteriori funzioni nei piani a pagamento. Il community support risulta sempre disponibile. A pagamento esiste anche il escalated support. Come si vede dalla figura sopra anche l'account gratuito offre una gamma completa di funzionalità.
+
 
 
 #### Il caso di studio
