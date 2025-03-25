@@ -1340,213 +1340,118 @@ Dune propone un'interfaccia intuitiva e facile da usare. Per formulare le query 
 ### Web3.py : una libreria Web3
 
 Queste librerie forniscono funzioni che permettono interazioni con la Blockchain. Queste sono state utilizzate con Python.\
-Web3.py richiede un provider per accedere alla blockchain. Come provider è stato utilizzato Infura. Infura è una blockchain API, simile a Ethereum API. Per utilizzare Infura è richiesta la creazione di un account per ottenere la chiave. Infura impone un limite al numero massimo di operazioni giornaliere. \
-\
-##### Web3
+Web3.py richiede un provider per accedere alla blockchain. Come provider è stato utilizzato Infura. Infura è una blockchain API, simile a Ethereum API. Per utilizzare Infura è richiesta la creazione di un account per ottenere la chiave. Infura impone un limite al numero massimo di operazioni giornaliere.
 
-- funzione per collegarsi al provider \
-  permette di collegarsi alla catena Etherscan. 
+##### Web3.py
 
-- funzione diretta per ottenere i dati di un blocco specifico \
-  
+La libreria Web3.py permette di ottenere informazioni direttamente dalla catena Ethereum o altre catene EVM-compatibli.
 
-- base API comprende un numero di funzioni utility convenienti \
-- funzione per interagire con i contratti \
-- funzione eventi, logs e filtri \
+Per collegarsi ad un nodo Ethereum è richiesto l'utilizzo di un provider. Un provider genera una richiesta JSON-RPC e restituisce la risposta.
 
-- disponibile la documentazione
+Gli approcci più comuni sono IPC, WebSocket, HTTP. IPC utilizza il filesystem locale mentre gli altri lo utilizzano in remoto. Per utilizzare il provider desiderato la libreria propone le seguenti funzioni: 
 
 
-*Configuration*
-  *Providers*
-  Esistono sei tipi di providers, di cui uno è deprecato. Questi tipi sono:
-  HTTPProvider
-  IPCProvider
-  LegacyWebSocketProvider (deprecato)
-  AsyncHTTPProvider
-  AsyncIPCProvider
-  WebSocketProvider
-  
-  la sintassi è Web3(Web3.function(URL))
-  si può verificare con w3.is_connected()
-  
-  *Middleware*
-  le istanze web3 possono essere ulteriormente configurate
-  [che cos'è il middleware]
-  
-*Accounts and Private Keys*
-  le chiavi private servono per approvare le transazioni
-  compatibile con nodo locale e nodo host
-*Base API*
-  funzioni utili
+- HTTPProvider : permette interazioni con un HTTP o HTTPS based server JSON-RPC
+- IPCProvider : permette interazioni con un IPC socket based server JSON-RPC
+- AsyncHTTPProvider : permette interazioni con un HTTP o HTTPS based server JSON-RPC in modo asincrono
+- AsyncIPCProvider :  permette interazioni con un IPC socket based server JSON-RPC in modo asincrono e persistente
+- WebSocketProvider : permette interazioni con un WS o WSSbased server JSON-RPC
 
-  *Encoding and Decoding Helpers*
-  *Address Helpers*
-  *Currency Conversions*
-  *Cryptographic Hashing*
-  
+Esiste anche la funzione LegacyWebSocketProvider, ma questa è stata deprecata. La sintassi è Web3(Web3.function(URL)). &Egrave; possibile verificare lo stato della connessione con la funzione w3.is_connected(). Inoltre è anche possibile scrivere un proprio provider.
 
-*web3.eth API*
-  funzioni per interagire con Ethereum
-  *Fetching Data* : ottenere dati
-  *Sending Transactions*: funzioni sulle transazioni
-  
-  
-*Contracts*
-  permette il deploy dei contratti
-  le funioni sono disponibili su functions namespace
-  si può leggere un contratto
-  
-*Events, Logs, and Filters*
-  riguarda blocchi specifici e eventi specifici
-  [ PROSEGUE ]
-  
-*Net API*
-  proprietà della Network
-  
-*ENS*
-  infrastruttura per indirizzi human-readable
-  richiede la libreria ens
-  permette di trovare Adress e ENS Name
-  
+&Egrave; possibile configurare il middleware. In particolare è possibile aggiungere, rimuovere, modificare e liberare strati di middleware a runtime.
+Web3.py utilizza di default alcuni strati di middleware : gas_price_strategy, ens_name_to_address, attrdict, validation, gas_estimate.
 
-*Troubleshooting*: documentazione di supporto:
-come creare l'environment, 
+Esiste un ulteriore strato di middleware chiamato Managers: questi forniscono sicurezza ai thread e primitive per permettere un utilizzo asincrono del Web3.
 
-*Web3 Internals*: 
+Oltre ad ottenere informazioni dalle catene di interesse, è possibile svolgere operazioni come transazioni, creazioni di nodi locali, interagire con i contratti, e creare ed utilizzare un ENS (Ethereum Name Service).
+
+Riguardo gli Account, è possibile creare una propria chiave privata. Ad ogni chiave generata è associato un indirizzo Ethereum. Con questa chiave privata è possibile firmare o verificare un messaggio, preparare un messaggio per erecover in Solidity, verificare un messaggio per erecover in Soldity, firmare una transazione, firmare una transazione per invocare un contratto. 
+
+Riguardo i contratti, Web3.py fornisce una funzionalità molto completa. &Egrave; possibile compilare un contratto Solidity e fare il deploy. &Egrave; possibile creare le Contract Factories, ovvero un oggetto che permette di interfacciare con i smart contracts oppure fare il deploy di smart contract. Inoltre, è possibile interagire con gli eventi dei contratti. WEb3.py fornisce un'API per invocare le funzioni di un contratto.
+
+Riguardo gli eventi e i logs, è possibile ottenere informazioni riguardo specifici eventi e log.
+
+Web3.py fornisce i cosiddetti Event Subscriptions: questi permettono di rimanere in ascolto per specifici eventi sulla blockchain. &Egrave; possibile ascoltare solo determinati eventi: nuovi block headers, lo stato di syncing di un nodo, nuove transazioni in attesa e i log emessi dagli smart contract.
 
 ##### Infura
 
-- richiede creazione di un account per utilizzare \
-- home page : *API Keys*, *Let's get started*, *Analytics Overview*, *Product Updates*
+Infura è una blockchain API che permette di creare chiavi API. Per essere utilizzata essa richiede la creazione di un account.
+
+La home page di Infura è composta dalle seguenti parti: *API Keys*, *Let's get started*, *Analytics Overview*, *Product Updates*.
 
 ![](images\Infura_home.png)
 
 
-- *All Roles* (di default si ha *Owner*, *Admin*, *Contributor*)
+Per ogni progetto Infura un utente può assumere uno di tre ruoli: 
 
-*Owner*: Can read, write, view, edit, and delete projects. Project Owner is the only member who can access billing/add-on for this project.
-  *Admin*: Can read, write, view, and edit this project. Cannot delete the project. Does not have access to billing/add-on for this project. Good for project and team management needs.  
-  *Collaborator*: Can read and view this project. Cannot write, edit, or delete the project. Does not have access to billing/add-on for this project. Good for high-level project collaboration needs.
+
+- *Owner*: chi ha creato il progetto. L'unico membro di un gruppo che può accedere al billing/add-on del progettp. Può leggere, scrivere, visualizzare, editare e cancellare il progetto.
+- *Admin*: Può leggere, scrivere, visualizzare, editare ma non cancellare il progetto. Non può accedere al billing/add-on del progetto.  
+- *Collaborator*: Può solo leggere o visualizzare il progetto.[@infuraprojects]
+
+La voce *API Keys* fornisce un riassunto delle chiavi API utilizzate.
+
+La voce *Let's get started* propone quattro collegamenti: *Send Requests*, che porta alla documentazione MetaMask, *Integrate MetaMask*, che porta alla documentazione MetaMask, *MetaMask Development Center*, che porta a MetaMask, *Need help get started*, che porta a Discord.
+
+La voce *Analytics Overview* fornisce un riassunto dell' utilizzo credito giornaliero.
+
+Infine, la voce *Product Updates* propone gli aggiornamenti.
+
+Nella parte a sinistra della pagina ci sono i seguenti campi, che portano ad altre pagine: *Home*, *Stats*, *Infura RPC*, *MetaMask SDK*, *Status*, *Docs*, *Faucet*, *Help*, *Settings*, *Upgrade*.
+
+Il link *Home* punta alla pagina home.
+
+Il link *Stats* porta ad una pagina con dettagli riguardo i consumi:
+
+
+- *Requests Volume* : Total volume of requests sent to Infura over the selected time period.
+- *Method Request Volume* : Breakdown of aggregate request volumes for top 5 methods on each network used for this project
+- *Network Request Volume* : Breakdown of aggregate request volumes for top 5 Networks on each network used for this project
+- *Requests Activity* : Breakdown of total request volumes, successful and failed requests based on each networks and methods used for this project.
+- *Eth_call activity* : Breakdown of activities made on eth_call method, including contract addresses that interacted with this project.
+
+Per alcuni campi è possibile specificare la chiave di interesse e l'intervallo di tempo di interesse: 15 minuti, 1 ora (gratuiti), ultime 24 ore, ultimi 7 giorni, ultimi 30 giorni (solo a pagamento)
+
+La pagina *Infura RPC* propone dettagli riguardo le chiavi API generate. Oltre alla chiave scritta in chiaro, ci sono i seguenti campi: \
+
+
+- *Active Endpoints*: elenco dei endpoint attivi (sia http che websocket)
+- *All Endpoints*: elenco di tutti gli endpoint
+- *Settings*: per controllare le proprie chiavi API
+- *API Key Sharing*: per condividere le chiavi
   
+La pagina *MetaMask SDK* fornisce una guida per integrare una propria dApp con Metamask SDK.
 
-- *API Keys* : riassunto delle chiavi API utilizzate
-- *Let's get started* : *Send Requests*, porta alla documentazione MetaMask, *Integrate MetaMask*, porta alla documentazione MetaMask, *MetaMask Development Center*, porta a MetaMask, *Need help get started*, porta a Discord \
-- *Analytics Overview*: riassunto di utilizzo credito giornaliero
-- *Product Updates* : aggiornamenti
+Il link *Status* porta ad una pagina dove sono discussi aggiornamenti riguardanti Infura. Il link *Docs* porta alla documentazione MetaMask. Il link *Faucet* porta al faucet. Il link *Help* porta a tutorial. Il link *Settings* porta alle impostazioni. Il link *Upgrade* porta alla pagina dei costi.
 
-- A sinistra ci sono: *Home*, *Stats*, *Products* (*Infura RPC*, *MetaMask SDK*), *Status*, *Docs*, *Faucet*, *Help*, *Settings*, *Upgrade*
-
-- *Home*: la pagina home
-- *Stats*: 
-*Requests Volume* : Total volume of requests sent to Infura over the selected time period.
-*Method Request Volume* : Breakdown of aggregate request volumes for top 5 methods on each network used for this project
-*Network Request Volume* : Breakdown of aggregate request volumes for top 5 Networks on each network used for this project
-*Requests Activity* : Breakdown of total request volumes, successful and failed requests based on each networks and methods used for this project.
-*Eth_call activity* : Breakdown of activities made on eth_call method, including contract addresses that interacted with this project.
-
-è possibile specificare quale chiave. è possibile gli intervalli di tempo: 15 minutes, 1 hour gratuiti
-ultime 24 ore, ultimi 7 giorni, ultimi 30 giorni sono a pagamento
-
-
-*Products* (*Infura RPC* : propone la chiave API Key generata
-  *Active Endpoints*: elenco dei endpoint attivi. sia http che websocker. Permette di copia-incollare
-  *All Endpoints*: elenco di tutti gli endpoint
-  *Settings*: per controllare le proprie chiavi API
-  *API Key Sharing*: le chiavi si possono condividere. Con Infura ci sono tre ruoli: *Owner*, *Admin*,     *Collaborator*
-  
-  
-  
-*Products*, *MetaMask SDK* : supporto per integrare dapp con Metamask SDK. 
-
-*Status*: porta ad una pagina status dove sono discussi aggiornamenti riguardanti Infura
-
-*Docs*: porta alla documentazione MetaMask
-
-*Faucet*: porta al faucet
-
-*Help*: porta a tutorial
-
-*Settings*: impostazioni
-
-*Upgrade*: porta alla pagina dei costi
-
-Non tutto quello scritto nella documentazione ha funzionato. 
 
 <!-- Web3 -->
 #### Usabilità
 
-##### Web3
+##### Web3.py
 
-- euristiche di Nielsen non direttamente utilizzabili, non c'è UI
-- diverso da piattaforma 
-- possibili parametri sono:
-
-1. Documentation, Community and Support, License and Legal Considerations, Adoption and Popularity
-2. Ease of Installation, Performance, Error Handling and Debugging, Security
-3. Code Quality 
-4. Compatibility
-5. Use Case Fit
-6. Future Prospects
-
-##### Infura
-
-- possibile applicare euristiche di Nielsen
-- linguaggio chiaro
-- documentazione disponibile
-- 
-
-##### Utenza
-
-Gli utenti : \
+La libreria Web3.py è facile da installare e non richiede altre librerie per funzionare. &Egrave; disponibile una documentazione ufficiale.
+Le funzioni utilizzano nomi che comunicano in modo chiaro a cosa servono. Permette di scrivere codice espressivo e ordinato.
+I messaggi di errore sono piuttosto chiari. 
 
 
 - **Utenti individuali**: \
-  *Questo utente può monitorare le sue attività ?* Sì, si possono ottenere dati di un wallet. 
-  E&grave; possibile ottenere il numero di transazioni, il codice e il bilancio di un wallet conoscendo    il suo indirizzo hash : \
-  
-```{py, eval = FALSE}
-transaction_count = web3.eth.get_transaction_count( LFG_ADDRESS )
-code = web3.eth.get_code( LFG_ADDRESS )
-balance = web3.eth.get_balance( LFG_ADDRESS )
-```
+  *Questo utente può monitorare le sue attività ?* Sì, si possono ottenere dati di un wallet. &Egrave; possibile ottenere il numero di transazioni, il codice e il bilancio di un wallet conoscendo il suo indirizzo hash. \
+  *Un utente può ricercare informazioni utili per prendere decisioni di inverstimento ?* Prima di svolgere una transazione è possibile ottenere la stima del costo del gas [@aaron]. &Egrave; possibile interagire con i contratti esistenti. Per fare ciò è necessario definire un ABI per il contratto di interesse. Le informazioni sono disponibili, ma l'utente deve interpretarle e decidere da solo. Inoltre deve scrivere codice direttamente.\
+  *Un utente può utilizzare lo strumento per svolgere operazioni ?* Sì. \ 
 
-  *Un utente può ricercare informazioni utili per prendere decisioni di inverstimento ?* Prima di svolgere una transazione è possibile ottenere la stima del costo del gas [@aaron]: \
-```{py, eval = FALSE}
-transaction = {
-    'nonce': web3.eth.get_transaction_count( <my address> ),
-    'to': <address>,
-    'value': web3.to_wei(1, 'ether'),
-    'gas': 21000,
-    'gasPrice': web3.to_wei('10', 'gwei'),
-    'chainId': 12345678,
-}
-
-gas = web3.eth.estimate_gas(transaction)
-
-```
-  E&grave; possibile interagire con i contratti esistenti. Per fare ciò è necessario definire un ABI per il contratto di interesse. \
-  Le informazioni sono disponibili, ma l'utente deve interpretarle e decidere da solo. Inoltre deve scrivere codice direttamente. \
-  *Un utente può utilizzare lo strumento per svolgere operazioni ?* Sì, è possibile completare transazioni scrivendo un codice Python. \ 
-  
+**Web3.py fornisce tutte le funzionalità necessarie per svolgere operazioni sulla blockchain. Richiede però che l'utente abbia conoscenze avanzate di programmazione. Quindi, potrebbe non essere adatto per tutti.**  
   
 - **Sviluppatori**: \
-  *Uno sviluppatore può creare una dApp ?* Sì, è possibile creare una dApp con il linguaggio Python e Web3.py risulta essere una libreria con funzionalità utili per questa implementazione. \
-  *Uno sviluppatore può lanciare la propria dApp ?* Sì, se la dApp è uno script di Python è sufficiente eseguire il codice sul proprio dispositivo per interagire con la catena. \
-  *Uno sviluppatore può fare auditing/valutazione della propria dApp ?* Sì, se la dApp è uno script di Python è possibile fare auditing dello script. \
-  *Uno sviluppatore può scrivere uno smart contract ?* Non direttamente, i smart contract sono scritti in Solidity oppure Vyper. QUesti script possono essere compilati utilizzando Python [@smartcontract]. \
-  *Uno sviluppatore può lanciare il proprio smart contract sulla blockchain ?* Sì, è possibile compilare e lanciare uno smart contract utilizzando Python. La compilazione però non avviene con una funzione dalla libreria Web3 , bensì con la libreria solcx. Eseguire il deploy del contratto richiede una transazione. \
-
-```{py, eval = FALSE}
-from solcx import compile_source 
-compiled_sol = compile_source( <solidity>, output_values=['abi', 'bin'])
-
-Greeter = w3.eth.contract(abi=abi, bytecode=bytecode)
-tx_hash = Greeter.constructor().transact()
-```
-
-  *Uno sviluppatore può verificare il codice del proprio smart contract ?* Sì, è possibile verificare il codice. Verificare il codice richiede di compilare il codice dello smart contract localmente, scaricare il bytecode sulla catena, e confrontare i due.  E&grave; possibile compilare il codice, è possibile ottenere il bytecode con get_code() e si può scrivere uno script Python che confronta i due. \
+  *Uno sviluppatore può creare una dApp ?* Non direttamente, è possibile creare una dApp con il linguaggio Python e utilizzare al suo interno la libreria Web3.py. \
+  *Uno sviluppatore può lanciare la propria dApp ?* Sì. \
+  *Uno sviluppatore può fare auditing/valutazione della propria dApp ?* Sì. \
+  *Uno sviluppatore può scrivere uno smart contract ?* Non direttamente, i smart contract sono scritti in Solidity oppure Vyper. Questi script possono essere compilati utilizzando Python [@smartcontract]. \
+  *Uno sviluppatore può lanciare il proprio smart contract sulla blockchain ?* Sì.\
+  *Uno sviluppatore può verificare il codice del proprio smart contract ?* Sì, è possibile verificare il codice. Verificare il codice richiede di compilare il codice dello smart contract localmente, scaricare il bytecode sulla catena, e confrontare i due. &Egrave; possibile compilare il codice, è possibile ottenere il bytecode con get_code() e si può scrivere uno script Python che confronta i due. \
   
+**Web3.py sembra essere uno strumento utile per gli sviluppatori.**
   
 - **Minatori e Validatori** : \
   *Un minatore o validatore può monitorare la produzione di blocchi ?* Sì, si possono invocare singoli blocchi, utilizzando il loro  numero oppure parole chiave ('latest', 'earliest', 'pending', 'safe', 'finalized'). \
@@ -1579,6 +1484,12 @@ tx_hash = Greeter.constructor().transact()
   *Un team può gestire la tokenomica del progetto ?* \
 
 
+##### Infura
+
+Il sistema comunica in modo chiaro ed esaustivo il suo stato, non ci sono ridondanze e ha un carico cognitivo contenuto. Il sistema utilizza una terminologia corretta e mette a disposizione della documentazione.
+Non è fornito controllo diretto sulle singole chiamate dalla pagina. \
+
+
 #### Risorse disponibili 
 
 - web3
@@ -1589,17 +1500,13 @@ tx_hash = Greeter.constructor().transact()
 
 #### Costi
 
-##### Web3
-web3
-
-libreria python, completamente gratuita
-
-##### Infura
+La libreria Web3.py è completamente gratuita. Su Infura è possibile creare un account gratuitamente, ma esistono anche dei piani tariffari. Esistono tre piani: *Developer*, *Team*, *Enterprise*. \
 
 ![](images\Infura_cost.png)
 
-#### Il caso di studio
+Ci sono differenze in termini di risorse e funzionalità messe a disposizione. Per la parte del caso di studio le risorse messe a disposizione per l'account gratuito sono state più che sufficienti.
 
+#### Il caso di studio
 
 <!-- WEB3 -->
 ##### Informazioni riguardo i trasferimenti
