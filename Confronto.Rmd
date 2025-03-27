@@ -1365,6 +1365,8 @@ Dune propone un'interfaccia intuitiva e facile da usare. Per formulare le query 
 
 La libreria Web3.py è una libreria Python che permette di interagire con la Blockchain. Richiede un provider per accedere alla blockchain. Come provider è stato utilizzato Infura. Infura è una blockchain API, simile a Etherscan API. Per utilizzare Infura è richiesta la creazione di un account per generare chiavi API. Infura impone un limite al numero massimo di operazioni giornaliere.
 
+In questo progetto si riferisce alla versione stable della libreria. 
+
 ##### Web3.py
 
 La libreria Web3.py permette di ottenere informazioni direttamente dalla catena Ethereum o altre catene EVM-compatibli.
@@ -1473,33 +1475,33 @@ La libreria Web3.py è facile da installare e non richiede altre librerie per fu
   
 - **Minatori e Validatori** : \
   *Un minatore o validatore può monitorare la produzione di blocchi ?* Sì, si possono invocare singoli blocchi, utilizzando il loro  numero oppure parole chiave ('latest', 'earliest', 'pending', 'safe', 'finalized'). \
-  *Un minatore o validatore può accedere alla mining pool ?* \
-  *Un minatore o validatore può stimare la reward e la difficulty ?* \
-  *Un minatore o validatore ha accesso a strumenti per effettuare lo staking ?* \
-  *Un minatore o validatore ha accesso a strumenti per effettuare il mining ?* \
-  *Un minatore o validatore può stimare il slashing risk ?* \
-  *Un minatore o validatore può conoscere la validator uptime ?* \
-  *Un minatore o validatore può stimare la reward rate ?* \
-  *Un minatore o validatore può ottenere informazioni sulla liquidity ?* \
+  *Un minatore o validatore può accedere alla mining pool ?* No. \
+  *Un minatore o validatore può stimare la reward e la difficulty ?* Non esiste una funzione di libreria per ottenere l'informazione direttamente. \
+  *Un minatore o validatore ha accesso a strumenti per effettuare lo staking ?* No. \
+  *Un minatore o validatore ha accesso a strumenti per effettuare il mining ?* No. \
+  *Un minatore o validatore può stimare il slashing risk ?* Non esiste una funzione di libreria per ottenere l'informazione direttamente. \
+  *Un minatore o validatore può conoscere la validator uptime ?* Non esiste una funzione di libreria per ottenere l'informazione direttamente. \
+  *Un minatore o validatore può stimare la reward rate ?* Non esiste una funzione di libreria per ottenere l'informazione direttamente. \
+  *Un minatore o validatore può ottenere informazioni sulla liquidity ?* Non esiste una funzione di libreria per ottenere l'informazione direttamente. \
 
 - **Analisti e ricercatori di cryptovalute** : \
-  *Un analista può conoscere lo storico e il numero di incidenti o attacchi ?* \
-  *Un analista può conoscere le dApp attive sulla blockchain ?* \
-  *Un analista può conoscere gli smart contracts attivi sulla blockchain ?* \
-  *Un analista può conoscere strategic partnerships, collaborations, announcements, ?* \
-  *Un analista può interagire con soluzioni layer 2 ?* \
-  *Un analista può conoscere i governance models utilizzati sulla blockchain ?* \
+  *Un analista può conoscere lo storico e il numero di incidenti o attacchi ?* &Egrave; possibile ricostruire lo storico degli eventi. \
+  *Un analista può conoscere le dApp attive sulla blockchain ?* Non direttamente. \
+  *Un analista può conoscere gli smart contracts attivi sulla blockchain ?* Sì. \
+  *Un analista può conoscere strategic partnerships, collaborations, announcements ?* No. \
+  *Un analista può interagire con soluzioni layer 2 ?* Sì. \
+  *Un analista può conoscere i governance models utilizzati sulla blockchain ?* No. \
 
 
 - **Team di progetti (DeFi, NFT, Progetti Token)** : \
-  *Un team può monitorare la liquidità dei token ?* No \
-  *Un team può conoscere le transazioni e le statistiche dei pool di liquidità ?* Forse \
-  *Un team può creare l'NFT ?* \
-  *Un team può fare minting di NFT ?* \
-  *Un team può lanciare i token o airdrop ?* \
-  *Un team può monitorare la distribuzione dei token ?* \
-  *Un team può verificare le interazioni con gli smart contract?* \
-  *Un team può gestire la tokenomica del progetto ?* \
+  *Un team può monitorare la liquidità dei token ?* Non esiste una funzione di libreria per ottenere l'informazione direttamente. \
+  *Un team può conoscere le transazioni e le statistiche dei pool di liquidità ?* Non esiste una funzione di libreria per ottenere l'informazione direttamente. \
+  *Un team può creare l'NFT ?* No. \
+  *Un team può fare minting di NFT ?* Sì. \
+  *Un team può lanciare i token o airdrop ?* Sì. \
+  *Un team può monitorare la distribuzione dei token ?* Sì. \
+  *Un team può verificare le interazioni con gli smart contract?* Sì. \
+  *Un team può gestire la tokenomica del progetto ?* Sì. \
 
 
 ##### Infura
