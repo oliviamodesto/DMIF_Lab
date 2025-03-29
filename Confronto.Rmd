@@ -1668,7 +1668,7 @@ Infura è facile da usare e mette a disposizione risorse utili per chi si occupa
 
 Sono state esaminate quattro piattaforme di interesse. Queste sono molto diverse tra loro. \
 Esse sono adatte a diversi tipi di utenti, offrono diverse funzionalità, richiedono diverse competenze e sono adatte a diversi utilizzi. 
-Questi diversi aspetti sono esaminate in maggiore dettaglio.
+Questi diversi aspetti sono esaminati in maggiore dettaglio.
 
 ### Confronto in termini di utenza
 
@@ -1677,120 +1677,90 @@ Questi diversi aspetti sono esaminate in maggiore dettaglio.
 utente_individuale <- "
 | Domanda | Etherscan | Etherscan API | Dune Analytics | Web3.py |
 |-----------------------------------------:|----------:|--------------:|---------------:|--------:|
-|Un utente può monitorare le sue attività ?| Y | Y | Y | |
-|Un utente può ricercare informazioni utili per prendere decisioni di inverstimento ?| Y | Y | Y | |
-|Un utente può utilizzare lo strumento per svolgere operazioni ?| N | N | N | |
+|Un utente può monitorare le sue attività ?| Y | Y | Y | Y |
+|Un utente può ricercare informazioni utili per prendere decisioni di inverstimento ?| Y | Y | Y | Y |
+|Un utente può utilizzare lo strumento per svolgere operazioni ?| N | N | N | Y |
 "
 cat(utente_individuale) # output the table in a format good for HTML/PDF/docx conversion
 ```
 
-- Da quello che si può vedere dalla tabella le quattro piattaforme forniscono lo stesso supporto. 
-- Web3.py è l'unica che permette di svolegere la transazione direttamente, ma si occupa solo di alcune catene. \
-- Complessivamente, sembrerebbe che la piattaforma Ethereum è la più adatta per un utente casuale che svolge attività sulla catena Ethereum.
-- Per chi svolge attività su altre catene e non ha competenze di programmazione, nessuna delle due piattaforme rimanenti potrebbe essere abbastanza accessibile.
-- 
+Da quello che si può vedere dalla tabella le quattro piattaforme forniscono supporto per monitorare e ricercare informazioni utili. Web3.py è l'unica piattaforma che permette di svolegere la transazione direttamente, ma si occupa solo di alcune catene.
+Complessivamente, sembrerebbe che la piattaforma Ethereum è la più adatta per un utente casuale che svolge attività sulla catena Ethereum. 
+L'unica piattaforma che permette di ricercare informazioni su altre catene è Dune. Questa richiede competenze di SQL, quindi potrebbe non essere abbastanza accessibile.
+
 
 ```{r table3, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
 sviluppatore <- "
 | Domanda | Etherscan | Etherscan API | Dune Analytics | Web3.py |
 |-----------------------------------------:|----------:|--------------:|---------------:|--------:|
-|Uno sviluppatore può creare una dApp ?|  |  |  |  |
-|Uno sviluppatore può lanciare la propria dApp ?|  |  |  |  |
-|Uno sviluppatore può fare auditing/valutazione della propria dApp ?|  |  |  |  |
-|Uno sviluppatore può scrivere uno smart contract ?|  |  |  |  |
-|Uno sviluppatore può lanciare il proprio smart contract sulla blockchain ?|  |  |  |  |
-|Uno sviluppatore può verificare il codice del proprio smart contract ?|  |  |  |  |
+|Uno sviluppatore può creare una dApp ?| N | N | N | N |
+|Uno sviluppatore può lanciare la propria dApp ?| N | N | N | Y |
+|Uno sviluppatore può fare auditing/valutazione della propria dApp ?| Y | N | N | Y |
+|Uno sviluppatore può scrivere uno smart contract ?| Y | N | N | N |
+|Uno sviluppatore può lanciare il proprio smart contract sulla blockchain ?| N | N | N | Y |
+|Uno sviluppatore può verificare il codice del proprio smart contract ?| Y | Y | Y | Y |
 "
 cat(sviluppatore) # output the table in a format good for HTML/PDF/docx conversion
 ```
 
-Da quello che si può vedere ...
+Da quello che si può vedere c'è una grossa differenza nel supporto fornito da Web3 e quello fornito dalle altre piattaforme. La libreria Web3.py sembra essere più che sufficiente per chi programma dApp.
+Le altre piattaforme potrebbero essere utili per svolegere attività di verifica o monitoraggio.
 
 ```{r table4, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
 minatori <- "
 | Domanda | Etherscan | Etherscan API | Dune Analytics | Web3.py |
 |-----------------------------------------:|----------:|--------------:|---------------:|--------:|
-|Un minatore o validatore può monitorare la produzione di blocchi ?|  |  |  |  |
-|Un minatore o validatore può accedere alla mining pool ?|  |  |  |  |
-|Un minatore o validatore può stimare la reward e la difficulty ?|  |  |  |  |
-|Un minatore o validatore ha accesso a strumenti per effettuare lo staking ?|  |  |  |  |
-|Un minatore o validatore ha accesso a strumenti per effettuare il mining ?|  |  |  |  |
-|Un minatore o validatore può stimare il slashing risk ?|  |  |  |  |
-|Un minatore o validatore può conoscere la validator uptime ?|  |  |  |  |
-|Un minatore o validatore può stimare la reward rate ?| | | | |
-|Un minatore o validatore può ottenere informazioni sulla liquidity ?| | | | |
+|Un minatore o validatore può monitorare la produzione di blocchi ?| Y | Y | Y | Y |
+|Un minatore o validatore può accedere alla mining pool ?| Y | N | N | N |
+|Un minatore o validatore può stimare la reward e la difficulty ?| Y | Y | Y | Y |
+|Un minatore o validatore ha accesso a strumenti per effettuare lo staking ?| N | N | N | N |
+|Un minatore o validatore ha accesso a strumenti per effettuare il mining ?| N | N | N | N |
+|Un minatore o validatore può stimare il slashing risk ?| N | N | Y | Y |
+|Un minatore o validatore può conoscere la validator uptime ?| N | N | N | Y |
+|Un minatore o validatore può stimare la reward rate ?| Y | Y | Y | Y |
+|Un minatore o validatore può ottenere informazioni sulla liquidity ?| Y | N | Y | Y |
 "
 cat(minatori) # output the table in a format good for HTML/PDF/docx conversion
 ```
 
-Da quello che si può vedere ...
+Da quello che si può vedere nessuno degli strumenti permette di fare staking oppure mining direttamente.
+La piattaforma che offre meno informazioni sembra essere Etherscan API.
+Per si occupa di staking oppure mining sulla catena Ethereum Etherscan risulta essere più che sufficiente. Per altre catene è possibile utilizzare Dune Analytics.
 
 ```{r table5, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
 analista <- "
 | Domanda | Etherscan | Etherscan API | Dune Analytics | Web3.py |
 |-----------------------------------------:|----------:|--------------:|---------------:|--------:|
-|Un analista può conoscere lo storico e il numero di incidenti o attacchi ?|  |  |  |  |
-|Un analista può conoscere le dApp attive sulla blockchain ?|  |  |  |  |
-|Un analista può conoscere gli smart contracts attivi sulla blockchain ?|  |  |  |  |
-|Un analista può conoscere strategic partnerships, collaborations, announcements ?|  |  |  |  |
-|Un analista può interagire con soluzioni layer 2 ?|  |  |  |  |
-|Un analista può conoscere i governance models utilizzati sulla blockchain ?|  |  |  |  |
+|Un analista può conoscere lo storico e il numero di incidenti o attacchi ?| N | N | Y | Y |
+|Un analista può conoscere le dApp attive sulla blockchain ?| N | N | Y | N |
+|Un analista può conoscere gli smart contracts attivi sulla blockchain ?| Y | Y | Y | Y |
+|Un analista può conoscere strategic partnerships, collaborations, announcements ?| Y | N | Y | N |
+|Un analista può interagire con soluzioni layer 2 ?| N | N | N | Y |
+|Un analista può conoscere i governance models utilizzati sulla blockchain ?| Y | N | N | N |
 "
 cat(analista) # output the table in a format good for HTML/PDF/docx conversion
 ```
 
-Da quello che si può vedere ... \
+Da quello che si può vedere la piattaforma che offre maggiore supporto risulta essere Dune Analytics. Dato che su Dune sono disponibili informazioni su decine di catene, progetti, etc. questa potrebbe essere l'opzione migliore pr chi si occupa di analisi e ricerca.
 
 ```{r table6, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
 team <- "
 | Domanda | Etherscan | Etherscan API | Dune Analytics | Web3.py |
 |-----------------------------------------:|----------:|--------------:|---------------:|--------:|
-|Un team può monitorare la liquidità dei token ?|  |  |  |  |
-|Un team può conoscere le transazioni e le statistiche dei pool di liquidità ?|  |  |  |  |
-|Un team può creare l'NFT ?|  |  |  |  |
-|Un team può fare minting di NFT ?|  |  |  |  |
-|Un team può lanciare i token o airdrop ?|  |  |  |  |
-|Un team può monitorare la distribuzione dei token ?|  |  |  |  |
-|Un team può verificare le interazioni con gli smart contract?|  |  |  |  |
-|Un team può gestire la tokenomica del progetto ?|  |  |  |  |
+|Un team può monitorare la liquidità dei token ?| Y | N | Y | Y |
+|Un team può conoscere le transazioni e le statistiche dei pool di liquidità ?| Y | N | Y | Y |
+|Un team può creare l'NFT ?| N | N | N | N |
+|Un team può fare minting di NFT ?| N | N | N | Y |
+|Un team può lanciare i token o airdrop ?| N | N | Y | Y |
+|Un team può monitorare la distribuzione dei token ?| Y | Y | Y | Y |
+|Un team può verificare le interazioni con gli smart contract?| Y | Y | Y | Y |
+|Un team può gestire la tokenomica del progetto ?| Y | Y | Y | Y |
 "
 cat(team) # output the table in a format good for HTML/PDF/docx conversion
 ```
 
+Web3 sembra fornire maggiore supporto. 
 
-- Etherscan : 
-  - molte funzionalità
-  - accessibile
-  - no competenze di programmazione
-  - solo Etherscan
-- Etherscan API :
-  - estende i dati accessibili
-  - richiede competenze di programmazione
-  - documentazione disponibile
-[ va bene per chi investe e studia la blckchain . Per chi programma va bene per consultare.
-  creazione di filtri aiuta a monitorare transazioni. ]
-  
-- Dune : 
-  - SQL minima, ma c'è l'AI di supporto
-  - analisi solo su pagina senza pagare
-  - molteplici catene supportate
-  - 
-[ va bene per consultare informazioni specifiche. Richiede una minima conoscenza di SQL.
-  data explorer di grande aiuto. (Forse) dati più dettagliati rispetto a Etherscan. 
-  ]
-  
-- Web3 & Infura : 
-  - librerie
-  - programmazione python (competenze più avanzate rispetto a Dune)
-  - documentazione ma niente AI diretta
-  - solo Eth
-  - Infura propone più catene
-  - facile generare una chiave API
-  - facile monitorare i consumi (aggiornati velocemente)
-  - 
-[ avanzate competenze di programmazione. Solo dati della blockchain. Contratti e transazioni
-  supportate. ]
-  
 ### Confronto in termini di costi
 
 - tutti e tre (Etherscan, Dune Analytics, Infura) hanno una versione gratuita
@@ -1805,26 +1775,285 @@ cat(team) # output the table in a format good for HTML/PDF/docx conversion
 - in ambito azinedate bisognerebbe valutare caso per caso
 - 
 
+Etherscan API: 0, 199, 299, 399, 899
+Dune Analytics: 0, 45, 349, 849
+Infura: 0, 50, 225, Custom
+
+Confronto versioni gratuite:
+
+```{r table8, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+
+free_vers <- "
+| Piattaforma | Numero di Chiamate | Credit | Community Support | Storage | Numero di chiavi |
+|--------------:|-------------------:|------------:|------------------:|-----------:|---------------:|
+| Etherscan API | 100000 | - | Y | 0 | 3 |
+| Dune | 250 | 2500 | non specificato | 100 MB | illimitate |
+| Infura | 11764 | 3000000 | non specificato | 0 | 1 |
+"
+cat(free_vers)
+
+```
+
+Dune e Infura non forniscono direttamente il numero di chiamate, perchè il numero di crediti dipende da cosa viene invocato. 
+Etherscan offre il numero più elevato di chiamate, Dune unico con storage.
+
+
+Dune : 
+```{r table9, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+
+dune_free <- "
+| APP | API | API export |
+|-----------------------:|-----------------------:|------------------------------------------------:|
+| Boost query execution | Programmatic execution | On free and analyst 1 credit = 1 000 data points |
+| Medium = 10 credits | Default = Medium = 10 credits | On plus 1 credit = 5 000 data points |
+| Large = 20 credits | Large = 20 credits | On premium 1 credit = 25 000 data points |
+"
+
+cat(dune_free)
+
+```
+
+
+Infura:
+eth_chainId: 5 credits
+eth_call: 80 credits
+eth_sendRawTransaction: 720 credits
+eth_getLogs: 255 credits
+
+quindi 11764 calls
+
+Paid Tier più basso
+
+```{r table11, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+
+paid1_vers <- "
+| Piattaforma  | Cost | Numero di Chiamate | Credit | Community Support | Storage | Numero di chiavi |
+|--------------:|------:|------------------:|------------:|------------------:|-----------:|---------------:|
+| Etherscan API | 199 | 200000 | - | Community Escalated Pro endpoints | 0 | 3 |
+| Dune | 45 | 400 | 4000 | not specified | 1 GB | unlimited |
+| Infura | 50 | 58823 | 15 millioni  | not specified | 0 | 5 |
+"
+cat(paid1_vers)
+
+```
+
+
+Paid Tier 
+
+```{r table12, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+
+paid2_vers <- "
+| Piattaforma  | Cost | Numero di Chiamate | Credit | Community Support | Storage | Numero di chiavi |
+|--------------:|------:|------------------:|------------:|------------------:|-----------:|---------------:|
+| Etherscan API | 299 | 500000 | - | Pro endpoints Community support Escalated support | 0 | 3 |
+| Dune | 349 | 2500 | 25000 | - | 15 GB download csv | unlimited |
+| Infura | 225 | 294117 | 75 milion  | non specificato  | 0 | unlimited |
+"
+cat(paid2_vers)
+
+```
+
+Paid Tier
+
+```{r table13, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+
+paid3_vers <- "
+| Piattaforma  | Cost | Numero di Chiamate | Credit | Community Support | Storage | Numero di chiavi |
+|--------------:|------:|------------------:|------------:|------------------:|-----------:|---------------:|
+| Etherscan API | 399 | 1000000 | - | Pro endpoints Community support Escalated support | 0 | 3 |
+| Dune | 849 | 10000 | 100000 | non specificato | 150 GB csv download | unlimited |
+| Infura | Custom | Custom | Custom | non specificato  | 0 | unlimited  |
+"
+
+cat(paid3_vers)
+
+```
+
+ 
+
 ### Confronto in termini di risorse disponibili
 
+- Catene raggiungibili
+Etherscan: Ethereum Mainnet, Beaconscan ETH2, Sepolia Testnet, Holesky Testnet\
+Etherscan API: esistono due versioni: con la prima versione è necessario specificare l'ID della catena. Con la seconda invece le chiavi sono state unificate e possono essere utilizzate su tutte le catene.\
 
-\
-[ che dati sono disponibili che mancano in Etherscan ? che dati mancano che sono disponibili su Etherscan ?]
+```{r table7, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
 
-
-I risultati ottenuti possono essere riassunti nella tabella sotto riportata. \
-
-```{r table1, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
-tabl <- "
-|   metodo | trasferimenti | prezzi USTC e LUNC | market cap | whitepaper | pressione vendita | wallet Luna Foundation |
-|---------:|--------------:|-------------------:|-----------:|-----------:|------------------:|-----------------------:|
-| Etherscan| visibili e scaricabili | visibili non scaricabili | solo valore attuale | link | dettagli insufficienti | visibile e scaricabile; solo attività su Ethereum |
-| Etherscan API| visibili e scaricabili| visibili non scaricabili | solo valore attuale | link |  dettagli insufficienti | visibile e scaricabile; solo attività su Ethereum |
-| Dune Analytics| visibili non scaricabili|  visibili non scaricabili | non disponibile | non disponibile | visibile non scaricabile | visibile e scaricabile: attività su più blockchain |
-| Web3.py | visibili e scaricabili | non disponibile | non disponibile | non disponibile | non disponibile | visibile e scaricabile; solo attività su Ethereum |
+api_supported <- "
+| Etherscan V1 | ID | Etherscan V2 | ID |
+|-------------:|---:|-------------:|---:|
+| Etherscan | 1 |Ethereum Mainnet | 1 |
+| Goerli Etherscan | 5 | - | - |
+| Optimistic Etherscan | 10 |OP Mainnet | 10 |
+| - | - | Cronos Mainnet | 25 |
+| - | - | XDC Mainnet | 50 |
+| - | - | XDC Apothem Testnet | 51 |
+| BscScan | 56 | BNB Smart Chain Mainnet | 56 |
+| Testnet BscScan | 97 |BNB Smart Chain Testnet | 97 |
+| GnosisScan | 100 |Gnosis | 100 |
+| - | - | Unichain Mainnet | 130 |
+| PolygonScan | 137 | Polygon Mainnet | 137 |
+| - | - | Sonic Mainnet | 146 |
+| BTTCScan | 199 | BitTorrent Chain Mainnet | 199 |
+| opBNB BscScan | 204 | - | - |
+| FTMScan | 250 | - | - |
+| Fraxscan | 252 | Fraxtal Mainnet | 252 |
+| KromaScan | 255 | - | - |
+| - | - | zkSync Sepolia Testnet | 300 |
+| - | - | zkSync Mainnet | 324 |
+| Goerli Optimistic Etherscan | 420 | - | - |
+| - | - | World Mainnet | 480 |
+| Donau BTTCScan | 1028 |BitTorrent Chain Testnet | 1028 |
+| zkEVM PolygonScan | 1101 |Polygon zkEVM Mainnet | 1101 |
+| WemixScan | 1111 | WEMIX3.0 Mainnet | 1111 |
+| Testnet WemixScan | 1112 |WEMIX3.0 Testnet | 1112 |
+| Moonbeam Moonscan | 1284 |Moonbeam Mainnet | 1284 |
+| Moonriver Moonscan | 1285 | Moonriver Mainnet | 1285 |
+| Moonbase Moonscan | 1287 |Moonbase Alpha Testnet | 1287 |
+| Testnet Unichain | 1301 |Unichain Sepolia Testnet | 1301 |
+| Testnet KromaScan | 2358 | - | - |
+| - | - | Polygon zkEVM Cardona Testnet | 2442 |
+| Testnet Fraxscan | 2522 |Fraxtal Testnet | 2522 |
+| - | - | Abstract Mainnet | 2741 |
+| Testnet FTMScan | 4002 | - | - |
+| - | - | World Sepolia Testnet | 4801 |
+| - | - | Mantle Mainnet | 5000 |
+| - | - | Mantle Sepolia Testnet | 5003 |
+| Testnet opBNB BscScan | 5611 | - | - |
+| BaseScan | 8453 |Base Mainnet | 8453 |
+| - | - | Abstract Sepolia Testnet | 11124 |
+| Holesky Etherscan | 17000 | Holesky Testnet | 17000 |
+| Testnet BlastScan | 23888 | - | - |
+| - | - | ApeChain Curtis Testnet | 33111 |
+| - | - | ApeChain Mainnet | 33139 |
+| Arbiscan | 42161 | Arbitrum One Mainnet | 42161 |
+| Nova Arbiscan | 42170 | Arbitrum Nova Mainnet | 42170 |
+| CeloScan | 42220 | Celo Mainnet | 42220 |
+| Fuji SnowScan | 43113 | Avalanche Fuji Testnet | 43113 |
+| SnowScan | 43114 | Avalanche C-Chain | 43114 |
+| Alfajores CeloScan | 44787 | Celo Alfajores Testnet | 44787 |
+| - | - | Sophon Mainnet | 50104 |
+| - | - | Sonic Blaze Testnet | 57054 |
+| Testnet LineaScan | 59140 | - | - |
+| - | - | Linea Sepolia Testnet | 59141 |
+| LineaScan | 59144 | Linea Mainnet | 59144 |
+| - | - | Polygon Amoy Testnet | 80002 |
+| - | - | Berachain Mainnet | 80094 |
+| BlastScan | 81457 | Blast Mainnet | 81457 |
+| Sepolia BaseScan | 84532 | Base Sepolia Testnet | 84532 |
+| - | - | Taiko Mainnet | 167000 |
+| - | - | Taiko Hekla L2 Testnet | 167009 |
+| Sepolia Arbiscan | 421614 | Arbitrum Sepolia Testnet | 421614 |
+| Testnet ScrollScan | 534351 | Scroll Sepolia Testnet | 534351 |
+| ScrollScan | 534352 | Scroll Mainnet | 534352 |
+| - | - | Xai Mainnet | 660279 |
+| Sepolia Etherscan | 11155111 | Sepolia Testnet | 11155111 |
+| Sepolia Optimistic Etherscan | 11155420 | OP Sepolia Testnet | 11155420 |
+| - | - | Blast Sepolia Testnet | 168587773 |
+| - | - | Sophon Sepolia Testnet | 531050104 |
+| - | - | Xai Sepolia Testnet | 37714555429 |
 "
-cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
+
+cat(api_supported)
+
 ```
+https://docs.etherscan.io/contract-verification/supported-chains
+https://docs.etherscan.io/etherscan-v2/getting-started/supported-chains
+
+Dune: 
+Abstract
+Acala
+Ajuna
+Aptos
+Arbitrum
+AssetHub
+AssetHub Kusama
+Astar
+Avalanche
+B3
+BNB
+BOB
+Base
+Beacon
+Berachain
+Bifrost
+Bitcoin
+Bitgreen
+Blast
+Boba
+BridgeHub
+BridgeHub Kusama
+Celo
+Centrifuge
+Collectives
+Composable
+Coretime
+Coretime Kusama
+Corn
+Crust
+Darwinia
+Degen
+Ethereum
+Fantom
+Flare
+Frequency
+Gnosis
+Hashed
+Hydration
+Ink
+Integritee
+Interlay
+InvArch
+Kaia
+Kilt
+Kusama
+Linea
+Litentry
+Logion
+Manta
+Mantle
+Moonbeam
+Mythos
+Near
+Nodle
+Nova
+Optimism
+Parallel
+Pendulum
+People
+People Kusama
+Phala
+Polimec
+Polkadex
+Polkadot
+Polygon
+Polygon zkEVM
+Ronin
+SEI
+Scroll
+Sepolia
+Shape
+Solana
+Sonic
+Sophon
+Starknet
+Stellar
+TON
+Tron
+Unichain
+Unique
+Viction
+Worldcoin
+
+
+
+https://dune.com/product/data-catalog
+
+
+Web3.py:
+Ethereum
+
+Caso di studio
 
 In questo progetto sono stati studiati più metodi per ottenere le stesse informazioni riguardanti il crollo del sistema Terra-Luna. \
 Le diverse piattaforme sono state ideate per utilizzi diversi e richiedono competenze differenti. Tranne Dune, le piattaforme sono focalizzate sulla blockchain Ethereum. Tranne Etherscan, richiedono tutte competenze di programmazione. \
@@ -1835,7 +2064,13 @@ Per il caso di studio l'approcio migliore sembrerebbe quello di combinare risult
 ## Considerazioni finali
 
 Sono strumenti molto diversi tra loro
+
+Confrontati in base a usabilità, risorse, costi e utenza.
+
+Valutati in base a 
+
 Per il caso di studio la coppia DUne-Etherscan ha risultati più completi
+
 
 ## Appendice
 

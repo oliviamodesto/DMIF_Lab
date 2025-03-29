@@ -4023,7 +4023,7 @@ occupa di sviluppo.</p>
 molto diverse tra loro.<br />
 Esse sono adatte a diversi tipi di utenti, offrono diverse funzionalità,
 richiedono diverse competenze e sono adatte a diversi utilizzi. Questi
-diversi aspetti sono esaminate in maggiore dettaglio.</p>
+diversi aspetti sono esaminati in maggiore dettaglio.</p>
 <div id="confronto-in-termini-di-utenza" class="section level3">
 <h3>Confronto in termini di utenza</h3>
 <table style="width:100%;">
@@ -4049,7 +4049,7 @@ diversi aspetti sono esaminate in maggiore dettaglio.</p>
 <td align="right">Y</td>
 <td align="right">Y</td>
 <td align="right">Y</td>
-<td align="right"></td>
+<td align="right">Y</td>
 </tr>
 <tr class="even">
 <td align="right">Un utente può ricercare informazioni utili per
@@ -4057,7 +4057,7 @@ prendere decisioni di inverstimento ?</td>
 <td align="right">Y</td>
 <td align="right">Y</td>
 <td align="right">Y</td>
-<td align="right"></td>
+<td align="right">Y</td>
 </tr>
 <tr class="odd">
 <td align="right">Un utente può utilizzare lo strumento per svolgere
@@ -4065,24 +4065,19 @@ operazioni ?</td>
 <td align="right">N</td>
 <td align="right">N</td>
 <td align="right">N</td>
-<td align="right"></td>
+<td align="right">Y</td>
 </tr>
 </tbody>
 </table>
-<ul>
-<li>Da quello che si può vedere dalla tabella le quattro piattaforme
-forniscono lo stesso supporto.</li>
-<li>Web3.py è l’unica che permette di svolegere la transazione
-direttamente, ma si occupa solo di alcune catene.<br />
-</li>
-<li>Complessivamente, sembrerebbe che la piattaforma Ethereum è la più
-adatta per un utente casuale che svolge attività sulla catena
-Ethereum.</li>
-<li>Per chi svolge attività su altre catene e non ha competenze di
-programmazione, nessuna delle due piattaforme rimanenti potrebbe essere
-abbastanza accessibile.</li>
-<li></li>
-</ul>
+<p>Da quello che si può vedere dalla tabella le quattro piattaforme
+forniscono supporto per monitorare e ricercare informazioni utili.
+Web3.py è l’unica piattaforma che permette di svolegere la transazione
+direttamente, ma si occupa solo di alcune catene. Complessivamente,
+sembrerebbe che la piattaforma Ethereum è la più adatta per un utente
+casuale che svolge attività sulla catena Ethereum. L’unica piattaforma
+che permette di ricercare informazioni su altre catene è Dune. Questa
+richiede competenze di SQL, quindi potrebbe non essere abbastanza
+accessibile.</p>
 <table style="width:100%;">
 <colgroup>
 <col width="45%" />
@@ -4103,53 +4098,57 @@ abbastanza accessibile.</li>
 <tbody>
 <tr class="odd">
 <td align="right">Uno sviluppatore può creare una dApp ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">N</td>
 </tr>
 <tr class="even">
 <td align="right">Uno sviluppatore può lanciare la propria dApp ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">Y</td>
 </tr>
 <tr class="odd">
 <td align="right">Uno sviluppatore può fare auditing/valutazione della
 propria dApp ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">Y</td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">Y</td>
 </tr>
 <tr class="even">
 <td align="right">Uno sviluppatore può scrivere uno smart contract
 ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">Y</td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">N</td>
 </tr>
 <tr class="odd">
 <td align="right">Uno sviluppatore può lanciare il proprio smart
 contract sulla blockchain ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">Y</td>
 </tr>
 <tr class="even">
 <td align="right">Uno sviluppatore può verificare il codice del proprio
 smart contract ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">Y</td>
+<td align="right">Y</td>
+<td align="right">Y</td>
+<td align="right">Y</td>
 </tr>
 </tbody>
 </table>
-<p>Da quello che si può vedere …</p>
+<p>Da quello che si può vedere c’è una grossa differenza nel supporto
+fornito da Web3 e quello fornito dalle altre piattaforme. La libreria
+Web3.py sembra essere più che sufficiente per chi programma dApp. Le
+altre piattaforme potrebbero essere utili per svolegere attività di
+verifica o monitoraggio.</p>
 <table style="width:100%;">
 <colgroup>
 <col width="45%" />
@@ -4171,78 +4170,82 @@ smart contract ?</td>
 <tr class="odd">
 <td align="right">Un minatore o validatore può monitorare la produzione
 di blocchi ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">Y</td>
+<td align="right">Y</td>
+<td align="right">Y</td>
+<td align="right">Y</td>
 </tr>
 <tr class="even">
 <td align="right">Un minatore o validatore può accedere alla mining pool
 ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">Y</td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">N</td>
 </tr>
 <tr class="odd">
 <td align="right">Un minatore o validatore può stimare la reward e la
 difficulty ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">Y</td>
+<td align="right">Y</td>
+<td align="right">Y</td>
+<td align="right">Y</td>
 </tr>
 <tr class="even">
 <td align="right">Un minatore o validatore ha accesso a strumenti per
 effettuare lo staking ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">N</td>
 </tr>
 <tr class="odd">
 <td align="right">Un minatore o validatore ha accesso a strumenti per
 effettuare il mining ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">N</td>
 </tr>
 <tr class="even">
 <td align="right">Un minatore o validatore può stimare il slashing risk
 ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">Y</td>
+<td align="right">Y</td>
 </tr>
 <tr class="odd">
 <td align="right">Un minatore o validatore può conoscere la validator
 uptime ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">Y</td>
 </tr>
 <tr class="even">
 <td align="right">Un minatore o validatore può stimare la reward rate
 ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">Y</td>
+<td align="right">Y</td>
+<td align="right">Y</td>
+<td align="right">Y</td>
 </tr>
 <tr class="odd">
 <td align="right">Un minatore o validatore può ottenere informazioni
 sulla liquidity ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">Y</td>
+<td align="right">N</td>
+<td align="right">Y</td>
+<td align="right">Y</td>
 </tr>
 </tbody>
 </table>
-<p>Da quello che si può vedere …</p>
+<p>Da quello che si può vedere nessuno degli strumenti permette di fare
+staking oppure mining direttamente. La piattaforma che offre meno
+informazioni sembra essere Etherscan API. Per si occupa di staking
+oppure mining sulla catena Ethereum Etherscan risulta essere più che
+sufficiente. Per altre catene è possibile utilizzare Dune Analytics.</p>
 <table style="width:100%;">
 <colgroup>
 <col width="45%" />
@@ -4264,55 +4267,58 @@ sulla liquidity ?</td>
 <tr class="odd">
 <td align="right">Un analista può conoscere lo storico e il numero di
 incidenti o attacchi ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">Y</td>
+<td align="right">Y</td>
 </tr>
 <tr class="even">
 <td align="right">Un analista può conoscere le dApp attive sulla
 blockchain ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">Y</td>
+<td align="right">N</td>
 </tr>
 <tr class="odd">
 <td align="right">Un analista può conoscere gli smart contracts attivi
 sulla blockchain ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">Y</td>
+<td align="right">Y</td>
+<td align="right">Y</td>
+<td align="right">Y</td>
 </tr>
 <tr class="even">
 <td align="right">Un analista può conoscere strategic partnerships,
 collaborations, announcements ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">Y</td>
+<td align="right">N</td>
+<td align="right">Y</td>
+<td align="right">N</td>
 </tr>
 <tr class="odd">
 <td align="right">Un analista può interagire con soluzioni layer 2
 ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">Y</td>
 </tr>
 <tr class="even">
 <td align="right">Un analista può conoscere i governance models
 utilizzati sulla blockchain ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">Y</td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">N</td>
 </tr>
 </tbody>
 </table>
-<p>Da quello che si può vedere …<br />
-</p>
+<p>Da quello che si può vedere la piattaforma che offre maggiore
+supporto risulta essere Dune Analytics. Dato che su Dune sono
+disponibili informazioni su decine di catene, progetti, etc. questa
+potrebbe essere l’opzione migliore pr chi si occupa di analisi e
+ricerca.</p>
 <table style="width:100%;">
 <colgroup>
 <col width="45%" />
@@ -4333,103 +4339,66 @@ utilizzati sulla blockchain ?</td>
 <tbody>
 <tr class="odd">
 <td align="right">Un team può monitorare la liquidità dei token ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">Y</td>
+<td align="right">N</td>
+<td align="right">Y</td>
+<td align="right">Y</td>
 </tr>
 <tr class="even">
 <td align="right">Un team può conoscere le transazioni e le statistiche
 dei pool di liquidità ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">Y</td>
+<td align="right">N</td>
+<td align="right">Y</td>
+<td align="right">Y</td>
 </tr>
 <tr class="odd">
 <td align="right">Un team può creare l’NFT ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">N</td>
 </tr>
 <tr class="even">
 <td align="right">Un team può fare minting di NFT ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">Y</td>
 </tr>
 <tr class="odd">
 <td align="right">Un team può lanciare i token o airdrop ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">N</td>
+<td align="right">N</td>
+<td align="right">Y</td>
+<td align="right">Y</td>
 </tr>
 <tr class="even">
 <td align="right">Un team può monitorare la distribuzione dei token
 ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">Y</td>
+<td align="right">Y</td>
+<td align="right">Y</td>
+<td align="right">Y</td>
 </tr>
 <tr class="odd">
 <td align="right">Un team può verificare le interazioni con gli smart
 contract?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">Y</td>
+<td align="right">Y</td>
+<td align="right">Y</td>
+<td align="right">Y</td>
 </tr>
 <tr class="even">
 <td align="right">Un team può gestire la tokenomica del progetto ?</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">Y</td>
+<td align="right">Y</td>
+<td align="right">Y</td>
+<td align="right">Y</td>
 </tr>
 </tbody>
 </table>
-<ul>
-<li>Etherscan :
-<ul>
-<li>molte funzionalità</li>
-<li>accessibile</li>
-<li>no competenze di programmazione</li>
-<li>solo Etherscan</li>
-</ul></li>
-<li>Etherscan API :
-<ul>
-<li>estende i dati accessibili</li>
-<li>richiede competenze di programmazione</li>
-<li>documentazione disponibile [ va bene per chi investe e studia la
-blckchain . Per chi programma va bene per consultare. creazione di
-filtri aiuta a monitorare transazioni. ]</li>
-</ul></li>
-<li>Dune :
-<ul>
-<li>SQL minima, ma c’è l’AI di supporto</li>
-<li>analisi solo su pagina senza pagare</li>
-<li>molteplici catene supportate</li>
-<li>[ va bene per consultare informazioni specifiche. Richiede una
-minima conoscenza di SQL. data explorer di grande aiuto. (Forse) dati
-più dettagliati rispetto a Etherscan. ]</li>
-</ul></li>
-<li>Web3 &amp; Infura :
-<ul>
-<li>librerie</li>
-<li>programmazione python (competenze più avanzate rispetto a Dune)</li>
-<li>documentazione ma niente AI diretta</li>
-<li>solo Eth</li>
-<li>Infura propone più catene</li>
-<li>facile generare una chiave API</li>
-<li>facile monitorare i consumi (aggiornati velocemente)</li>
-<li>[ avanzate competenze di programmazione. Solo dati della blockchain.
-Contratti e transazioni supportate. ]</li>
-</ul></li>
-</ul>
+<p>Web3 sembra fornire maggiore supporto.</p>
 </div>
 <div id="confronto-in-termini-di-costi" class="section level3">
 <h3>Confronto in termini di costi</h3>
@@ -4447,76 +4416,713 @@ dati DUne</p></li>
 <li><p>in ambito azinedate bisognerebbe valutare caso per caso</p></li>
 <li></li>
 </ul>
-</div>
-<div id="confronto-in-termini-di-risorse-disponibili" class="section level3">
-<h3>Confronto in termini di risorse disponibili</h3>
-<p><br />
-[ che dati sono disponibili che mancano in Etherscan ? che dati mancano
-che sono disponibili su Etherscan ?]</p>
-<p>I risultati ottenuti possono essere riassunti nella tabella sotto
-riportata.<br />
-</p>
+<p>Etherscan API: 0, 199, 299, 399, 899 Dune Analytics: 0, 45, 349, 849
+Infura: 0, 50, 225, Custom</p>
+<p>Confronto versioni gratuite:</p>
 <table style="width:100%;">
 <colgroup>
-<col width="8%" />
-<col width="13%" />
-<col width="17%" />
-<col width="10%" />
-<col width="10%" />
-<col width="16%" />
+<col width="15%" />
 <col width="21%" />
+<col width="13%" />
+<col width="20%" />
+<col width="12%" />
+<col width="16%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th align="right">metodo</th>
-<th align="right">trasferimenti</th>
-<th align="right">prezzi USTC e LUNC</th>
-<th align="right">market cap</th>
-<th align="right">whitepaper</th>
-<th align="right">pressione vendita</th>
-<th align="right">wallet Luna Foundation</th>
+<th align="right">Piattaforma</th>
+<th align="right">Numero di Chiamate</th>
+<th align="right">Credit</th>
+<th align="right">Community Support</th>
+<th align="right">Storage</th>
+<th align="right">Numero di chiavi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">Etherscan API</td>
+<td align="right">100000</td>
+<td align="right">-</td>
+<td align="right">Y</td>
+<td align="right">0</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="right">Dune</td>
+<td align="right">250</td>
+<td align="right">2500</td>
+<td align="right">non specificato</td>
+<td align="right">100 MB</td>
+<td align="right">illimitate</td>
+</tr>
+<tr class="odd">
+<td align="right">Infura</td>
+<td align="right">11764</td>
+<td align="right">3000000</td>
+<td align="right">non specificato</td>
+<td align="right">0</td>
+<td align="right">1</td>
+</tr>
+</tbody>
+</table>
+<p>Dune e Infura non forniscono direttamente il numero di chiamate,
+perchè il numero di crediti dipende da cosa viene invocato. Etherscan
+offre il numero più elevato di chiamate, Dune unico con storage.</p>
+<p>Dune :</p>
+<table>
+<colgroup>
+<col width="24%" />
+<col width="24%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">APP</th>
+<th align="right">API</th>
+<th align="right">API export</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">Boost query execution</td>
+<td align="right">Programmatic execution</td>
+<td align="right">On free and analyst 1 credit = 1 000 data points</td>
+</tr>
+<tr class="even">
+<td align="right">Medium = 10 credits</td>
+<td align="right">Default = Medium = 10 credits</td>
+<td align="right">On plus 1 credit = 5 000 data points</td>
+</tr>
+<tr class="odd">
+<td align="right">Large = 20 credits</td>
+<td align="right">Large = 20 credits</td>
+<td align="right">On premium 1 credit = 25 000 data points</td>
+</tr>
+</tbody>
+</table>
+<p>Infura: eth_chainId: 5 credits eth_call: 80 credits
+eth_sendRawTransaction: 720 credits eth_getLogs: 255 credits</p>
+<p>quindi 11764 calls</p>
+<p>Paid Tier più basso</p>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="6%" />
+<col width="18%" />
+<col width="12%" />
+<col width="18%" />
+<col width="11%" />
+<col width="15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Piattaforma</th>
+<th align="right">Cost</th>
+<th align="right">Numero di Chiamate</th>
+<th align="right">Credit</th>
+<th align="right">Community Support</th>
+<th align="right">Storage</th>
+<th align="right">Numero di chiavi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">Etherscan API</td>
+<td align="right">199</td>
+<td align="right">200000</td>
+<td align="right">-</td>
+<td align="right">Community Escalated Pro endpoints</td>
+<td align="right">0</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="right">Dune</td>
+<td align="right">45</td>
+<td align="right">400</td>
+<td align="right">4000</td>
+<td align="right">not specified</td>
+<td align="right">1 GB</td>
+<td align="right">unlimited</td>
+</tr>
+<tr class="odd">
+<td align="right">Infura</td>
+<td align="right">50</td>
+<td align="right">58823</td>
+<td align="right">15 millioni</td>
+<td align="right">not specified</td>
+<td align="right">0</td>
+<td align="right">5</td>
+</tr>
+</tbody>
+</table>
+<p>Paid Tier</p>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="6%" />
+<col width="18%" />
+<col width="12%" />
+<col width="18%" />
+<col width="11%" />
+<col width="15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Piattaforma</th>
+<th align="right">Cost</th>
+<th align="right">Numero di Chiamate</th>
+<th align="right">Credit</th>
+<th align="right">Community Support</th>
+<th align="right">Storage</th>
+<th align="right">Numero di chiavi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">Etherscan API</td>
+<td align="right">299</td>
+<td align="right">500000</td>
+<td align="right">-</td>
+<td align="right">Pro endpoints Community support Escalated support</td>
+<td align="right">0</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="right">Dune</td>
+<td align="right">349</td>
+<td align="right">2500</td>
+<td align="right">25000</td>
+<td align="right">-</td>
+<td align="right">15 GB download csv</td>
+<td align="right">unlimited</td>
+</tr>
+<tr class="odd">
+<td align="right">Infura</td>
+<td align="right">225</td>
+<td align="right">294117</td>
+<td align="right">75 milion</td>
+<td align="right">non specificato</td>
+<td align="right">0</td>
+<td align="right">unlimited</td>
+</tr>
+</tbody>
+</table>
+<p>Paid Tier</p>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="6%" />
+<col width="18%" />
+<col width="12%" />
+<col width="18%" />
+<col width="11%" />
+<col width="15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Piattaforma</th>
+<th align="right">Cost</th>
+<th align="right">Numero di Chiamate</th>
+<th align="right">Credit</th>
+<th align="right">Community Support</th>
+<th align="right">Storage</th>
+<th align="right">Numero di chiavi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">Etherscan API</td>
+<td align="right">399</td>
+<td align="right">1000000</td>
+<td align="right">-</td>
+<td align="right">Pro endpoints Community support Escalated support</td>
+<td align="right">0</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="right">Dune</td>
+<td align="right">849</td>
+<td align="right">10000</td>
+<td align="right">100000</td>
+<td align="right">non specificato</td>
+<td align="right">150 GB csv download</td>
+<td align="right">unlimited</td>
+</tr>
+<tr class="odd">
+<td align="right">Infura</td>
+<td align="right">Custom</td>
+<td align="right">Custom</td>
+<td align="right">Custom</td>
+<td align="right">non specificato</td>
+<td align="right">0</td>
+<td align="right">unlimited</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="confronto-in-termini-di-risorse-disponibili" class="section level3">
+<h3>Confronto in termini di risorse disponibili</h3>
+<ul>
+<li>Catene raggiungibili Etherscan: Ethereum Mainnet, Beaconscan ETH2,
+Sepolia Testnet, Holesky Testnet<br />
+Etherscan API: esistono due versioni: con la prima versione è necessario
+specificare l’ID della catena. Con la seconda invece le chiavi sono
+state unificate e possono essere utilizzate su tutte le catene.<br />
+</li>
+</ul>
+<table>
+<colgroup>
+<col width="38%" />
+<col width="11%" />
+<col width="38%" />
+<col width="11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Etherscan V1</th>
+<th align="right">ID</th>
+<th align="right">Etherscan V2</th>
+<th align="right">ID</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="right">Etherscan</td>
-<td align="right">visibili e scaricabili</td>
-<td align="right">visibili non scaricabili</td>
-<td align="right">solo valore attuale</td>
-<td align="right">link</td>
-<td align="right">dettagli insufficienti</td>
-<td align="right">visibile e scaricabile; solo attività su Ethereum</td>
+<td align="right">1</td>
+<td align="right">Ethereum Mainnet</td>
+<td align="right">1</td>
 </tr>
 <tr class="even">
-<td align="right">Etherscan API</td>
-<td align="right">visibili e scaricabili</td>
-<td align="right">visibili non scaricabili</td>
-<td align="right">solo valore attuale</td>
-<td align="right">link</td>
-<td align="right">dettagli insufficienti</td>
-<td align="right">visibile e scaricabile; solo attività su Ethereum</td>
+<td align="right">Goerli Etherscan</td>
+<td align="right">5</td>
+<td align="right">-</td>
+<td align="right">-</td>
 </tr>
 <tr class="odd">
-<td align="right">Dune Analytics</td>
-<td align="right">visibili non scaricabili</td>
-<td align="right">visibili non scaricabili</td>
-<td align="right">non disponibile</td>
-<td align="right">non disponibile</td>
-<td align="right">visibile non scaricabile</td>
-<td align="right">visibile e scaricabile: attività su più
-blockchain</td>
+<td align="right">Optimistic Etherscan</td>
+<td align="right">10</td>
+<td align="right">OP Mainnet</td>
+<td align="right">10</td>
 </tr>
 <tr class="even">
-<td align="right">Web3.py</td>
-<td align="right">visibili e scaricabili</td>
-<td align="right">non disponibile</td>
-<td align="right">non disponibile</td>
-<td align="right">non disponibile</td>
-<td align="right">non disponibile</td>
-<td align="right">visibile e scaricabile; solo attività su Ethereum</td>
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">Cronos Mainnet</td>
+<td align="right">25</td>
+</tr>
+<tr class="odd">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">XDC Mainnet</td>
+<td align="right">50</td>
+</tr>
+<tr class="even">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">XDC Apothem Testnet</td>
+<td align="right">51</td>
+</tr>
+<tr class="odd">
+<td align="right">BscScan</td>
+<td align="right">56</td>
+<td align="right">BNB Smart Chain Mainnet</td>
+<td align="right">56</td>
+</tr>
+<tr class="even">
+<td align="right">Testnet BscScan</td>
+<td align="right">97</td>
+<td align="right">BNB Smart Chain Testnet</td>
+<td align="right">97</td>
+</tr>
+<tr class="odd">
+<td align="right">GnosisScan</td>
+<td align="right">100</td>
+<td align="right">Gnosis</td>
+<td align="right">100</td>
+</tr>
+<tr class="even">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">Unichain Mainnet</td>
+<td align="right">130</td>
+</tr>
+<tr class="odd">
+<td align="right">PolygonScan</td>
+<td align="right">137</td>
+<td align="right">Polygon Mainnet</td>
+<td align="right">137</td>
+</tr>
+<tr class="even">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">Sonic Mainnet</td>
+<td align="right">146</td>
+</tr>
+<tr class="odd">
+<td align="right">BTTCScan</td>
+<td align="right">199</td>
+<td align="right">BitTorrent Chain Mainnet</td>
+<td align="right">199</td>
+</tr>
+<tr class="even">
+<td align="right">opBNB BscScan</td>
+<td align="right">204</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr class="odd">
+<td align="right">FTMScan</td>
+<td align="right">250</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr class="even">
+<td align="right">Fraxscan</td>
+<td align="right">252</td>
+<td align="right">Fraxtal Mainnet</td>
+<td align="right">252</td>
+</tr>
+<tr class="odd">
+<td align="right">KromaScan</td>
+<td align="right">255</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr class="even">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">zkSync Sepolia Testnet</td>
+<td align="right">300</td>
+</tr>
+<tr class="odd">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">zkSync Mainnet</td>
+<td align="right">324</td>
+</tr>
+<tr class="even">
+<td align="right">Goerli Optimistic Etherscan</td>
+<td align="right">420</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr class="odd">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">World Mainnet</td>
+<td align="right">480</td>
+</tr>
+<tr class="even">
+<td align="right">Donau BTTCScan</td>
+<td align="right">1028</td>
+<td align="right">BitTorrent Chain Testnet</td>
+<td align="right">1028</td>
+</tr>
+<tr class="odd">
+<td align="right">zkEVM PolygonScan</td>
+<td align="right">1101</td>
+<td align="right">Polygon zkEVM Mainnet</td>
+<td align="right">1101</td>
+</tr>
+<tr class="even">
+<td align="right">WemixScan</td>
+<td align="right">1111</td>
+<td align="right">WEMIX3.0 Mainnet</td>
+<td align="right">1111</td>
+</tr>
+<tr class="odd">
+<td align="right">Testnet WemixScan</td>
+<td align="right">1112</td>
+<td align="right">WEMIX3.0 Testnet</td>
+<td align="right">1112</td>
+</tr>
+<tr class="even">
+<td align="right">Moonbeam Moonscan</td>
+<td align="right">1284</td>
+<td align="right">Moonbeam Mainnet</td>
+<td align="right">1284</td>
+</tr>
+<tr class="odd">
+<td align="right">Moonriver Moonscan</td>
+<td align="right">1285</td>
+<td align="right">Moonriver Mainnet</td>
+<td align="right">1285</td>
+</tr>
+<tr class="even">
+<td align="right">Moonbase Moonscan</td>
+<td align="right">1287</td>
+<td align="right">Moonbase Alpha Testnet</td>
+<td align="right">1287</td>
+</tr>
+<tr class="odd">
+<td align="right">Testnet Unichain</td>
+<td align="right">1301</td>
+<td align="right">Unichain Sepolia Testnet</td>
+<td align="right">1301</td>
+</tr>
+<tr class="even">
+<td align="right">Testnet KromaScan</td>
+<td align="right">2358</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr class="odd">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">Polygon zkEVM Cardona Testnet</td>
+<td align="right">2442</td>
+</tr>
+<tr class="even">
+<td align="right">Testnet Fraxscan</td>
+<td align="right">2522</td>
+<td align="right">Fraxtal Testnet</td>
+<td align="right">2522</td>
+</tr>
+<tr class="odd">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">Abstract Mainnet</td>
+<td align="right">2741</td>
+</tr>
+<tr class="even">
+<td align="right">Testnet FTMScan</td>
+<td align="right">4002</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr class="odd">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">World Sepolia Testnet</td>
+<td align="right">4801</td>
+</tr>
+<tr class="even">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">Mantle Mainnet</td>
+<td align="right">5000</td>
+</tr>
+<tr class="odd">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">Mantle Sepolia Testnet</td>
+<td align="right">5003</td>
+</tr>
+<tr class="even">
+<td align="right">Testnet opBNB BscScan</td>
+<td align="right">5611</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr class="odd">
+<td align="right">BaseScan</td>
+<td align="right">8453</td>
+<td align="right">Base Mainnet</td>
+<td align="right">8453</td>
+</tr>
+<tr class="even">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">Abstract Sepolia Testnet</td>
+<td align="right">11124</td>
+</tr>
+<tr class="odd">
+<td align="right">Holesky Etherscan</td>
+<td align="right">17000</td>
+<td align="right">Holesky Testnet</td>
+<td align="right">17000</td>
+</tr>
+<tr class="even">
+<td align="right">Testnet BlastScan</td>
+<td align="right">23888</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr class="odd">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">ApeChain Curtis Testnet</td>
+<td align="right">33111</td>
+</tr>
+<tr class="even">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">ApeChain Mainnet</td>
+<td align="right">33139</td>
+</tr>
+<tr class="odd">
+<td align="right">Arbiscan</td>
+<td align="right">42161</td>
+<td align="right">Arbitrum One Mainnet</td>
+<td align="right">42161</td>
+</tr>
+<tr class="even">
+<td align="right">Nova Arbiscan</td>
+<td align="right">42170</td>
+<td align="right">Arbitrum Nova Mainnet</td>
+<td align="right">42170</td>
+</tr>
+<tr class="odd">
+<td align="right">CeloScan</td>
+<td align="right">42220</td>
+<td align="right">Celo Mainnet</td>
+<td align="right">42220</td>
+</tr>
+<tr class="even">
+<td align="right">Fuji SnowScan</td>
+<td align="right">43113</td>
+<td align="right">Avalanche Fuji Testnet</td>
+<td align="right">43113</td>
+</tr>
+<tr class="odd">
+<td align="right">SnowScan</td>
+<td align="right">43114</td>
+<td align="right">Avalanche C-Chain</td>
+<td align="right">43114</td>
+</tr>
+<tr class="even">
+<td align="right">Alfajores CeloScan</td>
+<td align="right">44787</td>
+<td align="right">Celo Alfajores Testnet</td>
+<td align="right">44787</td>
+</tr>
+<tr class="odd">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">Sophon Mainnet</td>
+<td align="right">50104</td>
+</tr>
+<tr class="even">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">Sonic Blaze Testnet</td>
+<td align="right">57054</td>
+</tr>
+<tr class="odd">
+<td align="right">Testnet LineaScan</td>
+<td align="right">59140</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr class="even">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">Linea Sepolia Testnet</td>
+<td align="right">59141</td>
+</tr>
+<tr class="odd">
+<td align="right">LineaScan</td>
+<td align="right">59144</td>
+<td align="right">Linea Mainnet</td>
+<td align="right">59144</td>
+</tr>
+<tr class="even">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">Polygon Amoy Testnet</td>
+<td align="right">80002</td>
+</tr>
+<tr class="odd">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">Berachain Mainnet</td>
+<td align="right">80094</td>
+</tr>
+<tr class="even">
+<td align="right">BlastScan</td>
+<td align="right">81457</td>
+<td align="right">Blast Mainnet</td>
+<td align="right">81457</td>
+</tr>
+<tr class="odd">
+<td align="right">Sepolia BaseScan</td>
+<td align="right">84532</td>
+<td align="right">Base Sepolia Testnet</td>
+<td align="right">84532</td>
+</tr>
+<tr class="even">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">Taiko Mainnet</td>
+<td align="right">167000</td>
+</tr>
+<tr class="odd">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">Taiko Hekla L2 Testnet</td>
+<td align="right">167009</td>
+</tr>
+<tr class="even">
+<td align="right">Sepolia Arbiscan</td>
+<td align="right">421614</td>
+<td align="right">Arbitrum Sepolia Testnet</td>
+<td align="right">421614</td>
+</tr>
+<tr class="odd">
+<td align="right">Testnet ScrollScan</td>
+<td align="right">534351</td>
+<td align="right">Scroll Sepolia Testnet</td>
+<td align="right">534351</td>
+</tr>
+<tr class="even">
+<td align="right">ScrollScan</td>
+<td align="right">534352</td>
+<td align="right">Scroll Mainnet</td>
+<td align="right">534352</td>
+</tr>
+<tr class="odd">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">Xai Mainnet</td>
+<td align="right">660279</td>
+</tr>
+<tr class="even">
+<td align="right">Sepolia Etherscan</td>
+<td align="right">11155111</td>
+<td align="right">Sepolia Testnet</td>
+<td align="right">11155111</td>
+</tr>
+<tr class="odd">
+<td align="right">Sepolia Optimistic Etherscan</td>
+<td align="right">11155420</td>
+<td align="right">OP Sepolia Testnet</td>
+<td align="right">11155420</td>
+</tr>
+<tr class="even">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">Blast Sepolia Testnet</td>
+<td align="right">168587773</td>
+</tr>
+<tr class="odd">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">Sophon Sepolia Testnet</td>
+<td align="right">531050104</td>
+</tr>
+<tr class="even">
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">Xai Sepolia Testnet</td>
+<td align="right">37714555429</td>
 </tr>
 </tbody>
 </table>
+<p><a href="https://docs.etherscan.io/contract-verification/supported-chains" class="uri">https://docs.etherscan.io/contract-verification/supported-chains</a>
+<a href="https://docs.etherscan.io/etherscan-v2/getting-started/supported-chains" class="uri">https://docs.etherscan.io/etherscan-v2/getting-started/supported-chains</a></p>
+<p>Dune: Abstract Acala Ajuna Aptos Arbitrum AssetHub AssetHub Kusama
+Astar Avalanche B3 BNB BOB Base Beacon Berachain Bifrost Bitcoin
+Bitgreen Blast Boba BridgeHub BridgeHub Kusama Celo Centrifuge
+Collectives Composable Coretime Coretime Kusama Corn Crust Darwinia
+Degen Ethereum Fantom Flare Frequency Gnosis Hashed Hydration Ink
+Integritee Interlay InvArch Kaia Kilt Kusama Linea Litentry Logion Manta
+Mantle Moonbeam Mythos Near Nodle Nova Optimism Parallel Pendulum People
+People Kusama Phala Polimec Polkadex Polkadot Polygon Polygon zkEVM
+Ronin SEI Scroll Sepolia Shape Solana Sonic Sophon Starknet Stellar TON
+Tron Unichain Unique Viction Worldcoin</p>
+<p><a href="https://dune.com/product/data-catalog" class="uri">https://dune.com/product/data-catalog</a></p>
+<p>Web3.py: Ethereum</p>
+<p>Caso di studio</p>
 <p>In questo progetto sono stati studiati più metodi per ottenere le
 stesse informazioni riguardanti il crollo del sistema Terra-Luna.<br />
 Le diverse piattaforme sono state ideate per utilizzi diversi e
@@ -4533,8 +5139,11 @@ quelli di Dune Analytics si riesce ad ottenere un quadro completo.</p>
 </div>
 <div id="considerazioni-finali-4" class="section level2">
 <h2>Considerazioni finali</h2>
-<p>Sono strumenti molto diversi tra loro Per il caso di studio la coppia
-DUne-Etherscan ha risultati più completi</p>
+<p>Sono strumenti molto diversi tra loro</p>
+<p>Confrontati in base a usabilità, risorse, costi e utenza.</p>
+<p>Valutati in base a</p>
+<p>Per il caso di studio la coppia DUne-Etherscan ha risultati più
+completi</p>
 </div>
 <div id="appendice" class="section level2">
 <h2>Appendice</h2>
