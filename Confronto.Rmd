@@ -283,28 +283,30 @@ L'endpoint *Logs* permette di ottenere:
 L'endpoint *Geth/Parity Proxy* permette di interagire con un nodo Ethereum (come Geth oppure Parity) utilizzando una API semplificata. Si utilizza un proxy di Etherscan per inviare richieste e ottenere dati blockchain. \
 Un esempio è : \
 
-https://api.etherscan.io/api \
-   ?module=proxy  \
-   &action=eth_blockNumber \
-   &apikey=YourApiKeyToken \
+
+
+    https://api.etherscan.io/api
+    ?module=proxy
+    &action=eth_blockNumber
+    &apikey=YourApiKeyToken 
 
 Le possibili action sono:
 
 
-- eth_blockNumber
-- eth_getBlockByNumber
-- eth_getUncleByBlockNumberAndIndex
-- eth_getBlockTransactionCountByNumber
-- eth_getTransactionByHash
-- eth_getTransactionByBlockNumberAndIndex
-- eth_getTransactionCount
-- eth_sendRawTransaction
-- eth_getTransactionReceipt
-- eth_call
-- eth_getCode
-- eth_getStorageAt
-- eth_gasPrice
-- eth_estimateGas
+- **eth_blockNumber** : restituisce il numero del blocco più recente.
+- **eth_getBlockByNumber** : ottiene informazioni riguardo un blocco dato il suo numero.
+- **eth_getUncleByBlockNumberAndIndex** : ottiene informazioni di un blocco Uncle in base al suo numero.
+- **eth_getBlockTransactionCountByNumber** : restituisce il numero di transazioni in un blocco.
+- **eth_getTransactionByHash** : restituisce le informazioni riguardo una transazione dato il suo hash.
+- **eth_getTransactionByBlockNumberAndIndex** : restituisce le informazioni riguardo una transazione dato il numero del suo blocco e l'indice di posizione della transazione.
+- **eth_getTransactionCount** : restituisce il numero di transazioni effettuate da un indirizzo.
+- **eth_sendRawTransaction** : invia una transazione pre firmata per broadcast sulla rete Ethereum.
+- **eth_getTransactionReceipt** : restituisce il receipt di una transazione dato il hash della transazione.
+- **eth_call** : esegue una nuova message call immediatamente senza creare una transazione sulla blockchain.
+- **eth_getCode** : restituisce il codice ad un dato indirizzo. 
+- **eth_getStorageAt** : restituisce il valore archiviato ad un dato indirizzo.
+- **eth_gasPrice** : restituisce il prezzo attuale del gas espresso in wei.
+- **eth_estimateGas** : effettua una chiamata o transazione che non sarà aggiunta alla blockchain e restituisce il gas utilizzato.
 
 L'endpoint *Tokens* permette di ottenere informazioni riguardo ai token, con maggiore attenzione ai token ERC20. \
 In base all'indirizzo:
@@ -323,7 +325,7 @@ In base all'indirizzo e al numero di blocco:
 - il balance ERC20 storico.
 
 Inoltre sono disponibili informazioni riguardo:
-<!-- DA QUA-->
+
 
 - l'indirizzo ERC20 Token Holding
 - l'indirizzo ERC721 Token Holding
@@ -359,7 +361,7 @@ Come si vede, Etherscan API mette a dispozione un'ampia quantità di informazion
 Richiede alcune competenze minime per accedere ai dati. \
 Può essere una valida piattaforma complementare per sviluppatori, minatori, validatori.
 
-<!-- DUNE -->
+
 ### Dune Analytics : una piattaforma SQL
 
 Le piattaforme SQL permettono di interrogare la Blockchain con comandi SQL. Un esempio di piattaforma SQL è Dune Analytics. \
@@ -458,7 +460,7 @@ Dune permette di visualizzare i dati in diverse forme grafiche. &Egrave; possibi
 
 Dune propone un'interfaccia intuitiva e facile da usare. Per formulare le query sono richieste competenze di SQL. Le dashboard permettono di creare delle panoramiche interattive e aggiornate su argomenti di interesse. La piattaforma fornisce dati riguardanti un elevato numero di blockchain diverse.
 
-<!-- WEB3 -->
+
 ### Web3.py : una libreria Web3
 
 La libreria Web3.py è una libreria Python che permette di interagire con la Blockchain. Richiede un provider per accedere alla blockchain. Come provider è stato utilizzato Infura. Infura è una blockchain API, simile a Etherscan API. Per utilizzare Infura è richiesta la creazione di un account per generare chiavi API. Infura impone un limite al numero massimo di operazioni giornaliere.\
@@ -548,7 +550,7 @@ Il link *Status* porta ad una pagina dove sono discussi aggiornamenti riguardant
 
 Infura non è adatto a tutte le utenze. Mette a disposizione risorse utili per gli sviluppatori.
 
-<!-- SECONDA PARTE -->
+
 ## Valutazioni
 
 Per esaminare e confrontare i diversi strumenti disponibili sono stati scelti i seguenti parametri di confronto: \
@@ -763,7 +765,7 @@ Dune offre una documentazione ufficiale completa.
   *Un utente può ricercare informazioni utili per prendere decisioni di inverstimento ?* Sì. \
   *Un utente può utilizzare lo strumento per svolgere operazioni ?* No. \
   
-<!-- DA QUA-->
+
 - **Sviluppatori**: \
   *Uno sviluppatore può creare una dApp ?* No. \
   *Uno sviluppatore può lanciare la propria dApp ?* No. \
@@ -1194,16 +1196,25 @@ Infura mette a disposizione servizi backend. Permette di collegarsi con diverse 
 
 #### Confronto
 
-Tutti i metodi forniscono dati completi e aggiornati. Ci sono alcune differenze tra le risorse e gli strumenti messi a disposizione.
+Tutti i metodi forniscono dati completi e aggiornati. Ci sono alcune differenze per quanto riguarda le risorse e gli strumenti messi a disposizione.
 
-Oltre a fornire i dati, Etherscan li interpreta per renderli più comprensibili agli utenti. Esistono strumenti di ricerca per navigare le risorse messe a disposizione sulla piattaforma. Inoltre sono forniti molti strumenti riguardano gli smart contract. L'unico limite è che Etherscan si occupa solo di quattro catene.
+Oltre a fornire i dati, Etherscan li interpreta per renderli più comprensibili agli utenti.
+Come visto vengono proposte valutazioni e classifiche dei token e statistiche dei dati. 
+Esistono strumenti di ricerca per navigare le risorse messe a disposizione sulla piattaforma, come ad esempio la barra di ricerca. 
+Inoltre sono forniti molti strumenti riguardanti gli smart contract. &Egrave; possibile ricercare, verificare, interagire con e confrontare smart contract.
+L'unico limite di Etherscan è che si occupa solo di quattro catene.
 
-Etherscan API invece non rielabora i dati in nessun modo: l'interpretazione è affidata interamente agli utenti.
-Sono forniti gli endpoint da cui scaricare i dati, e non ci sono strumenti di rielaborazione.
+Etherscan API invece non rielabora i dati in nessun modo. Inoltre, non fornisce strumenti di rielaborazione. L'interpretazione dei dati è affidata interamente agli utenti. Si limita a fornire gli endpoint da cui scaricare i dati.
+Per salvare i dati in locale è necessario scrivere codice.
 
-Dune propone alcune interpretazioni dei dati [PAGINE DEDICATE ?]. Complessivamente, Dune dedica meno attenzione agli smart contracts rispetto a Etherscan. Sono forniti strumenti di ricerca per naviagre le risorse messe a disposizione. Sono forniti strumenti per visualizzare i dati in modi più comprensibili. A differenza di Etherscan, Etherscan API e Web3.py Dune si occupa anche di catene al di fuori dell'universo Ethereum. 
+A differenza di Etherscan, Etherscan API e Web3.py, Dune si occupa anche di catene al di fuori dell'universo Ethereum. 
+Sono forniti strumenti per visualizzare i dati in modo immediato con i grafi e le dashboard. 
+Dune propone alcune pagine dedicate a interpretare e rappresentare i dati riguardanti le transazioni, i consumi e l'adozione della blockchain nel tempo. I dati si possono scaricare in formato csv solo con determinati piani tariffari.
+Sono forniti strumenti di ricerca per navigare le risorse messe a disposizione.
+Complessivamente, Dune dedica meno attenzione agli smart contracts rispetto a Etherscan. 
 
-La libreria Web3.py riguarda solo la catena Ethereum. Ha una funzionalità molto potenente, ma la rielaborazione, visualizzazione e interpretazione dei dati è interamente affidata agli utenti. 
+La libreria Web3.py riguarda solo la catena Ethereum. Ha funzionalità molto potenenti, dato che permette di accedere ai dati, svolgere operazioni sulla catena e gestire il *Middleware*.
+La rielaborazione, visualizzazione e interpretazione dei dati è interamente affidata agli utenti che devono avere competenze di programmazione.
 
 
 ### Costo
@@ -1212,7 +1223,7 @@ Un altro aspetto valutato sono le tariffe di ciascuna piattaforma. Ogni piattafo
 
 #### Etherscan
 
-La creazione di un account su Etherscan è completamente gratuita. Il servizi a pagamento riguardano la parte API. Questi sono discussi in dettaglio nella parte Etherscan API. 
+La creazione di un account su Etherscan è completamente gratuita. I servizi a pagamento riguardano la parte API. Questi sono discussi in dettaglio nella parte Etherscan API. 
 
 Complessivamente, Etherscan è un'ottima piattaforma limitatamente all'universo Ethereum.
 
@@ -1225,7 +1236,7 @@ Etherscan offre cinque piani tariffari (aggiornato al 5 Marzo 2025). Quello che 
 ![](images\Etherscan_plan.png){height=70%, width=70%}
 
 
-Esiste un set di API endpoints sempre disponibile. Questo viene esteso con ulteriori funzioni nei piani a pagamento. Il community support risulta sempre disponibile. Questo è fornito tramite il canale X ufficiale di Etherscan. A pagamento esiste anche l'escalated support. Questo permette di ottenere supporto prioritario da parte di Etherscan. Per creare una richiesta bisogna compilare un modulo. Come si vede dalla figura sopra anche l'account gratuito offre una gamma completa di funzionalità.
+Esiste un set di API endpoints sempre disponibile. Questo viene esteso con ulteriori funzioni nei piani a pagamento. Il community support risulta sempre disponibile. Questo è fornito tramite il canale X ufficiale di Etherscan. A pagamento esiste anche l'escalated support. Questo permette di ottenere supporto prioritario da parte di Etherscan. Per accedere ad esso bisogna compilare un modulo. Come si vede dalla figura sopra anche l'account gratuito offre una gamma completa di funzionalità.
 
 
 #### Dune
@@ -1234,16 +1245,16 @@ Dune offre quattro piani tariffari (aggiornato al 5 Marzo 2025), che riguardano 
 
 ![](images\Dune_plan.png){height=70%, width=70%}
 
-Come si può vedere, ci sono differenze significative tra le risorse, la quantità di risorse e i servizi messi a disposizione con ogni piano. \
+Come si può vedere, ci sono differenze significative tra le risorse, la quantità di risorse e i servizi messi a disposizione da ogni piano. \
 
-Esistono quattro piani. Sono sempre disponibili crediti, memoria e un certo numero di datapoints per credit. Per datapoints si intende i singoli valori nelle tabelle.
-Quello che cambia con ogni piano è la quantità di risorse disponibili. Inoltre sono aggiunti ulteriori servizi.
+Esistono quattro piani. Sono sempre disponibili crediti, memoria e un certo numero di datapoints per credito. Per datapoints si intende il numero di righe nelle tabelle di output.
+Il piano *Analyst* incrementa il numero di crediti, la memoria disponibile e aggiunge il Query Management Endpoints.
+[ cerca ]
+Il piano *Plus* aggiunge un query engine più grande e permette di scaricare i dati in formato csv.
 
-Analyst aggiunge query management endpoints.
+Il piano *Premium* aggiunge le private query views, private materialized views, private data uploads.
+[ cerca ]
 
-Plus aggiunge large query engine, csv export.
-
-Premium aggiunge private query views, private materialized views, private data uploads.
 
 #### Infura
 
@@ -1255,7 +1266,7 @@ Ci sono differenze in termini di risorse e funzionalità messe a disposizione. P
 
 *Developer* e *Team* offrono gli stessi servizi in quantità differenti.
 
-*Enterprise* offre molta più funzionalità, ma bisogna contattare Infura per definire i dettagli.
+*Enterprise* offre molte più funzionalità, ma bisogna contattare Infura per definire i dettagli.
 
 
 #### Confronto
@@ -1263,7 +1274,7 @@ Ci sono differenze in termini di risorse e funzionalità messe a disposizione. P
 Si confrontano le offerte disponibili con Etherscan, Dune Analytics e Infura. Dato che le tre piattaforme contano il numero di chiamate in modo differente, sono state fatte alcune approssimazioni. \
 Etherscan fornisce direttamente il numero di chiamate. Questo è stato utilizzato per l'analisi.\
 Dune e Infura invece forniscono un numero di crediti: questi crediti sono consumati effettuando chiamate. Diverse chiamate hanno costi diversi. \
-Per Dune il costo default di una esecuzione programmata di una query è fissato a 10 crediti. Questo è stato scelto come approssimazione del costo di una chiamata.
+Per Dune il costo di default di una esecuzione programmata di una query è fissato a 10 crediti. Questo è stato scelto come approssimazione del costo di una chiamata.
 <!--
 ```{r table9, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
 
@@ -1307,7 +1318,7 @@ cat(free_vers)
 ```
 
 Le tre piattaforme (Etherscan, Dune Analytics, Infura) propongono un piano gratuito per i loro utenti. Questi piani si sono dimostrati sufficienti per implementare il caso di studio. \
-Etherscan offre il numero più elevato di chiamate. Dune è l'unica piattaforma che offre storage e permette di generare un numero illimitato di chiavi. Con questa versione nonè possibile scaricare i dati da Dune.
+Etherscan offre il numero più elevato di chiamate. Dune è l'unica piattaforma che offre storage e permette di generare un numero illimitato di chiavi. Con questa versione non è possibile scaricare i dati da Dune.
 
 ##### Paid Tier più basso
 
@@ -1325,7 +1336,7 @@ cat(paid1_vers)
 ```
 
 Etherscan è l'opzione più costosa, seguita da Infura e infine Dune.\
-Etherscan fornisce il numero di chiamate più elevato ma il numero di chaivi più basso. L'insieme dei endpoint raggiungibili è ampliato. 
+Etherscan fornisce il numero di chiamate più elevato ma il numero di chiavi più basso. L'insieme degli endpoint disponibili con Etherscan API è ampliato rispetto alla versione gratuita. 
 Dune resta l'unica piattaforma ad offrire spazio di archiviazione e un numero illimitato di chiavi. 
 
 ##### Paid Tier secondo
@@ -1345,7 +1356,7 @@ cat(paid2_vers)
 
 Dune è l'opzione più costosa, seguita da Etherscan e infine Infura.
 Sia Dune che Infura offrono un numero illimitato di chiavi.
-Dune resta l'unica piattaforma ad offrire spazio di archiviazione e un numero illimitato di chiavi, ma ha il numero di chiamate più basso. 
+Dune resta l'unica piattaforma ad offrire spazio di archiviazione ma ha il numero di chiamate più basso. 
 
 ##### Paid Tier terzo
 
@@ -1364,7 +1375,7 @@ cat(paid3_vers)
 ```
 
 Dune ha un costo molto più elevato delle altre opzioni. Questa è l'unica versione di Dune che permette di scaricare i dati. Dune è ancora l'unica piattaforma ad offrire spazio di archiviazione.
-Etherscan offre il numero più elevato di chiamate delle tre, ma solo tre chiavi API.
+Etherscan offre il numero più elevato di chiamate, ma permette la creazione di sole tre chiavi API.
 Infura non specifica un prezzo: il piano tariffario e il numero di chiamate vengono stabiliti in modo customizzato.
 
 
@@ -1509,7 +1520,7 @@ date_interest$USTC <- c(1.002,
                         1.001,
                         1.001,
                         1.001,
-                        NA,
+                        1.001,
                         1.00,
                         0.995,
                         0.995,
@@ -1523,22 +1534,22 @@ date_interest$USTC <- c(1.002,
                         0.097
                         )
 
-date_interest$LUNC <- c(NA,
+date_interest$LUNC <- c(82.316,
                         84.454,
-                        NA,
+                        82.669,
                         86.136,
-                        NA,
-                        NA,
+                        82.62,
+                        77.565,
                         68.577,
-                        NA,
+                        63.856,
                         33.144,
-                        NA,
-                        NA,
+                        16.867,
+                        1.119,
                         0.016,
-                        NA,
+                        0.000,
                         0.001,
-                        NA,
-                        NA
+                        0.000,
+                        0.000
                         )
 
 date_interest
@@ -1550,8 +1561,8 @@ date_interest
 
 Etherscan mette a disposizione il market cap attuale sia di USTC che di LUNC. Il market cap di una cryptovaluta è il valore totale di tutte le monete in circolazione. Si calcola come prezzo attuale x offerta circolante. Non è possibile visualizzare lo storico del market cap di queste cryptovalute. L'unico storico che mette a disposizione è quello di Ether. Quindi non è stato possibile verificare l'evento del 20 Aprile 2022. \
 
-![](images\Etherscan_USTC_stablecoin.png){height=40%, width=40%}
-![](images\Etherscan_LUNC_market_cap.png){height=40%, width=40%}
+![](images\Etherscan_USTC_stablecoin.png){height=60%, width=60%}
+![](images\Etherscan_LUNC_market_cap.png){height=60%, width=60%}
 
 Inoltre è fornita una classifica aggiornata dei market cap delle diverse cryptovalute ma anche questa non ha uno storico.\
 ![](images\Etherscan_USTC_stablecoin2.png){height=60%, width=60%}
@@ -1561,8 +1572,8 @@ Inoltre è fornita una classifica aggiornata dei market cap delle diverse crypto
 
 Nelle pagine dedicate a Wrapped LUNC e a Wrapped USCT Etherscan fornisce dei link che puntano entrambi alla stessa pagina del Terra Whitepaper. Il whitepaper di una cryptocurrency è un documento completo in cui sono delineati i suoi aspetti tecnici ed economici. Nel momento in cui è stata visitata (14 Febbraio 2025) la pagina del Terra Whitepaper ospitava a sua volta un link alla pagina di un account X. \
 
-![](images\Etherscan_WLUNC_whitepaper.png){height=40%, width=40%}
-![](images\Etherscan_USTC_whitepaper.png){height=40%, width=40%}
+![](images\Etherscan_WLUNC_whitepaper.png){height=60%, width=60%}
+![](images\Etherscan_USTC_whitepaper.png){height=60%, width=60%}
 
 ![](images\Etherscan_WLUNC_whitepaper2.png){height=40%, width=40%}
 
@@ -1914,23 +1925,22 @@ Quindi è stata creata una query SQL su Dune che cerca nelle tabelle dedicate al
 L'utilizzo delle librerie Web3.py è simile a Etherscan API. Una differenza è che è stato necessario consultare sia i logs che i blocchi. Infatti i log forniti sono sprovvisti di timestamp. Quindi sono stati consultati i blocchi in modo da ottenere i timestamps corrispondenti. \
 Per svolgere qualsiasi operazione è necessario collegarsi al provider Infura: \
 
-web3 = Web3(Web3.HTTPProvider('https://mainnet.infura.io/v3/< KEY >'))
+    web3 = Web3(Web3.HTTPProvider('https://mainnet.infura.io/v3/< KEY >'))
 
 
 Per invocare i log \
 
-logs = web3.eth.get_logs({ \
-    "fromBlock": < NUMERO BLOCCO INIZIALE >, \
-    "toBlock": < NUMERO BLOCCO FINALE >, \
-    "address": < USTC HASH in hex >, \
-    "topics" : [ < ERC-20 HASH in hex>] \
-}) \
+    logs = web3.eth.get_logs({
+    "fromBlock": < NUMERO BLOCCO INIZIALE >,
+    "toBlock": < NUMERO BLOCCO FINALE >,
+    "address": < USTC HASH in hex >,
+    "topics" : [ < ERC-20 HASH in hex>]})
 
 
 Per ottenere i timestamp delle operazioni sono stati consultati i blocchi ottenuti con i log. \
 
-block = web3.eth.get_block( <NUMERO BLOCCO DI INTERESSE> )
-timestamp = block['timestamp']
+    block = web3.eth.get_block( <NUMERO BLOCCO DI INTERESSE> )
+    timestamp = block['timestamp']
 
 
 I risultati ottenuti in questo modo sono stati salvati in file JSON che poi sono stati convertiti a file csv. Su R sono state assegnate le corrispondenze tra le timestamps e le operazioni di trasferimento, e sono stati creati i grafi dei trasferimenti. 
