@@ -84,23 +84,30 @@ Il link *Verified Contracts* propone l'elenco dei smart contracts verificati. Su
 
 Il link *Top Tokens* propone un elenco di tutti i token ERC-20 con reputazione OK oppure Neutra. ERC-20 (Ethereum Request for Comment 20) è uno standard tecnico per gli asset su catena Ethereum [@erc20]. Le reputazioni sono delle valutazioni fatte da Etherscan. Queste aiutano gli utenti a predere decisioni informate. \
 
-Un token ha una reputazione Neutra se: \
-1. Ci sono informazioni sufficienti riguardanti il progetto e il suo team. Queste informazioni forniscono trasparenza. \
-2. Il codice sorgente del contratto è verificato. \
-3. Ci sono sufficienti informazioni fornite (website, logo, official contact email). \
-4. Sono forniti i profili professionali dei membri dei team e consulenti. Questi profili possono anche essere disponibili sul sito. \
-5. Il progetto mantiene un sito web funzionante con profili social attivi e canali di comunicazione. \
-6. Non ci sono 'red' flags significative nel momento in cui il puntaggio è stato assegnato. \
-7. Il token è quotato sulle principali piattaforme di aggregazioni di prezzi (Coingecko e Coinmarketcap). \
-\
-Un token ha reputazione OK se : \
-1. Rispetta le condizioni per essere considerato Neutro. \
-2. Fornisce informazioni accurate e sufficienti. \
-3. Ci sono chiari obiettivi di progetto e informazioni accurate. \
-4. Profili visibili per i principali fondatori, sostenitori, consulenti del progetto. \
-5. Il token è quotato sulle principali piattaforme di exchange che usano controlli AML (Anti Money Laundering) o KYC (Know Your Customer). \
-6. Ha raggiunto milestones significative. \
-[@reputation] \
+Un token ha una reputazione Neutra se:
+
+
+1. Ci sono informazioni sufficienti riguardanti il progetto e il suo team. Queste informazioni forniscono trasparenza.
+2. Il codice sorgente del contratto è verificato.
+3. Ci sono sufficienti informazioni fornite (website, logo, official contact email).
+4. Sono forniti i profili professionali dei membri dei team e consulenti. Questi profili possono anche essere disponibili sul sito.
+5. Il progetto mantiene un sito web funzionante con profili social attivi e canali di comunicazione.
+6. Non ci sono 'red' flags significative nel momento in cui il puntaggio è stato assegnato.
+7. Il token è quotato sulle principali piattaforme di aggregazioni di prezzi (Coingecko e Coinmarketcap).
+
+
+
+Un token ha reputazione OK se :
+
+
+1. Rispetta le condizioni per essere considerato Neutro.
+2. Fornisce informazioni accurate e sufficienti.
+3. Ci sono chiari obiettivi di progetto e informazioni accurate.
+4. Profili visibili per i principali fondatori, sostenitori, consulenti del progetto.
+5. Il token è quotato sulle principali piattaforme di exchange che usano controlli AML (Anti Money Laundering) o KYC (Know Your Customer).
+6. Ha raggiunto milestones significative.
+[@reputation]
+
 
 Il link *Token Transfers* propone un elenco di trasferimenti di token ERC-20.  \
 
@@ -225,53 +232,53 @@ Gli endpoints disponibili gratuitamente sono: *Accounts*, *Contracts*, *Transact
 L'endpoint *Accounts* permette di ottenere informazioni riguardo specifici account. Più precisamente:
 
 
-- informazioni su specifici wallet conoscendo i loro hash address. \
-- le transazioni interne in base all'indirizzo, hash o intervallo di blocchi. \
-- il tipo di token trasferiti (ERC20, ERC712, ERC1155) conoscendo l'indirizzo di trasferimento. \
-- l'elenco di blocchi validati da un indirizzo specifico. \
-- il beacon chain withdrawal in base all'indirizzo oppure all'intervallo di blocchi. \
-- lo storico del bilancio in ETH per un specifico indirizzo. \
+- informazioni su specifici wallet conoscendo i loro hash address.
+- le transazioni interne in base all'indirizzo, hash o intervallo di blocchi.
+- il tipo di token trasferiti (ERC20, ERC712, ERC1155) conoscendo l'indirizzo di trasferimento.
+- l'elenco di blocchi validati da un indirizzo specifico.
+- il beacon chain withdrawal in base all'indirizzo oppure all'intervallo di blocchi.
+- lo storico del bilancio in ETH per un specifico indirizzo.
 
 
-L'endpoint *Contracts* permette di ottenere le seguenti informazioni sui smart contract: \
+L'endpoint *Contracts* permette di ottenere le seguenti informazioni sui smart contract:
 
 
-- l'ABI per un contratto verificato. \
-- il codice sorgente di un contratto verificato. \
-- la hash e il creatore del contratto. \
+- l'ABI per un contratto verificato.
+- il codice sorgente di un contratto verificato.
+- la hash e il creatore del contratto.
 
-Inoltre consente di eseguire le seguenti operazioni: \
-
-
-- verificare un contratto scritto in Solidity oppure Vyper. \
-- controllare lo stato di verifica di un contratto. \
-- verificare un Proxy Contract utilizzando cURL. \
-- controllare lo stato di una richiesta di verifica di un Proxy Contract utilizzando cURL. \
-
-L'endpoint *Transactions* permette di: \
+Inoltre consente di eseguire le seguenti operazioni:
 
 
-- controllare lo stato di esecuzione di un contratto. \
-- controllare lo stato di una transazione. \
+- verificare un contratto scritto in Solidity oppure Vyper.
+- controllare lo stato di verifica di un contratto.
+- verificare un Proxy Contract utilizzando cURL.
+- controllare lo stato di una richiesta di verifica di un Proxy Contract utilizzando cURL.
 
-L'endpoint *Blocks* permette di ottenere informazioni riguardo ai blocchi. Più precisamente: \
-
-
-- il reward di un blocco, anche uncle, in base al numero. \
-- una stima del tempo rimasto prima che un blocco venga minato, in base al numero. \
-- il numero di un blocco conoscendo il timestamp. \
-- la dimesione media di un blocco in un intervallo di tempo specificato. \
-- il numero di blocchi giornalieri e il reward. \
-- la quantità di reward distribuita ai miner nell'intervallo di tempo specificato. \
-- il tempo medio impiegato per includere un blocco nella blockchain Ethereum. \
-- il numero di blocchi uncle giornalieri e il reward. \
-
-L'endpoint *Logs* permette di ottenere: \
+L'endpoint *Transactions* permette di:
 
 
-- gli event logs tramite un indirizzo. \
-- gli event logs in base ai valori topic. \
-- gli event logs combinando indirizzo e topic. \
+- controllare lo stato di esecuzione di un contratto.
+- controllare lo stato di una transazione.
+
+L'endpoint *Blocks* permette di ottenere informazioni riguardo ai blocchi. Più precisamente:
+
+
+- il reward di un blocco, anche uncle, in base al numero.
+- una stima del tempo rimasto prima che un blocco venga minato, in base al numero.
+- il numero di un blocco conoscendo il timestamp.
+- la dimesione media di un blocco in un intervallo di tempo specificato.
+- il numero di blocchi giornalieri e il reward.
+- la quantità di reward distribuita ai miner nell'intervallo di tempo specificato.
+- il tempo medio impiegato per includere un blocco nella blockchain Ethereum.
+- il numero di blocchi uncle giornalieri e il reward.
+
+L'endpoint *Logs* permette di ottenere:
+
+
+- gli event logs tramite un indirizzo.
+- gli event logs in base ai valori topic.
+- gli event logs combinando indirizzo e topic.
 
 L'endpoint *Geth/Parity Proxy* permette di interagire con un nodo Ethereum (come Geth oppure Parity) utilizzando una API semplificata. Si utilizza un proxy di Etherscan per inviare richieste e ottenere dati blockchain. \
 Un esempio è : \
@@ -281,85 +288,84 @@ https://api.etherscan.io/api \
    &action=eth_blockNumber \
    &apikey=YourApiKeyToken \
 
-Le possibili action sono: \
+Le possibili action sono:
 
 
-- eth_blockNumber [descrivi] \
-- eth_getBlockByNumber \
-- eth_getUncleByBlockNumberAndIndex \
-- eth_getBlockTransactionCountByNumber \
-- eth_getTransactionByHash \
-- eth_getTransactionByBlockNumberAndIndex \
-- eth_getTransactionCount \
-- eth_sendRawTransaction \
-- eth_getTransactionReceipt \
-- eth_call \
-- eth_getCode \
-- eth_getStorageAt \
-- eth_gasPrice \
-- eth_estimateGas \
+- eth_blockNumber
+- eth_getBlockByNumber
+- eth_getUncleByBlockNumberAndIndex
+- eth_getBlockTransactionCountByNumber
+- eth_getTransactionByHash
+- eth_getTransactionByBlockNumberAndIndex
+- eth_getTransactionCount
+- eth_sendRawTransaction
+- eth_getTransactionReceipt
+- eth_call
+- eth_getCode
+- eth_getStorageAt
+- eth_gasPrice
+- eth_estimateGas
 
 L'endpoint *Tokens* permette di ottenere informazioni riguardo ai token, con maggiore attenzione ai token ERC20. \
 In base all'indirizzo:
 
 
-- la total supply di token ERC20. \
-- il balance ERC20. \
-- la lista di token holder. \
-- il numero di token holder. \
-- le informazioni riguardo il token. \
+- la total supply di token ERC20.
+- il balance ERC20.
+- la lista di token holder.
+- il numero di token holder.
+- le informazioni riguardo il token.
 
 In base all'indirizzo e al numero di blocco:
 
 
-- la total supply storica di token ERC20. \
-- il balance ERC20 storico. \
+- la total supply storica di token ERC20.
+- il balance ERC20 storico.
 
 Inoltre sono disponibili informazioni riguardo:
 <!-- DA QUA-->
 
-- l'indirizzo ERC20 Token Holding. \
-- l'indirizzo ERC721 Token Holding. \
-- l'indirizzo ERC721 Token Inventory By Contract Address. \
+- l'indirizzo ERC20 Token Holding
+- l'indirizzo ERC721 Token Holding
+- l'indirizzo ERC721 Token Inventory By Contract Address
 
-L'endpoint *Gas Tracker* permette di ottenere informazioni riguardo al gas:  \
-
-
-- una stima della confirmation time. \
-- i prezzi del gas. \
-- la media giornaliera del Gas Limit. \
-- il consumo giornaliero di gas utilizzato. \
-- il prezzo giornaliero medio dei gas. \
-
-L'endpoint *Stats* permette di ottenere informazioni riguardo ai stats. Più precisamente: \
+L'endpoint *Gas Tracker* permette di ottenere informazioni riguardo al gas:
 
 
-- la fornitura totale di Ether. \
-- la fornitura totale di Ether 2. \
-- l'ultimo prezzo di Ether. \
-- le dimensioni dei nodi Ethereum. \
-- il numero totale di nodi. \
-- la transaction fee giornaliera. \
-- la Daily New Address Count. \
-- l'utilizzo giornaliero della rete. \
-- la hash rate media giornaliera. \
-- il numero di transazioni giornaliero. \
-- la difficoltà media giornaliera. \
-- lo storico del prezzo Ether. \
+- una stima della confirmation time.
+- i prezzi del gas.
+- la media giornaliera del Gas Limit.
+- il consumo giornaliero di gas utilizzato.
+- il prezzo giornaliero medio dei gas.
 
-#### Considerazioni finali
+L'endpoint *Stats* permette di ottenere informazioni riguardo ai stats. Più precisamente:
 
-Etherscan API mette a dispozione un'ampia quantità di informazioni. Questi possono essere scaricati sul proprio dispositivo in formato JSON e rielaborati a piacere. \
-Non è molte user friendly e richiede alcune competenze minime per accedere ai dati. \
+
+- la fornitura totale di Ether.
+- la fornitura totale di Ether 2.
+- l'ultimo prezzo di Ether.
+- le dimensioni dei nodi Ethereum.
+- il numero totale di nodi.
+- la transaction fee giornaliera.
+- la Daily New Address Count.
+- l'utilizzo giornaliero della rete.
+- la hash rate media giornaliera.
+- il numero di transazioni giornaliero.
+- la difficoltà media giornaliera.
+- lo storico del prezzo Ether.
+
+
+Come si vede, Etherscan API mette a dispozione un'ampia quantità di informazioni. Queste possono essere scaricate sul proprio dispositivo in formato JSON e rielaborate a piacere. \
+Richiede alcune competenze minime per accedere ai dati. \
 Può essere una valida piattaforma complementare per sviluppatori, minatori, validatori.
 
 <!-- DUNE -->
 ### Dune Analytics : una piattaforma SQL
 
 Le piattaforme SQL permettono di interrogare la Blockchain con comandi SQL. Un esempio di piattaforma SQL è Dune Analytics. \
-Dune Analytics mette a disposizione i dati sottoforma di tabelle consultabili traminte query SQL. &Egrave; possibile creare nuove query da zero oppure duplicare e modificare query già esistenti tramite il fork. Dune Analytics non permette di scaricare i dati se l'account non è a pagamento. \
+Dune Analytics mette a disposizione i dati sotto forma di tabelle consultabili traminte query SQL. &Egrave; possibile creare nuove query da zero oppure duplicare e modificare query già esistenti tramite il fork. Dune Analytics non permette di scaricare i dati se l'account non è a pagamento. \
 \
-La pagina home fornisce link ai diversi servizi e informazioni di interesse di Dune. In alto è presente un menu a tendina: *Products*, *Chains*, *Enterprise*, *Resources*, *Company*, *Pricing*, *Launch App*. \
+La pagina home fornisce link ai diversi servizi e informazioni di interesse. In alto è presente un menu a tendina: *Products*, *Chains*, *Enterprise*, *Resources*, *Company*, *Pricing*, *Launch App*. \
 Il menu *Products* propone i tre prodotti *Catalyst*, *Echo*, *Datashare*. *Dune Catalyst* è uno strumento per facilitare il caricamento di dati dalla blockchain alla piattaforma *Dune Analytics*. La pagina *Echo* permette di creare chiavi API. *Datashare* permette di contattare supporto.\
 Il menu *Chains* elenca le catene supportate da Dune Analytics. Il menu *Enterprise* porta alla pagina per iscriversi ai servizi Enterprise. Il menu *Resources* propone la documentazione e le risorse disponibili. Il menu *Company* propone link riguardanti gli eventi organizzati da Dune e le offerte di lavoro. Il menu *Pricing* propone la pagina con i diversi piani tariffari. Il menu *Launch App* porta allo spazio di lavoro dove creare e elaborare query.
 
@@ -373,7 +379,7 @@ La voce *New query* propone la pagina per creare una nuova query. *New dashboard
 
 ![](images\dune_dashboard.png){height=40%, width=40%}
 
-Nella dashboard di esempio i grafi e la tabella visibile sono gli output di alcune query create dallo stesso account. &Egrave; possibile ottenere output aggiornati rieseguendo le query direttamente sulla pagina. Queste dashboard si possono esportare su GitHub e il loro url si può condividere su altre piattaforme.\
+Nella dashboard di esempio i grafi e la tabella visibile sono gli output di alcune query. &Egrave; possibile ottenere output aggiornati rieseguendo le query direttamente sulla pagina. Queste dashboard si possono esportare su GitHub e il loro url si può condividere su altre piattaforme.\
 La voce *Upload a dataset* propone la pagina per caricare dati sulla piattaforma Dune. La voce *Submit a contract* propone la pagina per decodificare i contratti. Bisogna specificare la blockchain di interesse e l'indirizzo hash del contratto. \
 La voce *API endpoints* propone la pagina per creare dei custom endpoint API. \
 
@@ -386,15 +392,15 @@ Non è possibile creare endpoint con query che non appartengono all'account. \
 Dune propone 6 endpoints predefiniti: 
 
 
-- *Farcaster Endpoints* : ottenere informazioni riguardo Farcaster, un protocollo per social media decentralizzate.
-- *Eigenlayer* : fornisce informazioni riguardo i metadati di AVS e operatori e la mappatura di metadati agli operatori.
+- *Farcaster Endpoints* : consente di ottenere informazioni riguardo Farcaster, un protocollo per social media decentralizzate.
+- *Eigenlayer* : fornisce informazioni riguardo i metadati di AVS, gli operatori e la mappatura di metadati agli operatori.
 - *Projects* : fornisce dati riguardanti Linea LXP.
-- *Contracts*: fornisce informazioni riguardo i contratti lanciati su una qualsiasi catena EVM basata sull'attività degli ultimi 30 giorni.
-- *DEX*: ottiene metatdati e dati statistici per coppie di token.
-- *Markets*: ottiene la quota di mercato in termini di USD e numero di scambi per DEX oppure NFT.
+- *Contracts*: fornisce informazioni riguardo i contratti lanciati su una catena EVM basata sull'attività degli ultimi 30 giorni.
+- *DEX*:  consente di ottenere metatdati e dati statistici per coppie di token.
+- *Markets*:  consente di ottenere la quota di mercato in termini di USD e numero di scambi per DEX oppure NFT.
 
 La voce *Create Team* propone la pagina per creare un team su Dune. Questo permette a gruppi di utenti Dune di collaborare su query e dashboard. \
-Un team ha un suo profilo separato dai singoli utenti che lo compongono. Il numero di membri in un team è illimitato. I membri possono svolgere ruoli diversi. I ruoli possibili sono *Viewer*, *Editor* oppure *Admin*. Il *Viewer* può visualizzare il lavoro del team e consumare crediti. L'*Editor* può anche creare ed editare query. L'*Admin* può gestire il team e i contenuti. \
+Un team ha un suo profilo separato dai singoli utenti che lo compongono. Il numero di membri in un team è illimitato. I membri possono svolgere ruoli diversi. I ruoli possibili sono *Viewer*, *Editor* oppure *Admin*. Il *Viewer* può visualizzare il lavoro del team e consumare crediti. L'*Editor* può anche creare ed editare query. L'*Admin* può anche gestire il team e i contenuti. \
 \
 La pagina *Library* permette di visualizzare le proprie creazioni. Le query e le dashboard create si possono organizzare in folder. \
 
@@ -408,11 +414,11 @@ La pagina *Metrics* propone dati riguardanti le transazioni e i consumi sulle bl
 
 ![](images\dune_menu_metrics.png){height=40%, width=40%}
 
-La pagina *Dune Index* propone un grafo rappresentante l'adozione della blockchain nel tempo. Inoltre, viene indicato il Dune Index per ogni blockchain. In fondo alla pagina viene descritta la metodologia utilizzata per il calcolo dell'Index. \
+La pagina *Dune Index* propone un grafo rappresentante l'adozione della blockchain nel tempo. Viene indicato il Dune Index per ogni blockchain. In fondo alla pagina viene descritta la metodologia utilizzata per il calcolo dell'Index. \
 \
-La pagina *Transaction fees* propone un grafo rappresentante i USD spesi in gas. Inoltre, viene indicato il transaction fee per ogni blockchain.  In fondo alla pagina viene descritta la metodologia utilizzata per il calcolo. \
+La pagina *Transaction fees* propone un grafo rappresentante gli USD spesi in gas. Inoltre, viene indicato il transaction fee per ogni blockchain. In fondo alla pagina viene descritta la metodologia utilizzata per il calcolo. \
 \
-La pagina *Transfer Volume* propone un grafo rappresentante gli USD trasferiti su blockchian. Inoltre, viene indicato gli USD trasferiti per ogni blockchain. 
+La pagina *Transfer Volume* propone un grafo rappresentante gli USD trasferiti su blockchian. Inoltre, vengono indicati gli USD trasferiti per ogni blockchain. 
 \
 La pagina *Transaction Count* propone un grafo rappresentante il numero di transazioni su blockchain. &Egrave; riportata una tabella con il numero di transazioni per ogni blockchain.
 
@@ -444,44 +450,39 @@ Per creare una nuova query bisogna accedere alla voce *new query* sotto *Create*
 
 ![](images\dune_workspace_example_5.png){height=60%, width=60%}
 
-Dune fornisce un'AI per assistere con la creazione o modifica delle query. Se qualcosa non va a buon fine, l'interfaccia produce dei messaggi di errore leggibili. \
+Dune fornisce un'AI per assistere con la creazione o modifica delle query. Se qualcosa non va a buon fine, l'interfaccia produce dei messaggi di errore comprensibili. \
 Dune permette di visualizzare i dati in diverse forme grafiche. &Egrave; possibile manipolare i grafi così ottenuti modificando i parametri messi a disposizione. \
 
 ![](images\dune_workspace_example_2.png){height=60%, width=60%}
 
-
-
-
-#### Considerazioni finali
 
 Dune propone un'interfaccia intuitiva e facile da usare. Per formulare le query sono richieste competenze di SQL. Le dashboard permettono di creare delle panoramiche interattive e aggiornate su argomenti di interesse. La piattaforma fornisce dati riguardanti un elevato numero di blockchain diverse.
 
 <!-- WEB3 -->
 ### Web3.py : una libreria Web3
 
-La libreria Web3.py è una libreria Python che permette di interagire con la Blockchain. Richiede un provider per accedere alla blockchain. Come provider è stato utilizzato Infura. Infura è una blockchain API, simile a Etherscan API. Per utilizzare Infura è richiesta la creazione di un account per generare chiavi API. Infura impone un limite al numero massimo di operazioni giornaliere.
-
-In questo progetto si riferisce alla versione stable della libreria. 
+La libreria Web3.py è una libreria Python che permette di interagire con la Blockchain. Richiede un provider per accedere alla blockchain. Come provider è stato utilizzato Infura. Infura è una blockchain API, simile a Etherscan API. Per utilizzare Infura è richiesta la creazione di un account per generare chiavi API. Infura impone un limite al numero massimo di operazioni giornaliere.\
+Il progetto si riferisce alla versione v7.10.0 della libreria. 
 
 ##### Web3.py
 
-La libreria Web3.py permette di ottenere informazioni direttamente dalla catena Ethereum o altre catene EVM-compatibli.
+La libreria Web3.py permette di ottenere informazioni direttamente dalla catena Ethereum o da altre catene EVM-compatibli.
 
 Per collegarsi ad un nodo Ethereum è richiesto l'utilizzo di un provider. Un provider genera una richiesta JSON-RPC e restituisce la risposta.
 
-Gli approcci più comuni sono IPC, WebSocket, HTTP. IPC utilizza il filesystem locale mentre gli altri lo utilizzano in remoto. Per utilizzare il provider desiderato la libreria propone le seguenti funzioni: 
+Gli approcci più comuni sono IPC, WebSocket, HTTP. IPC utilizza il filesystem locale mentre gli altri lavorano in remoto. Per utilizzare il provider desiderato la libreria propone le seguenti funzioni che permettono interazioni con i server: 
 
 
-- HTTPProvider : permette interazioni con un HTTP o HTTPS based server JSON-RPC
-- IPCProvider : permette interazioni con un IPC socket based server JSON-RPC
-- AsyncHTTPProvider : permette interazioni con un HTTP o HTTPS based server JSON-RPC in modo asincrono
-- AsyncIPCProvider :  permette interazioni con un IPC socket based server JSON-RPC in modo asincrono e persistente
-- WebSocketProvider : permette interazioni con un WS o WSSbased server JSON-RPC
+- HTTPProvider : con un server JSON-RPC basato su HTTP o HTTPS
+- IPCProvider : con un server JSON-RPC basato su un IPC socket
+- AsyncHTTPProvider : con un server JSON-RPC asincrono basato su HTTP o HTTPS
+- AsyncIPCProvider : con un server JSON-RPC asincrono e persistente basato su un IPC socket
+- WebSocketProvider : con un server JSON-RPC basato su WS o WSSbased
 
-Esiste anche la funzione LegacyWebSocketProvider, ma questa è stata deprecata. La sintassi è Web3(Web3.function(URL)). &Egrave; possibile verificare lo stato della connessione con la funzione w3.is_connected(). Inoltre è anche possibile scrivere un proprio provider.
+La sintassi è Web3(Web3.function(URL)). &Egrave; possibile verificare lo stato della connessione con la funzione w3.is_connected(). Inoltre è possibile scrivere un proprio provider.
 
-&Egrave; possibile configurare il middleware. In particolare è possibile aggiungere, rimuovere, modificare e liberare strati di middleware a runtime.
-Web3.py utilizza di default alcuni strati di middleware : gas_price_strategy, ens_name_to_address, attrdict, validation, gas_estimate.
+&Egrave; possibile configurare il middleware. Per middleware si intende uno strato di software che sta tra i provider e Web3. In particolare è possibile aggiungere, rimuovere, modificare e cancellare strati di middleware a runtime.
+Web3.py utilizza i seguenti strati di middleware di default : gas_price_strategy, ens_name_to_address, attrdict, validation, gas_estimate.
 
 Esiste un ulteriore strato di middleware chiamato Managers: questo fornisce thread safety e primitive per permettere un utilizzo asincrono del Web3.
 
@@ -489,11 +490,13 @@ Oltre ad ottenere informazioni dalle catene di interesse, è possibile svolgere 
 
 Riguardo gli Account, è possibile creare una propria chiave privata. Ad ogni chiave generata è associato un indirizzo Ethereum. Con questa chiave privata è possibile firmare o verificare un messaggio, preparare un messaggio per erecover in Solidity, verificare un messaggio per erecover in Soldity, firmare una transazione, firmare una transazione per invocare un contratto. 
 
-Riguardo i contratti, Web3.py fornisce una funzionalità molto completa. &Egrave; possibile compilare un contratto Solidity e fare il deploy. &Egrave; possibile creare le Contract Factories, ovvero un oggetto che permette di interfacciare con i smart contracts oppure fare il deploy di smart contract. Inoltre, è possibile interagire con gli eventi dei contratti. Web3.py fornisce un'API per invocare le funzioni di un contratto.
+Riguardo i contratti, Web3.py fornisce una funzionalità molto completa. &Egrave; possibile compilare un contratto Solidity e fare il deploy. &Egrave; possibile creare le Contract Factories, ovvero oggetti che permettono di interfacciarsi con i smart contracts oppure fare il deploy di smart contract. Inoltre, è possibile interagire con gli eventi dei contratti. Infine, Web3.py fornisce un'API per invocare le funzioni di un contratto.
 
 Riguardo gli eventi e i logs, è possibile ottenere informazioni riguardo specifici eventi e log.
 
 Web3.py fornisce i cosiddetti Event Subscriptions: questi permettono di rimanere in ascolto per specifici eventi sulla blockchain. &Egrave; possibile ascoltare solo determinati eventi: nuovi block headers, lo stato di sincronizzazione di un nodo, nuove transazioni in attesa e i log emessi dagli smart contract.
+
+La libreria Web3.py è uno strumento molto potente per chi sviluppa dApp. Essa richiede competenze avanzate e non è adatta ad un utente casuale.
 
 ##### Infura
 
@@ -512,9 +515,9 @@ Per ogni progetto Infura un utente può assumere uno di tre ruoli:
 
 La voce *API Keys* fornisce un riassunto delle chiavi API utilizzate.
 
-La voce *Let's get started* propone quattro collegamenti: *Send Requests*, che porta alla documentazione MetaMask, *Integrate MetaMask*, che porta alla documentazione MetaMask, *MetaMask Development Center*, che porta a MetaMask, *Need help get started*, che porta a Discord.
+La voce *Let's get started* propone quattro collegamenti: *Send Requests* e *Integrate MetaMask*, che portano alla documentazione MetaMask, *MetaMask Development Center*, che porta alla pagina di MetaMask, *Need help getting started*, che porta a Discord.
 
-La voce *Analytics Overview* fornisce un riassunto dell' utilizzo credito giornaliero.
+La voce *Analytics Overview* fornisce un riassunto dell'utilizzo del credito giornaliero.
 
 Infine, la voce *Product Updates* propone gli aggiornamenti.
 
@@ -537,84 +540,77 @@ La pagina *Infura RPC* propone dettagli riguardo le chiavi API generate. Oltre a
 
 - *Active Endpoints*: elenco dei endpoint attivi (sia http che websocket)
 - *All Endpoints*: elenco di tutti gli endpoint
-- *Settings*: per controllare le proprie chiavi API
-- *API Key Sharing*: per condividere le chiavi
+- *Settings*: permette di controllare le proprie chiavi API
+- *API Key Sharing*: permette di condividere le chiavi
   
 La pagina *MetaMask SDK* fornisce una guida per integrare una propria dApp con Metamask SDK. \
-Il link *Status* porta ad una pagina dove sono discussi aggiornamenti riguardanti Infura. Il link *Docs* porta alla documentazione MetaMask. Il link *Faucet* porta al faucet. Il link *Help* porta a tutorial. Il link *Settings* porta alle impostazioni. Il link *Upgrade* porta alla pagina dei costi.
+Il link *Status* porta ad una pagina dove sono discussi aggiornamenti riguardanti Infura. Il link *Docs* porta alla documentazione MetaMask. Il link *Faucet* porta al faucet: una piattaforma che fornisce test token per testare smart contracts. Il link *Help* porta a tutorial. Il link *Settings* porta alle impostazioni. Il link *Upgrade* porta alla pagina dei costi.
 
-<!-- Web3 -->
-#### Considerazioni finali
-
-La libreria Web3.py è uno strumento molto potente per chi sviluppa dApp. Essa richiede competenze avanzate e non è adatta per l'utente casuale.\
-Infura è facile da usare e mette a disposizione risorse utili per chi si occupa di sviluppo.
+Infura non è adatto a tutte le utenze. Mette a disposizione risorse utili per gli sviluppatori.
 
 <!-- SECONDA PARTE -->
 ## Valutazioni
 
-Per esaminare e confrontare i diversi strumenti disponibili sono stati scelti tre parametri di confronto: \
+Per esaminare e confrontare i diversi strumenti disponibili sono stati scelti i seguenti parametri di confronto: \
 
 
-- l'**usabilità** del metodo e i prerequisiti richiesti per utilizzare lo strumento \
-- le **risorse** che ciascun strumento mette a disposizione \
-- i **costi** e limiti di ciasun strumento \
-
-Questi sono analizzati separatamente.
+- l'**usabilità** del metodo e i prerequisiti richiesti per utilizzare lo strumento
+- le **risorse** che ciascun strumento mette a disposizione
+- i **costi** ovvero i piani tariffari
 
 ### Usabilità
 
 Definiamo l'usabilità come la misura con cui un prodotto può essere usato da specifici utenti per raggiungere specifici obiettivi con efficacia, efficienza e soddisfazione, in uno specifico contesto d'uso [@gamberini]. \
 Esistono più modi di valutare l'usabilità. I due metodi principali sono la valutazione euristica e la valutazione empirica. La valutazione euristica si basa su delle regole. La valutazione empirica coinvolge gli utenti [@cognitivegroup]. \
-In questa analisi è utilizzato un approcio euristico. La valutazione si basa in parte sulle dieci euristiche di Nielsen.\
-
-Le euristiche di Nielsen nascono per valutare le decisioni prese nella progettazione e implementazione delle interfaccie utente. Con ogni euristica si valuta un aspetto diverso del sistema. Esse sono state definite negli anni 90 da Jacob Nielsen [@gamberini]. \ 
+In questa analisi è utilizzato un approcio euristico. La valutazione si basa in parte sulle dieci euristiche di Nielsen definite negli anni 90.
+Le euristiche di Nielsen nascono per valutare la progettazione e l'implementazione delle interfaccie utente. Con ogni euristica si valuta un aspetto diverso del sistema [@gamberini]. \ 
 Le dieci euristiche per il design delle interfaccie utente sono [@nngroup]: \
 
 
 1. **Visibilità dello stato del sistema**: si valuta se il sistema comunica chiaramente all'utente qual'è il suo stato, e se il feedback arriva all'utente nel minor tempo possibile. \
 2. **Corrispondenza tra il sistema e il mondo reale**: si valuta se il sistema utilizza un linguaggio familiare agli utenti. \
 3. **Libertà e controllo dell'utente**: si valuta se il sistema permette agli utenti di fare passi indietro in caso di errori. \
-4. **Standard e consistenza**: si valuta se il sistema segue convenzioni ed è consistente. \
+4. **Standard e consistenza**: si valuta se il sistema segue convenzioni ed è consistente
 5. **Prevenzione degli errori**: si valuta se il sistema ha delle misure per prevenire errori. \
 6. **Riconoscimento piuttosto che richiamo**: si valuta se il sistema aiuta a ridurre il carico cognitivo dell'utente. \
-7. **Flessibilità e efficienza d'uso**: si valuta se il sistema ha delle scorciatoie. \
-8. **Estetica e design minimalistico**: si valuta se l'interfaccia contiene informazioni irrilevanti. \
-9. **Aiuta gli utenti a riconoscere, diagnosticare e recover dagli errori**: si valuta se i messaggi di errore sono comprensibili e aiutano a correggere gli errori. \
-10. **Supporto e documentazione**: si valuta se il sistema ha della documentazione disponibile. \
+7. **Flessibilità e efficienza d'uso**: si valuta se il sistema ha delle scorciatoie.
+8. **Estetica e design minimalistico**: si valuta se l'interfaccia contiene informazioni irrilevanti.
+9. **Aiuta gli utenti a riconoscere, diagnosticare e gestire gli errori**
+10. **Supporto e documentazione**: si valuta se il sistema ha della documentazione disponibile.
 
-Come accennato nell'introduzione, la blockchain ha un'utenza diversificata e i diversi strumenti soddisfano le esigenze di utenze diverse. Oltre alle euristiche di Nielsen sono state identificate alcune figure che potrebbero utilizzare le piattaforme analizzate. Sono state formulate delle domande specifiche per inquadrare in modo preciso gli strumenti. L'obbiettivo è identificare a che tipo di utenza è rivolta.
+Come accennato nell'introduzione, la blockchain ha un'utenza diversificata e i diversi strumenti soddisfano le esigenze di utenze diverse. Oltre alle euristiche di Nielsen sono state identificate alcune figure che potrebbero utilizzare le piattaforme analizzate. Sono state formulate delle domande specifiche per inquadrare in modo preciso gli strumenti. L'obbiettivo è identificare a che tipo di utenza è rivolta ciascuna piattaforma.
 
 
 - **Utenti individuali**: un individuo, che gestisce la sua finanzia personale e fa piccoli investimenti. Questo utente vorrà poter monitorare le sue attività, prendere decisioni di inverstimento, portare avanti piccole operazioni. \
   - *Un utente può monitorare le sue attività ?* \
-  Ovvero, può conoscere lo stato del proprio wallet e delle transazioni effettuate. \
+  Può conoscere lo stato del proprio wallet e delle transazioni effettuate ? \
   - *Un utente può ricercare informazioni utili per prendere decisioni di inverstimento ?* \
-  Esempi di informazioni considerate utili per prendere decisioni sono il prezzo del gas e il costo di una operazione. \
+  Esempi di informazioni considerate utili per prendere decisioni sono il prezzo del gas e il costo di una operazione.\
   - *Un utente può utilizzare lo strumento per svolgere operazioni ?* \
-  Ovvero, può completare una singola transazione dal proprio wallet direttamente sulla piattaforma o utilizzando la libreria. \
+  Può completare una singola transazione dal proprio wallet direttamente sulla piattaforma o utilizzando la libreria ?\
 
 
 - **Sviluppatori dApp**: chi sviluppa dApp vorrà poter creare la dApp, lanciare la dApp, fare auditing/valutazione della dApp.
   - *Uno sviluppatore può creare una dApp ?* \
-  Ovvero la piattaforma o libreria fornisce strumenti che possono essere direttamente utilizzati per creare una dApp. Esempi di strumenti sono un ambiente di sviluppo, compilatori oppure un linguaggio di programmazione. \
+  La piattaforma o libreria fornisce strumenti che possono essere direttamente utilizzati per creare una dApp ? Esempi di strumenti sono un ambiente di sviluppo, compilatori oppure un linguaggio di programmazione. \
   - *Uno sviluppatore può lanciare la propria dApp ?* \
-  Ovvero lo strumento permette di fare il deploy di una dApp sulla blockchain. \
+  Lo strumento permette di fare il deploy di una dApp sulla blockchain ? \
   - *Uno sviluppatore può fare auditing/valutazione della propria dApp ?* \
   
 - **Sviluppatori di smart contract** : chi scrive o fa auditing di smart contract avrà interesse a scrivere il codice, lanciare il codice, e verificare il codice. \
   - *Uno sviluppatore può scrivere uno smart contract ?* \
-  Ovvero lo strumento fornisce strumenti per scrivere o compilare il codice di uno smart contract. \
+  Lo strumento permette di scrivere o compilare il codice di uno smart contract ? \
   - *Uno sviluppatore può lanciare il proprio smart contract sulla blockchain ?* \
   - *Uno sviluppatore può verificare il codice del proprio smart contract ?* \
-  Ovvero lo strumento permette di confrontare il bytecode presente sulla catena con il bytecode generato localmente. \
+  Lo strumento permette di confrontare il bytecode presente sulla catena con il bytecode generato localmente ? \
   
 - **Minatori e Validatori** : chi si occupa di minare e validare i blocchi vorrà poter monitorare la produzione di blocchi, confermare delle transazioni, monitorare la salute della rete, monitorare le attività della rete. \
   - *Un minatore o validatore può monitorare la produzione di blocchi ?* \
-  &Egrave; possibile monitorare la generazione di blocchi sulla catena principale, ottenere informazioni riguardanti i singoli blocchi e sul loro stato. \ 
+  &Egrave; possibile monitorare la generazione di blocchi sulla catena principale, ottenere informazioni riguardanti i singoli blocchi e sul loro stato ? \ 
   - *Un minatore o validatore può accedere alla mining pool ?* \
-  La piattaforma o libreria permette di interagire con le mining pool esistenti in un qualche modo significativo. \
+  La piattaforma o libreria permette di interagire con le mining pool esistenti in un qualche modo significativo ? \
   - *Un minatore o validatore può stimare la reward e la difficulty ?* \
-  Lo strumento permette di stimare la reward e la difficulty di una operazioni di mining o validazione. \
+  Lo strumento permette di stimare la reward e la difficulty di una operazioni di mining o validazione ? \
   - *Un minatore o validatore ha accesso a strumenti per effettuare lo staking ?* \
   - *Un minatore o validatore ha accesso a strumenti per effettuare il mining ?* \
   - *Un minatore o validatore può stimare il slashing risk in caso di penalità ?* \
@@ -625,16 +621,14 @@ Come accennato nell'introduzione, la blockchain ha un'utenza diversificata e i d
   
 - **Analisti e ricercatori di cryptovalute** : gli analisti di mercato vorrano poter monitorare i movimenti di mercato. I ricercatori di blockchain vorranno poter esplorare i dati della blockchain, analizzare le tendenze dei volumi delle transazioni, dei prezzi del gas, dei movimenti dei token.
   - *Un analista può conoscere lo storico e il numero di incidenti o attacchi ?* \
-  La piattaforma o libreria fornisce informazioni riguardanti il numero e lo storico di incidenti o attacchi sulle blockchain. \
   - *Un analista può conoscere le dApp attive sulla blockchain ?* \
   - *Un analista può conoscere gli smart contracts attivi sulla blockchain ?* \
   - *Un analista può conoscere strategic partnerships, collaborations, announcements, ?* \
-  Lo strumento può ottenere informazioni riguardanti strategic partnership, collaborazioni o annunci riguardanti un progetto blockchain. \
   - *Un analista può interagire con soluzioni layer 2 ?* \
   - *Un analista può conoscere i governance models utilizzati sulla blockchain ?* \
   
 
-- **Team di progetti (DeFi, NFT, Progetti Token)** : ci sono tre casi, le piattaforme di finanza decentralizzata, i creatori e le piattaforme di NFT, i team di ICO. Le piattaforme di finanza decentralizzata utilizzano Etherscan per monitorare la liquidità dei token, le transazioni e le statistiche dei pool di liquidità. Chi crea NFT vorrà poter creare l'NFT, fare mining, fare operazioni e monitorare lo stato. I team ICO vorranno poter lanciare i token o airdrop, monitorare la distribuzione dei token, verificare le interazioni con gli smart contract e gestire la tokenomica del progetto.
+- **Team di progetti riguardanti DeFi, oppure NFT, oppure Token** : Le piattaforme di finanza decentralizzata vorranno poter monitorare la liquidità dei token, le transazioni e le statistiche dei pool di liquidità. Chi crea NFT vorrà poter creare l'NFT, fare mining, fare operazioni e monitorare lo stato. I team ICO vorranno poter lanciare i token o airdrop, monitorare la distribuzione dei token, verificare le interazioni con gli smart contract e gestire la tokenomica del progetto.
   - *Un team può monitorare la liquidità dei token ?* \
   - *Un team può conoscere le transazioni e le statistiche dei pool di liquidità ?* \
   - *Un team può creare l'NFT ?* \
@@ -643,7 +637,7 @@ Come accennato nell'introduzione, la blockchain ha un'utenza diversificata e i d
   - *Un team può monitorare la distribuzione dei token ?* \
   - *Un team può verificare le interazioni con gli smart contract?* \
   - *Un team può gestire la tokenomica del progetto ?* \
-  Per tokenomica si intende lo studio e l’analisi di aspetti economici di una crittovaluta o progetto blockchain. Esempi di informazioni sono il numero totale di token in circolazione, i meccanismi di distribuzione, i meccanismi di minting e burning. \
+  Per tokenomica si intende lo studio e l’analisi di aspetti economici di una criptovaluta o progetto blockchain. Esempi di informazioni sono il numero totale di token in circolazione, i meccanismi di distribuzione, i meccanismi di minting e burning. \
 
 #### Etherscan
 
@@ -757,10 +751,10 @@ Una volta inviata una chiamata non è possibile interromperla. Sono consumati cr
 
 Complessivamente, l'interfaccia di Dune Analytics è risultata intuitiva da utilizzare. \
 
-L'interfaccia comunica chiaramente dove si trova l'utente utilizzando breadcrumbs. Il sistema utilizza un linguaggio chiaro all'utente, le tabelle sono etichettate con i termini corretti. \
+L'interfaccia comunica chiaramente dove si trova l'utente utilizzando breadcrumbs. Il sistema utilizza un linguaggio chiaro, le tabelle sono etichettate con i termini corretti. \
 La dashboard riduce il carico cognitivo dell'utente, senza presentare ridondanze. Quando si esegue una query, lo stato di elaboarzione è comunicato chiaramente. &Egrave; possibile interrompere la richiesta con il bottone *Cancel*. Se una query non va a buon fine, viene proposto un messaggio di errore chiaro e comprensibile. \
-&Egrave; stato riscontrato un problema visualizzando gli output di una query: la tabella con i risultati risultava compressa e non era possibile leggere le righe. La pagina propone un handle di ridimensionamento, ma è stato necessario prima fare zoom out. \
-Dune propone uno storico e versionamento precedenti delle query.\
+&Egrave; stato riscontrato un problema visualizzando gli output di una query: la tabella con i risultati risultava compressa e non era possibile leggere le righe. La pagina propone un handle di ridimensionamento, ma è stato necessario prima fare zoom out per ridimensionare la finestra. \
+Dune propone uno storico e il versionamento delle query.\
 Dune offre una documentazione ufficiale completa. 
 
 
@@ -769,7 +763,7 @@ Dune offre una documentazione ufficiale completa.
   *Un utente può ricercare informazioni utili per prendere decisioni di inverstimento ?* Sì. \
   *Un utente può utilizzare lo strumento per svolgere operazioni ?* No. \
   
-
+<!-- DA QUA-->
 - **Sviluppatori**: \
   *Uno sviluppatore può creare una dApp ?* No. \
   *Uno sviluppatore può lanciare la propria dApp ?* No. \
@@ -785,10 +779,10 @@ Dune offre una documentazione ufficiale completa.
   *Un minatore o validatore può stimare la reward e la difficulty ?* &Egrave; possibile tracciare l'andamento della reward se questa è stata documentata. \
   *Un minatore o validatore ha accesso a strumenti per effettuare lo staking ?* No. \
   *Un minatore o validatore ha accesso a strumenti per effettuare il mining ?* No. \
-  *Un minatore o validatore può stimare il slashing risk ?* Se i dati sono messi a disposizione. \
+  *Un minatore o validatore può stimare il slashing risk ?* Sì, se i dati sono messi a disposizione. \
   *Un minatore o validatore può conoscere la validator uptime ?* No. \
-  *Un minatore o validatore può stimare la reward rate ?* Solo se questa è stata documentata.\
-  *Un minatore o validatore può ottenere informazioni sulla liquidity ?* Solo se questa è stata documentata.\
+  *Un minatore o validatore può stimare la reward rate ?* Sì, se questa è stata documentata.\
+  *Un minatore o validatore può ottenere informazioni sulla liquidity ?* Sì, se questa è stata documentata.\
 
 
 - **Analisti e ricercatori di cryptovalute** : \
@@ -813,7 +807,7 @@ Dune offre una documentazione ufficiale completa.
 
 #### Web3.py
 
-La libreria Web3.py è facile da installare e non richiede altre librerie per funzionare. &Egrave; disponibile una documentazione ufficiale. Le funzioni utilizzano nomi che comunicano in modo chiaro a cosa servono. Permette di scrivere codice espressivo e ordinato. I messaggi di errore sono piuttosto chiari. 
+La libreria richiede capacità di programmazione. Infatti, per ottenere le informazioni occorre scrivere programmi in Python. La libreria Web3.py è facile da installare e non richiede altre librerie per funzionare. &Egrave; disponibile una documentazione ufficiale. Le funzioni utilizzano nomi che comunicano in modo chiaro a cosa servono. Permette di scrivere codice espressivo e ordinato. I messaggi di errore sono chiari.
 
 
 - **Utenti individuali**: \
@@ -826,13 +820,13 @@ La libreria Web3.py è facile da installare e non richiede altre librerie per fu
   *Uno sviluppatore può creare una dApp ?* Non direttamente, è possibile creare una dApp con il linguaggio Python e utilizzare al suo interno la libreria Web3.py. \
   *Uno sviluppatore può lanciare la propria dApp ?* Sì. \
   *Uno sviluppatore può fare auditing/valutazione della propria dApp ?* Sì. \
-  *Uno sviluppatore può scrivere uno smart contract ?* Non direttamente, i smart contract sono scritti in Solidity oppure Vyper. Questi script possono essere compilati utilizzando Python [@smartcontract]. \
+  *Uno sviluppatore può scrivere uno smart contract ?* No. \
   *Uno sviluppatore può lanciare il proprio smart contract sulla blockchain ?* Sì.\
-  *Uno sviluppatore può verificare il codice del proprio smart contract ?* Sì, è possibile verificare il codice. Verificare il codice richiede di compilare il codice dello smart contract localmente, scaricare il bytecode sulla catena, e confrontare i due. &Egrave; possibile compilare il codice, è possibile ottenere il bytecode con get_code() e si può scrivere uno script Python che confronta i due. \
+  *Uno sviluppatore può verificare il codice del proprio smart contract ?* Sì, è possibile verificare il codice. Verificare il codice richiede di compilare il codice dello smart contract localmente, scaricare il bytecode sulla catena, e confrontare i due. &Egrave; possibile fare il confronto con uno script Python. \
   
 
 - **Minatori e Validatori** : \
-  *Un minatore o validatore può monitorare la produzione di blocchi ?* Sì, si possono invocare singoli blocchi, utilizzando il loro  numero oppure parole chiave ('latest', 'earliest', 'pending', 'safe', 'finalized'). \
+  *Un minatore o validatore può monitorare la produzione di blocchi ?* Sì, si possono invocare singoli blocchi, utilizzando il loro  numero oppure una parola chiave (*latest*, *earliest*, *pending*, *safe*, *finalized*). \
   *Un minatore o validatore può accedere alla mining pool ?* No. \
   *Un minatore o validatore può stimare la reward e la difficulty ?* Non esiste una funzione di libreria per ottenere l'informazione direttamente. \
   *Un minatore o validatore ha accesso a strumenti per effettuare lo staking ?* No. \
@@ -844,7 +838,7 @@ La libreria Web3.py è facile da installare e non richiede altre librerie per fu
 
 - **Analisti e ricercatori di cryptovalute** : \
   *Un analista può conoscere lo storico e il numero di incidenti o attacchi ?* &Egrave; possibile ricostruire lo storico degli eventi. \
-  *Un analista può conoscere le dApp attive sulla blockchain ?* Non direttamente. \
+  *Un analista può conoscere le dApp attive sulla blockchain ?* No. \
   *Un analista può conoscere gli smart contracts attivi sulla blockchain ?* Sì. \
   *Un analista può conoscere strategic partnerships, collaborations, announcements ?* No. \
   *Un analista può interagire con soluzioni layer 2 ?* Sì. \
@@ -953,16 +947,17 @@ cat(team) # output the table in a format good for HTML/PDF/docx conversion
 -->
 
 Come affermato nell'introduzione, le diverse piattaforme sono pensate per utenze diverse. \
-Etherscan sembra essere la piattaforma più accessibile e facile da utilizzare. &Egrave; la più adatta per un utente che svolge attività sulla catena Ethereum. Nonostante non permetta di svolgere mining e staking direttamente essa può fornire risorse di ricerca utili per chi si occupa di staking oppure mining. Esso permette la creazione di filtri (può rendere più facile il monitoraggio). \
-Per uno sviluppatore la piattaforma non fornisce molto supporto, ci sono alternative più versatili. \
-Per un team il supporto offerto da Etherscan è adeguato. \
+Etherscan è la piattaforma più accessibile e facile da utilizzare. &Egrave; anche quella più ricca di informazioni riguardo l'ecosistema Ethereum. Permette attività di monitoraggio tramite la creazione di filtri. &Egrave; la più adatta ad un utente che svolge attività sulla catena Ethereum. Non permette di svolgere mining e staking direttamente, ma può fornire risorse utili ai minatori oppure ai stakers. \
+La piattaforma non fornisce molto supporto agli sviluppatori. Invece offre supporto adeguato ai team.\
 \
-Etherscan API invece risulta meno accessibile ad un utente senza competenze informatiche. Per gli utente individuale, i minatori e i team potrebbe preferire utilizzare Etherscan. Per chi sviluppa invece l'output in formato JSON può risultare molto utile per ottenere dati direttamente nella propria applicazione. \
+Etherscan API invece risulta meno accessibile ad un utente senza competenze informatiche. Si limita a fornire degli endpoint. Gli utenti individuali, i minatori e i team potrebbero preferire Etherscan. Per gli sviluppatori invece l'output in formato JSON può risultare molto utile per ottenere dati importabili direttamente nelle loro applicazioni.\
 \
-Su Dune sono disponibili informazioni su decine di catene, non solo quelle legate all'ecosistema Ethereum. Esso richiede competenze di SQL. Questa potrebbe essere una buona l'opzione per chi si occupa di analisi e ricerca, per chi fa mining e per i team. In particolare, la creazione di dashboard e di custom endpoints permette di monitorare parametri facilmente. La piattaforma che offre maggiore supporto all'attività di analisi risulta essere Dune Analytics. I dati disponibili sono di interesse anche per gli utenti individuali, ma richiede minime competenze di SQL. &Egrave; fornito supporto sotto forma dell'AI ed è possibile utilizzare le query create da altri utenti. \
+Su Dune sono disponibili informazioni su decine di catene, non solo quelle legate all'ecosistema Ethereum. Non richiede competenze di programmazione, ma richiede la capacità di scrivere query SQL. &Egrave; fornito supporto sotto forma di AI. Inoltre, è possibile utilizzare le query create da altri utenti.\
+Questa potrebbe essere una buona opzione per chi si occupa di analisi e ricerca, per chi fa mining e per i team. In particolare, la creazione di dashboard e di custom endpoints permette di monitorare parametri facilmente. I dati disponibili sono di interesse anche per gli utenti individuali.
 \
-C'è una grossa differenza nel supporto fornito da Web3 e quello fornito dalle altre piattaforme. La libreria Web3.py sembra essere più che sufficiente per chi programma dApp. Web3.py può essere utilizzato per scrivere programmi per il monitoraggio. Web3.py è l'unica piattaforma che permette di svolgere la transazione direttamente, ma si occupa solo di alcune catene. \
-Web3 può essere uno strumento molto potente per chi ha competenze avanzate di programmazione in tutti i gruppi. L'unico limite è che la libreria si occupa solo dell'ecosistema Ethereum.
+C'è una grossa differenza nel supporto fornito da Web3 e quello fornito dalle piattaforme. Web3 può essere uno strumento molto potente per chi ha competenze avanzate di programmazione in tutti i gruppi. Un limite è che si occupa solo dell'ecosistema Ethereum. \
+La libreria Web3.py sembra essere più che sufficiente per chi programma dApp. \
+Web3.py è l'unica piattaforma che permette di svolgere la transazione direttamente, ma si occupa solo di alcune catene.
 
 ### Risorse
 
@@ -991,9 +986,7 @@ Le funzionalità di interesse sono :
 3. **Gli strumenti per il download dei dati.**
 4. **Gli strumenti per rielaborare i dati.**
 5. **Gli strumenti che permettono l'interazione con gli smart contracts.**
-6. **Gli strumenti che permettono di visualizzare i dati dei singoli blocchi.**
-7. **Gli strumenti che permettono di visualizzare i dati dei token.**
-8. **L'accesso alle risorse esterne.**
+6. **L'accesso alle risorse esterne.**
 
 
 #### Etherscan
@@ -1013,23 +1006,26 @@ Etherscan fornisce accesso a quattro catene blockchain. Le catene sono: **Ethere
 - **eventi (log)** : Sì
 
 *Le informazioni disponibili a seguito di rielaborazione dei dati delle piattaforme.* \
-Etherscan crea delle classifiche dei token ERC-20 e di collezioni di NFT (*Top Token*, *Top NFT*). Etherscan propone delle valutazioni sui token ERC-20, chiamate reputazione. La pagina *Top Statistics* riassume i dati disponibili sulla piattaforma.
+Etherscan crea delle classifiche dei token ERC-20 e di collezioni di NFT (*Top Token*, *Top NFT*).\
+Etherscan propone delle valutazioni sui token ERC-20, chiamate reputazione.\
+La pagina *Top Statistics* fa delle statistiche sui dati disponibili sulla piattaforma.
 
 *Gli avvisi e le notifiche generati dalla piattaforma.* \
 Etherscan può inviare una notifica via email se avvengono trasferimenti di token utilizzando gli indirizzi associati all'account.
 
 *Gli strumenti per visualizzare i dati.* \
-Le pagine di Etherscan propongono i dati sotto forma di tabelle. Esistono i filtri che permettono di visualizzare solo le transazioni di interesse.
+Le pagine di Etherscan propongono i dati sotto forma di tabelle. Esistono i filtri che permettono di visualizzare solo le transazioni di interesse. \
+Ogni blocco della catena ha una pagina dedicata con informazioni dettagliate.\
+Ogni token ha una sua pagina dedicata con informazioni dettagliate. 
 
 *Gli strumenti per la ricerca dei dati.* \
 
 
 - la *barra di ricerca*, presente in ogni pagina. 
-- il *Code Reader*, che interpreta il codice degli smart contracts.
 - il *Similar Contract Search*, che permette di cercare smart contract con codice simile a quello di un contratto specifico.
 - il *Smart Contract Search*, che permette di cercare il codice sorgente di smart contract in base al contratto e all’indirizzo del deployer, la data di creazione, il numero del blocco e altro.
-- il *Account Balance Checker*, consultare lo storico del bilancio Ether oppure Token di un account.
-- il *Domain Name Lookup*, permette di cercare un indirizzo utilizzando il Domain Name Lookup.
+- il *Account Balance Checker*, che permette di consultare lo storico del bilancio Ether oppure Token di un account.
+- il *Domain Name Lookup*, che permette di cercare un indirizzo utilizzando il Domain Name Lookup.
   
 *Gli strumenti per il download dei dati.* \
 La pagina *CSV Export* permette di scaricare parte dei dati in formato csv. Inoltre, è possibile scaricare alcuni grafi in formato pdf.
@@ -1044,20 +1040,14 @@ La pagina *CSV Export* permette di scaricare parte dei dati in formato csv. Inol
 
 *Gli strumenti che permettono l'interazione con gli smart contracts.* \
 
-Data la pagina di un contratto o di un token è possibile interagire con il smart contract associato andando alle voci *Read Contract* e *Write Contract*. Queste due pagine permettono di eseguire le funzioni scritte nei contratti. Con le funzioni di *Read Contract* è possibile ottenere informazioni già presenti nel codice. Con *Write Contract* invece è possibile utilizzare le funzioni che richiedono il proprio wallet. \
+Data la pagina di un contratto o di un token è possibile interagire con il smart contract associato andando alle voci *Read Contract* e *Write Contract*. Queste due pagine permettono di eseguire le funzioni scritte nei contratti. Con le funzioni di *Read Contract* è possibile ottenere informazioni già presenti nel codice. Con *Write Contract* invece è possibile invocare le funzioni del contratto che richiedono l'utilizzo di un wallet. \
 *Verify Contracts* permette di verificare e pubblicare codice sorgente di un smart contract. 
-
-*Gli strumenti che permettono di visualizzare i dati dei singoli blocchi.* \
-Ogni blocco della catena ha una pagina dedicata con informazioni dettagliate. 
-  
-*Gli strumenti che permettono di visualizzare i dati dei token.* \ 
-Ogni token ha una sua pagina dedicata con informazioni dettagliate. 
 
 *L'accesso alle risorse esterne.* \
 Etherscan raccoglie e organizza numerosi link che puntano a supporto esterno sotto la voce *Directory*. Queste voci sono *Exchanges*, *Wallet*, *Listing and Prices*, *News and Forums*, *Events*, *Learning Resources*, *Smart Contracts*, *Mining*, *Others*.
 
 
-Come visto prima, Etherscan fornisce una vasta gamma di strumenti per rielaborare i dati. Complessivamente, questi strumenti sono facili da utilizzare. 
+Come visto prima, Etherscan fornisce una vasta gamma di strumenti per visualizzare e rielaborare i dati. Complessivamente, questi strumenti sono facili da utilizzare. 
 
 
 #### Etherscan API
@@ -1083,19 +1073,21 @@ Etherscan API non rielabora i dati.
 Etherscan API non genera notifiche.
 
 *Gli strumenti per visualizzare i dati.* \
-Gli output delle chiamate sono solo in formato testuale.
+Gli output delle chiamate sono solo in formato testuale.\
+L'Endpoint *Blocks* permette di ottenere informazioni riguardo i singoli blocchi.\
+L'Endpoint *Tokens* permette di ottenere informazioni riguardo i singoli token.
 
 *Gli strumenti per la ricerca dei dati.* \
-Etherscan API permette l'utilizzo di endpoint.
+La ricerca avviene attraverso gli endpoint.
 
 *Gli strumenti per il download dei dati.* \
-Non direttamente: è possibile scaricare i dati in formato JSON scrivendo del proprio codice. 
+Non disponibili.&Egrave; necessario scrivere del codice per fare il download dei dati in formato JSON.
 
 *Gli strumenti per rielaborare i dati.* \
 Etherscan API non mette a disposizione strumenti di questo tipo.
   
 *Gli strumenti che permettono l'interazione con gli smart contracts.* \
-Etherscan API permette di eseguire controlli e verifiche sui contratti:
+Etherscan API permette di eseguire controlli e verifiche sui contratti. In particolare, permette di :
 
 
 - verificare un contratto scritto in Solidity oppure Vyper.
@@ -1103,16 +1095,10 @@ Etherscan API permette di eseguire controlli e verifiche sui contratti:
 - verificare un Proxy Contract utilizzando cURL.
 - controllare lo stato di una richiesta di verifica di un Proxy Contract utilizzando cURL.
 
-*Gli strumenti che permettono di visualizzare i dati dei singoli blocchi.* \
-L'Endpoint *Blocks* permette di ottenere informazioni riguardo i singoli blocchi.
-
-*Gli strumenti che permettono di visualizzare i dati dei token.* \
-L'Endpoint *Tokens* permette di ottenere informazioni riguardo i singoli token.
-
 *L'accesso alle risorse esterne.*\
-Etherscan API non offre diretto accesso a risorse esterne.
+Etherscan API non offre accesso diretto a risorse esterne.
 
-[CONSIDERAZIONI FINALI]
+Etherscan API si limita a fornire dei endpoint da cui scaricare dati aggiornati. I dati disponibili sono gli stessi di Etherscan. Per ottenerli sono però necessarie competenze di programmazione.
 
 #### Dune
 
@@ -1133,9 +1119,9 @@ Dune Analytics raccoglie i dati di 82 catene. L'elenco dettagliato è in appendi
 *Le informazioni disponibili a seguito di rielaborazione dei dati delle piattaforme.*
 
 
-- la pagina *Metrics* propone dati riguardanti le transazioni e i consumi sulle blockchain documentate da Dune Analytics
+- la pagina *Metrics* propone dati riguardanti le transazioni e i consumi sulle blockchain
 - la pagina *Dune Index* propone un grafo rappresentante l'adozione della blockchain nel tempo
-- la pagina *Transaction fees* propone un grafo rappresentante i USD spesi in gas
+- la pagina *Transaction fees* propone un grafo rappresentante gli USD spesi in gas
 - la pagina *Transfer Volume* propone un grafo rappresentante gli USD trasferiti su blockchian 
 
 *Gli avvisi e le notifiche generati dalla piattaforma.* \
@@ -1158,11 +1144,12 @@ Gli output delle query sono visualizzabili come tabelle oppure grafi. Gli output
 Oltre a creare grafi, non è possibile rielaborare gli output delle query direttamente sulla piattaforma.
 
 *Gli strumenti che permettono l'interazione con gli smart contracts.* No.\
-*Gli strumenti che permettono di visualizzare i dati dei singoli blocchi.* Sì. \
-*Gli strumenti che permettono di visualizzare i dati dei token.* Sì.\
   
-*L'accesso alle risorse esterne.* \
-[...]
+*L'accesso alle risorse esterne.* Sì. \
+
+Dune fornisce dati completi e aggiornati riguardanti numerose catene. Richiede conoscenze di SQL.
+
+<!-- DA QUA -->
 
 #### Web3.py 
 
@@ -1196,8 +1183,6 @@ Non direttamente, tutti gli output funzioni si possono scaricare.
 
 **Gli strumenti per rielaborare i dati.** Sì. \
 **Gli strumenti che permettono l'interazione con gli smart contracts.** Sì. \
-**Gli strumenti che permettono di visualizzare i dati dei singoli blocchi.** Sì.\
-**Gli strumenti che permettono di visualizzare i dati dei token.** Sì.\
 
 **L'accesso alle risorse esterne. **\
 Web3.py non fornisce link a risorse esterne.
@@ -1209,41 +1194,16 @@ Infura mette a disposizione servizi backend. Permette di collegarsi con diverse 
 
 #### Confronto
 
+Tutti i metodi forniscono dati completi e aggiornati. Ci sono alcune differenze tra le risorse e gli strumenti messi a disposizione.
 
-- Tutte le piattaforme offrono dati aggiornati. Ogni piattaforma ha accesso ha catene diverse.
-- Gli strumenti disponibili cambiano in base alla piattaforma. 
-- La precisione dei dati cambia in base alla piattaforma.
-- Etherscan fornisce feedback sui dati, le altre piattaforme no
-- Etherscan API interagisce con più catene rispetto a Etherscan
-- Dune interagisce molte catene
-- Web3.py è un po' limitato
-- Etherscan e Dune permetto di rielaborare i dati, le altre piattaforme no
-- Dune non permette di scaricare i dati senza pagare, le altre piattaoforme sì
+Oltre a fornire i dati, Etherscan li interpreta per renderli più comprensibili agli utenti. Esistono strumenti di ricerca per navigare le risorse messe a disposizione sulla piattaforma. Inoltre sono forniti molti strumenti riguardano gli smart contract. L'unico limite è che Etherscan si occupa solo di quattro catene.
 
-1. **Le catene blockchain a cui la piattaforma da accesso.** -> cambia con ogni piattaforma
-2. **Le informazioni disponibili**, riguardanti: tutti
-  - transazioni
-  - indirizzi
-  - blocchi
-  - token
-  - smart contracts
-  - gas
-  - eventi (log)
-3. **Le informazioni disponibili a seguito di rielaborazione dei dati delle piattaforme.** -> Etherscan e Dune rielaborano mentre API e Web3 no 
-4. **Gli avvisi e le notifiche generati dalla piattaforma.** tutti, tranne API
+Etherscan API invece non rielabora i dati in nessun modo: l'interpretazione è affidata interamente agli utenti.
+Sono forniti gli endpoint da cui scaricare i dati, e non ci sono strumenti di rielaborazione.
 
-Le funzionalità di interesse sono :
+Dune propone alcune interpretazioni dei dati [PAGINE DEDICATE ?]. Complessivamente, Dune dedica meno attenzione agli smart contracts rispetto a Etherscan. Sono forniti strumenti di ricerca per naviagre le risorse messe a disposizione. Sono forniti strumenti per visualizzare i dati in modi più comprensibili. A differenza di Etherscan, Etherscan API e Web3.py Dune si occupa anche di catene al di fuori dell'universo Ethereum. 
 
-
-1. **Gli strumenti per visualizzare i dati.** : 
-2. **Gli strumenti per la ricerca dei dati.**
-3. **Gli strumenti per il download dei dati.**
-4. **Gli strumenti per rielaborare i dati.**
-5. **Gli strumenti che permettono l'interazione con gli smart contracts.**
-6. **Gli strumenti che permettono di visualizzare i dati dei singoli blocchi.**
-7. **Gli strumenti che permettono di visualizzare i dati dei token.**
-8. **L'accesso alle risorse esterne.**
-
+La libreria Web3.py riguarda solo la catena Ethereum. Ha una funzionalità molto potenente, ma la rielaborazione, visualizzazione e interpretazione dei dati è interamente affidata agli utenti. 
 
 
 ### Costo
@@ -1300,31 +1260,11 @@ Ci sono differenze in termini di risorse e funzionalità messe a disposizione. P
 
 #### Confronto
 
-Si confrontano le offerte disponibili con Etherscan, Dune Analytics e Infura. \
-
-##### Versioni gratuite
-
-Le tre piattaforme (Etherscan, Dune Analytics, Infura) propongono un piano gratuito per i loro utenti. Questi piani si sono dimostrati sufficienti per implementare il caso di studio. \
-Le funzionalità di Etherscan (API) e Infura disponibili gratuitamente sono molto estese. Con Dune invece non poter scaricare i dati può essere molto limitante. \
-
-
-```{r table8, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
-
-free_vers <- "
-| Piattaforma | Numero di Chiamate | Credit | Community Support | Storage | Numero di chiavi |
-|--------------:|-------------------:|------------:|------------------:|-----------:|---------------:|
-| Etherscan API | 100000 | - | Y | 0 | 3 |
-| Dune | 250 | 2500 | non specificato | 100 MB | illimitate |
-| Infura | 11764 | 3000000 | non specificato | 0 | 1 |
-"
-cat(free_vers)
-
-```
-
-Etherscan offre il numero più elevato di chiamate. Dune è l'unica piattaforma che offre storage e permette di generare un numero illimitato di chiavi.\
-Dune e Infura non forniscono direttamente il numero di chiamate, perchè il numero di crediti dipende da cosa viene invocato. \
-In particolare, con Dune: 
-
+Si confrontano le offerte disponibili con Etherscan, Dune Analytics e Infura. Dato che le tre piattaforme contano il numero di chiamate in modo differente, sono state fatte alcune approssimazioni. \
+Etherscan fornisce direttamente il numero di chiamate. Questo è stato utilizzato per l'analisi.\
+Dune e Infura invece forniscono un numero di crediti: questi crediti sono consumati effettuando chiamate. Diverse chiamate hanno costi diversi. \
+Per Dune il costo default di una esecuzione programmata di una query è fissato a 10 crediti. Questo è stato scelto come approssimazione del costo di una chiamata.
+<!--
 ```{r table9, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
 
 dune_free <- "
@@ -1338,16 +1278,36 @@ dune_free <- "
 cat(dune_free)
 
 ```
+-->
 
-Riguardo Infura, la pagina specifica il costo in crediti per quattro funzioni :
+
+Sulla sua pagina, Infura specifica i costi in crediti per quattro funzioni :
 
 
-- eth_chainId: 5 credits
-- eth_call: 80 credits
-- eth_sendRawTransaction: 720 credits
-- eth_getLogs: 255 credits
+- eth_chainId: 5 crediti
+- eth_call: 80 crediti
+- eth_sendRawTransaction: 720 crediti
+- eth_getLogs: 255 crediti
 
-Il costo di Dune è stato approssimato come 10 crediti per chiamata, il costo di Infura è stato approssimato come 255 crediti a chiamata.
+Il costo di una chiamata è stato approssimato a quello di una eth_call.
+
+##### Versioni gratuite
+
+```{r table8, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+
+free_vers <- "
+| Piattaforma | Numero di Chiamate | Credit | Community Support | Storage | Numero di chiavi |
+|--------------:|-------------------:|------------:|------------------:|-----------:|---------------:|
+| Etherscan API | 100000 | - | Y | 0 | 3 |
+| Dune | 250 | 2500 | non specificato | 100 MB | illimitate |
+| Infura | 37500 | 3000000 | non specificato | 0 | 1 |
+"
+cat(free_vers)
+
+```
+
+Le tre piattaforme (Etherscan, Dune Analytics, Infura) propongono un piano gratuito per i loro utenti. Questi piani si sono dimostrati sufficienti per implementare il caso di studio. \
+Etherscan offre il numero più elevato di chiamate. Dune è l'unica piattaforma che offre storage e permette di generare un numero illimitato di chiavi. Con questa versione nonè possibile scaricare i dati da Dune.
 
 ##### Paid Tier più basso
 
@@ -1358,15 +1318,15 @@ paid1_vers <- "
 |--------------:|------:|------------------:|------------:|------------------:|-----------:|---------------:|
 | Etherscan API | 199 | 200000 | - | Community Escalated Pro endpoints | 0 | 3 |
 | Dune | 45 | 400 | 4000 | not specified | 1 GB | unlimited |
-| Infura | 50 | 58823 | 15 millioni  | not specified | 0 | 5 |
+| Infura | 50 | 187500 | 15 millioni  | not specified | 0 | 5 |
 "
 cat(paid1_vers)
 
 ```
 
-Etherscan è l'opzione più costosa e fornisce il numero di chiamate più elevato ma il numero di chaivi più basso.
-Etherscan offre supporto.
-Dune offre memoria.
+Etherscan è l'opzione più costosa, seguita da Infura e infine Dune.\
+Etherscan fornisce il numero di chiamate più elevato ma il numero di chaivi più basso. L'insieme dei endpoint raggiungibili è ampliato. 
+Dune resta l'unica piattaforma ad offrire spazio di archiviazione e un numero illimitato di chiavi. 
 
 ##### Paid Tier secondo
 
@@ -1377,14 +1337,15 @@ paid2_vers <- "
 |--------------:|------:|------------------:|------------:|------------------:|-----------:|---------------:|
 | Etherscan API | 299 | 500000 | - | Pro endpoints Community support Escalated support | 0 | 3 |
 | Dune | 349 | 2500 | 25000 | - | 15 GB download csv | unlimited |
-| Infura | 225 | 294117 | 75 milion  | non specificato  | 0 | unlimited |
+| Infura | 225 | 937500 | 75 milion  | non specificato  | 0 | unlimited |
 "
 cat(paid2_vers)
 
 ```
 
-Etherscan resta l'unica piattaforma che non offre un numero illimitato di chiavi.
-Dune ha il costo più elevato.
+Dune è l'opzione più costosa, seguita da Etherscan e infine Infura.
+Sia Dune che Infura offrono un numero illimitato di chiavi.
+Dune resta l'unica piattaforma ad offrire spazio di archiviazione e un numero illimitato di chiavi, ma ha il numero di chiamate più basso. 
 
 ##### Paid Tier terzo
 
@@ -1402,9 +1363,9 @@ cat(paid3_vers)
 
 ```
 
-Dune ha un costo molto più elevato delle altre opzioni. Unico tier che permette di scaricare i dati.
-Etherscan offre un numero più elevato di chiamate.
-Infura è l'unica permette di specificare costo custom.
+Dune ha un costo molto più elevato delle altre opzioni. Questa è l'unica versione di Dune che permette di scaricare i dati. Dune è ancora l'unica piattaforma ad offrire spazio di archiviazione.
+Etherscan offre il numero più elevato di chiamate delle tre, ma solo tre chiavi API.
+Infura non specifica un prezzo: il piano tariffario e il numero di chiamate vengono stabiliti in modo customizzato.
 
 
 ### Caso di studio
@@ -2080,18 +2041,26 @@ Le transazioni già viste con Etherscan sono state confermate ma, dato che Web3.
 
 #### Considerazioni finali
 
-- Le diverse piattaforme hanno permesso di ottenere risultati diversi
-- Per un analisi più completa potrebbe essere di interesse combinare i risultati di Etherscan e Dune
-- Web3 di minore interesse
-- Etherscan preferibile ad Etherscan API
+Etherscan propone informazioni complete riguardo i trasferimenti e i wallet. I prezzi delle valute sono riportati con precisione giornaliera. Questa è risultata troppo grossolana per il caso di studio. Non è stato possibile verificare tutti gli eventi di interesse.
+
+Etherscan sembra preferibile ad Etherscan API, dato che propone gli stessi dati, informazioni aggiuntive, ed è più facile da utilizzare.
+
+La piattaforma Dune risulta avvantaggiata perché si occupa anche di ecosistemi non Ethereum. I dati raccolti hanno una precisione più elevata rispetto ad Etherscan. Mancano però i dati del market cap, che la piattaforma sceglie di escludere. Non è stato possibile consultare il white paper della valuta di interesse.
+
+Con Web3.py sono state verificate meno informazioni rispetto ad altre piattaforme. &Egrave; lo strumento meno adatto al caso di studio.
+
+Per uno studio completo potrebbe essere di interesse combinare i risultati di più piattaforme, come Etherscan e Dune
 
 ## Conclusioni
 
-Sono strumenti molto diversi tra loro.
+In questo progetto sono stati studiati quattro strumenti per interagire con le blockchain. Ongi strumento rappresenta un approcio differente: Etherscan rappresenta i Blockchain Explorer, Etherscan API rappresenta le Blockchain API, Dune Analytics rappresenta le piattaforme SQL, Web3.py rappresenta le librerie Web3. \
 
-Confrontati in base a usabilità, risorse, costi e utenza.
+Queste piattaforme sono state descritte una ad una. Esse sono state valutate in base a usabilità, risorse disponibili, e costi. Per ogni parametro di valutazione le piattaforme sono state confrontate. \
+Infine le piattaforme sono state applicate ad un piano di studio.
 
-Proposto un esempio pratico.
+
+Complessivamente, quello che emerge è che Etherscan e Dune sono i metodi più accessibili agli utenti, mentre Web3 e Etherscan API sono pensati per un utilizzo più orientato alla programmazione.
+
 
 ## Appendice
 
