@@ -1414,7 +1414,7 @@ Si prova a ricostruire in parte il crollo del sistema Terra-Luna. La sequenza di
 
 12 Maggio 2022 : LUNA crolla del 99%.\
 
-Il 27 Maggio 2022 il token LUNA è diventato il token Luna Classic (LUNC) e la stablecoin UST è diventata  TerraClassicUSD (USTC). \
+Il 27 Maggio 2022 il token LUNA diventa il token Luna Classic (LUNC) e la stablecoin UST diventa Terra Classic USD (USTC). \
 Come accennato, vogliamo ricostruire questi eventi cercando informazioni utilizzando le piattaforme viste. In particolare vogliamo individuare i trasferimenti USTC anomali avvenuti il 3 e il 19 Aprile, l'andamento del peg di USTC e LUNC nel periodo di Aprile e Maggio 2022, il valore del market cap in questo periodo, e informazioni riguardo le attività del Luna Foundation Guard.\
 LUNC e USTC hanno una loro blockchain dedicata chiamata Terra Classic. Per questo progetto si studiano le versioni Wrapped delle due cryptovalute sulla blockchain Ethereum. Wrapped LUNC è una versione tokenizzata di LUNC su blockchain Ethereum, che permette di scambiare e usare LUNC sul ecosistema Ethereum  via smart contract. Wrapped USTC  è una versione tokenizzata di USTC su blockchain Ethereum, che permette di usare USTC in applicazioni DeFi basate su Ethereum.
 
@@ -1559,7 +1559,7 @@ date_interest
 <!-- Etherscan -->
 ##### Informazioni riguardo il market cap
 
-Etherscan mette a disposizione il market cap attuale sia di USTC che di LUNC. Il market cap di una cryptovaluta è il valore totale di tutte le monete in circolazione. Si calcola come prezzo attuale x offerta circolante. Non è possibile visualizzare lo storico del market cap di queste cryptovalute. L'unico storico che mette a disposizione è quello di Ether. Quindi non è stato possibile verificare l'evento del 20 Aprile 2022. \
+Etherscan mette a disposizione il market cap corrente sia di USTC che di LUNC. Il market cap di una cryptovaluta è il valore totale di tutte le monete in circolazione. Si calcola come prezzo attuale x offerta circolante. Non è possibile visualizzare lo storico del market cap di queste cryptovalute. L'unico storico che Etherscan mette a disposizione è quello di Ether. Quindi non è stato possibile verificare l'evento del 20 Aprile 2022. \
 
 ![](images\Etherscan_USTC_stablecoin.png){height=60%, width=60%}
 ![](images\Etherscan_LUNC_market_cap.png){height=60%, width=60%}
@@ -1592,7 +1592,7 @@ Etherscan però mette a disposizione i closing prices con precisione giornaliera
 <!-- Etherscan -->
 ##### Luna Foundation Guard
 
-Su Etherscan attualmente (15 Feb 2025) esiste un address che ha come nome pubblico Luna Foundation Guard Reserve Wallet. Il periodo di attività di questo portafoglio va dal Gennaio 2022 fino al Luglio 2023. I dati delle sue attività sono resi disponibili in dettaglio e sono scaricabili su csv. \
+Su Etherscan attualmente (15/02/2025) esiste un indirizzo che ha come nome pubblico Luna Foundation Guard Reserve Wallet. Il periodo di attività di questo portafoglio va dal Gennaio 2022 fino al Luglio 2023. I dati delle sue attività sono resi disponibili in dettaglio e sono scaricabili in formato csv. \
 Questi dati riguardano solo le attività sulla blockchain Ethereum. Di conseguenza, non è stato possibile verificare l'evento di vendite del 10 Maggio. \
 
 ![](images\Etherscan_LunaFoundationGuardReserveWallet.png){height=60%, width=60%}
@@ -1607,7 +1607,7 @@ I dati di interesse riguardanti i trasferimenti sono contenuti nei log. &Egrave;
 Le query formulate per questi dati hanno nove campi: \
  - **module** specifica l'API endpoint. In questo caso si tratta dei log.\
  - **action** specifica il tipo di operazione. La action getLogs restituisce i log riguardanti l'indirizzo nel campo address. \
- - **address** specifica l'indirizzo di cui cercare i log. &Egrave; di tipo stringa. Nel progetto a questo campo è stata assegnata la hash di USTC. Questa è stata ottenuta da Etherscan.\
+ - **address** specifica l'indirizzo presso cui cercare i log. &Egrave; di tipo stringa. Nel progetto a questo campo è stata assegnata la hash di USTC. Questa è stata ottenuta da Etherscan.\
  - **fromBlock** specifica il block number da cui cominciare a cercare i log. &Egrave; di tipo intero. Questo valore è stato scelto uguale a quello visto con Etherscan. \
  - **toBlock** specifica il block number a cui fermarsi. &Egrave; di tipo intero. Questo valore è stato scelto uguale a quello visto con Etherscan. \
  - **topic0** specifica il topic di interesse. &Egrave; possibile specificare più topic e combinarli tra loro. &Egrave; stato assegnato il valore della hash del contratto ERC-20. \
@@ -1700,7 +1700,7 @@ ggplot(ethAPI_ustc_April19, aes(x=index, y=value_set)) +
 Come si può vedere, i risultati ottenuti sono in accordo con quanto visto con Etherscan.\
 
 <!-- Etherscan API -->
-##### Informazioni riguardo i prezzi di USTC e di LUNC
+##### Informazioni riguardanti i prezzi di USTC e di LUNC
 
 &Egrave; possibile visualizzare gli stessi grafi visti con Etherscan. I dati proposti nel grafo restano non direttamente scaricabili. \
 Etherscan e Etherscan API propogono dei link alle piattaforme Coingecko e Coinbase dove è possibile trovare ulteriori informazioni. Coinbase è una società di scambio di beni digitali. Coingecko è una piattaforma che aggrega dati riguardanti le cryptovalute. \
@@ -1846,7 +1846,7 @@ internal_transactions = "https://api.etherscan.io/api
 ##### Informazioni riguardo i trasferimenti
 
 Per ottenere le informazioni riguardo i trasferimenti è stata utilizzata la tabella ethereum.logs. 
-Sono cercati i log di Ethereum in cui la data del giorno corrisponde a quella di interesse, il hash del contratto corrisponde a quello di USTC, topic0 è pari al hash di ERC-20 e i valori trasferiti sono diversi da zero. \ 
+Sono stati cercati i log di Ethereum in cui la data del giorno corrisponde a quella di interesse, il hash del contratto corrisponde a quello di USTC, topic0 è pari al hash di ERC-20 e i valori trasferiti sono diversi da zero. \ 
 Per la visualizzazione dei valori trasferiti questi sono stati convertiti da tipo varbinary a tipo decimale. \
 
 ```{sql, eval = FALSE}
@@ -1894,7 +1894,7 @@ Non è stato possibile consultare il Terra whitepaper direttamente su Dune.
 <!-- DUNE -->
 ##### Pressione di vendita
 
-Dato che la precisione dei closing prices è più elevata è possibile verificare i dati riportati nell'articolo *Anatomy of a Stablecoin's failure: the Terra-Luna Case*.
+Dato che la precisione dei closing prices è più elevata rispetto ad Etherscan è possibile verificare i dati riportati nell'articolo *Anatomy of a Stablecoin's failure: the Terra-Luna Case*.
 Nell'articolo sono indicati alcuni eventi specifici di interesse: 05 May 2022 12:00, 07 May 2022 22:00, 09 May 2022 14:00, 11 May 2022 10:00. \
 Si riportano i closing prices di quei momenti. \
 
@@ -1922,7 +1922,7 @@ Quindi è stata creata una query SQL su Dune che cerca nelle tabelle dedicate al
 <!-- WEB3 -->
 ##### Informazioni riguardo i trasferimenti
 
-L'utilizzo delle librerie Web3.py è simile a Etherscan API. Una differenza è che è stato necessario consultare sia i logs che i blocchi. Infatti i log forniti sono sprovvisti di timestamp. Quindi sono stati consultati i blocchi in modo da ottenere i timestamps corrispondenti. \
+L'utilizzo delle librerie Web3.py è simile a Etherscan API. In questo caso è stato necessario consultare sia i logs che i blocchi. Infatti i log forniti sono sprovvisti di timestamp. Quindi sono stati consultati i blocchi in modo da ottenere i timestamps corrispondenti. \
 Per svolgere qualsiasi operazione è necessario collegarsi al provider Infura: \
 
     web3 = Web3(Web3.HTTPProvider('https://mainnet.infura.io/v3/< KEY >'))
@@ -1943,7 +1943,7 @@ Per ottenere i timestamp delle operazioni sono stati consultati i blocchi ottenu
     timestamp = block['timestamp']
 
 
-I risultati ottenuti in questo modo sono stati salvati in file JSON che poi sono stati convertiti a file csv. Su R sono state assegnate le corrispondenze tra le timestamps e le operazioni di trasferimento, e sono stati creati i grafi dei trasferimenti. 
+I risultati ottenuti in questo modo sono stati salvati in file JSON che poi sono stati convertiti in formato csv. Su R sono state assegnate le corrispondenze tra le timestamps e le operazioni di trasferimento, e sono stati creati i grafi dei trasferimenti. 
 
 ```{r get_timestamp, echo = FALSE, results='hide'}
 
@@ -2042,7 +2042,7 @@ Queste informazioni non sono direttamente disponibili sulla blockchain. \
 
 Web3.py fornisce delle funzioni per ottenere informazioni riguardanti un wallet. \
 &Egrave; possibile utilizzare la funzione get_transactions_count per ottenere il numero di transazioni per un wallet specifico. \
-E&grave; possibile utilizzare la funzione get_balance per ottenere il bilancio di un wallet specifico. \
+&Egrave; possibile utilizzare la funzione get_balance per ottenere il bilancio di un wallet specifico. \
 Per ottenere le singole transazioni che coinvolgono un wallet non esiste una funzione che estrae direttamente tutte le transazioni: bisogna esaminare i blocchi della catena uno ad uno. \
 Le transazioni già viste con Etherscan sono state confermate ma, dato che Web3.py non permette di visitare la catena Bitcoin, non è stato possibile confermare la vendita del 10 Maggio 2022.
 
@@ -2052,11 +2052,11 @@ Etherscan propone informazioni complete riguardo i trasferimenti e i wallet. I p
 
 Etherscan sembra preferibile ad Etherscan API, dato che propone gli stessi dati, informazioni aggiuntive, ed è più facile da utilizzare.
 
-La piattaforma Dune risulta avvantaggiata perché si occupa anche di ecosistemi non Ethereum. I dati raccolti hanno una precisione più elevata rispetto ad Etherscan. Mancano però i dati del market cap, che la piattaforma sceglie di escludere. Non è stato possibile consultare il white paper della valuta di interesse.
+La piattaforma Dune offre il vantaggio che si occupa anche di ecosistemi non Ethereum. I dati raccolti hanno una precisione più elevata rispetto ad Etherscan. Mancano però i dati del market cap, che la piattaforma sceglie di escludere. Non è stato possibile consultare il white paper della valuta di interesse.
 
-Con Web3.py sono state verificate meno informazioni rispetto ad altre piattaforme. &Egrave; lo strumento meno adatto al caso di studio.
+Con Web3.py sono state verificate meno informazioni rispetto ad altre piattaforme. Si è dimostrato lo strumento meno adatto al caso di studio.
 
-Per uno studio completo potrebbe essere di interesse combinare i risultati di più piattaforme, come Etherscan e Dune
+Per uno studio completo quindi risulta convienente combinare i risultati di più piattaforme, come Etherscan e Dune.
 
 ## Conclusioni
 
