@@ -569,12 +569,12 @@ Le euristiche di Nielsen nascono per valutare la progettazione e l'implementazio
 Le dieci euristiche per il design delle interfaccie utente sono [@nngroup]: \
 
 
-1. **Visibilità dello stato del sistema**: si valuta se il sistema comunica chiaramente all'utente qual'è il suo stato, e se il feedback arriva all'utente nel minor tempo possibile. \
-2. **Corrispondenza tra il sistema e il mondo reale**: si valuta se il sistema utilizza un linguaggio familiare agli utenti. \
-3. **Libertà e controllo dell'utente**: si valuta se il sistema permette agli utenti di fare passi indietro in caso di errori. \
+1. **Visibilità dello stato del sistema**: si valuta se il sistema comunica chiaramente all'utente qual'è il suo stato, e se il feedback arriva all'utente nel minor tempo possibile.
+2. **Corrispondenza tra il sistema e il mondo reale**: si valuta se il sistema utilizza un linguaggio familiare agli utenti.
+3. **Libertà e controllo dell'utente**: si valuta se il sistema permette agli utenti di fare passi indietro in caso di errori.
 4. **Standard e consistenza**: si valuta se il sistema segue convenzioni ed è consistente
-5. **Prevenzione degli errori**: si valuta se il sistema ha delle misure per prevenire errori. \
-6. **Riconoscimento piuttosto che richiamo**: si valuta se il sistema aiuta a ridurre il carico cognitivo dell'utente. \
+5. **Prevenzione degli errori**: si valuta se il sistema ha delle misure per prevenire errori.
+6. **Riconoscimento piuttosto che richiamo**: si valuta se il sistema aiuta a ridurre il carico cognitivo dell'utente.
 7. **Flessibilità e efficienza d'uso**: si valuta se il sistema ha delle scorciatoie.
 8. **Estetica e design minimalistico**: si valuta se l'interfaccia contiene informazioni irrilevanti.
 9. **Aiuta gli utenti a riconoscere, diagnosticare e gestire gli errori**
@@ -1151,7 +1151,6 @@ Oltre a creare grafi, non è possibile rielaborare gli output delle query dirett
 
 Dune fornisce dati completi e aggiornati riguardanti numerose catene. Richiede conoscenze di SQL.
 
-<!-- DA QUA -->
 
 #### Web3.py 
 
@@ -1231,7 +1230,7 @@ Complessivamente, Etherscan è un'ottima piattaforma limitatamente all'universo 
 #### Etherscan API
 
 
-Etherscan offre cinque piani tariffari (aggiornato al 5 Marzo 2025). Quello che cambia in base al piano riguarda principalmente il numero di chiamate API, a quali endpoint è possibile accedere, e il tipo di supporto a cui si può accedere.
+Etherscan offre cinque piani tariffari (aggiornato al 05/03/2025). Quello che cambia in base al piano riguarda principalmente il numero di chiamate API, a quali endpoint è possibile accedere, e il tipo di supporto a cui si può accedere.
 
 ![](images\Etherscan_plan.png){height=70%, width=70%}
 
@@ -1241,20 +1240,17 @@ Esiste un set di API endpoints sempre disponibile. Questo viene esteso con ulter
 
 #### Dune
 
-Dune offre quattro piani tariffari (aggiornato al 5 Marzo 2025), che riguardano l'API: \
+Dune offre quattro piani tariffari (aggiornato al 05/03/2025), che riguardano l'API: \
 
 ![](images\Dune_plan.png){height=70%, width=70%}
 
-Come si può vedere, ci sono differenze significative tra le risorse, la quantità di risorse e i servizi messi a disposizione da ogni piano. \
+Come si può vedere, ci sono differenze significative tra le risorse, la quantità di risorse e i servizi messi a disposizione da ogni piano.
 
 Esistono quattro piani. Sono sempre disponibili crediti, memoria e un certo numero di datapoints per credito. Per datapoints si intende il numero di righe nelle tabelle di output.
 Il piano *Analyst* incrementa il numero di crediti, la memoria disponibile e aggiunge il Query Management Endpoints.
-[ cerca ]
+Questi ultimi sono dei endpoint che permettono di creare e gestire le query SQL in modo programmato tramite un endpoint API.
 Il piano *Plus* aggiunge un query engine più grande e permette di scaricare i dati in formato csv.
-
-Il piano *Premium* aggiunge le private query views, private materialized views, private data uploads.
-[ cerca ]
-
+Il piano *Premium* aggiunge la possibilità di accedere alle query private, ai materialized views privati e ai dati privati di altri utenti. I materialized views sono delle tabelle consultabili tramite query create con gli output di altre query.
 
 #### Infura
 
@@ -2060,13 +2056,14 @@ Per uno studio completo quindi risulta convienente combinare i risultati di più
 
 ## Conclusioni
 
-In questo progetto sono stati studiati quattro strumenti per interagire con le blockchain. Ongi strumento rappresenta un approcio differente: Etherscan rappresenta i Blockchain Explorer, Etherscan API rappresenta le Blockchain API, Dune Analytics rappresenta le piattaforme SQL, Web3.py rappresenta le librerie Web3. \
+In questo progetto sono stati studiati quattro strumenti per interagire con le blockchain. Ogni strumento rappresenta un approcio differente: Etherscan rappresenta i Blockchain Explorer, Etherscan API rappresenta le Blockchain API, Dune Analytics rappresenta le piattaforme SQL, Web3.py rappresenta le librerie Web3. \
 
 Queste piattaforme sono state descritte una ad una. Esse sono state valutate in base a usabilità, risorse disponibili, e costi. Per ogni parametro di valutazione le piattaforme sono state confrontate. \
 Infine le piattaforme sono state applicate ad un piano di studio.
 
-
 Complessivamente, quello che emerge è che Etherscan e Dune sono i metodi più accessibili agli utenti, mentre Web3 e Etherscan API sono pensati per un utilizzo più orientato alla programmazione.
+
+Usando gli strumenti separatamente è stato possibile ricostruire solo parte degli eventi legati al crollo del sistema Terra-Luna. Per ottenere un quadro completo che comprende tutti gli eventi sarebbe necessario combinare i risultati di più piattaforme. Questo permette di compensare le lacune delle singole piattaforme.
 
 
 ## Appendice
