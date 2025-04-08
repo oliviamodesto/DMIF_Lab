@@ -77,22 +77,22 @@ Il link *View Blocks* porta ad una pagina in cui sono elencati tutti i blocchi d
 Il link *Forked Blocks* porta ad una pagina in cui sono elencati tutti i forked blocks. Su Ethereum, nel momento in cui è necessario cambiare le regole possono essere creati dei split temporanei nella network. I nuovi blocchi possono essere generati utilizzando le nuove oppure le vecchie regole. Questi split possono essere temporanei o permanenti [@fork]. Questo elenco esclude i blocchi forked a causa di "Chain Reorganization" [@stackexchange2]. \
 Il link *Uncles* porta ad una pagina in cui sono elencati tutti i blocchi detti *Uncles*. Questi sono blocchi validi che non sono parte della principale catena di Ethereum perché sono stati sottoposti troppo tardi [@stackexchange2]. \
 Il link *Top Accounts* propone un classifica degli account ordinati in base al proprio bilancio in ETH. \
-Il link *Verified Contracts* propone l'elenco dei smart contracts verificati. Su Ethereum esistono due forme di verifica: la source code verification e la formal verification. La source code verification verifica se il code sorgente di uno smart contract produce lo stesso bytecode prensente all'indirizzo del smart contract. La formal verification verifica la correttezza dello smart contract, ovvero se il contratto si comporta come previsto. In questo caso per verifica si intende la source code verification [@smartcontracts]. \
+Il link *Verified Contracts* propone l'elenco dei smart contracts verificati. Su Ethereum esistono due forme di verifica: la source code verification e la formal verification. La source code verification verifica se il codice sorgente di uno smart contract produce lo stesso bytecode prensente all'indirizzo del smart contract. La formal verification verifica la correttezza dello smart contract, ovvero se il contratto si comporta come previsto. In questo caso per verifica si intende la source code verification [@smartcontracts]. \
 \
 *Token* offre link alle risorse riguardanti i token più popolari.\
 ![](images\Etherscan_menu_2.png){height=60%, width=60%}
 
-Il link *Top Tokens* propone un elenco di tutti i token ERC-20 con reputazione OK oppure Neutra. ERC-20 (Ethereum Request for Comment 20) è uno standard tecnico per gli asset su catena Ethereum [@erc20]. Le reputazioni sono delle valutazioni fatte da Etherscan. Queste aiutano gli utenti a predere decisioni informate. \
+Il link *Top Tokens* propone un elenco di tutti i token ERC-20 con reputazione OK oppure Neutra. ERC-20 (Ethereum Request for Comment 20) è uno standard tecnico per gli asset su catena Ethereum [@erc20]. Le reputazioni sono delle valutazioni fatte da Etherscan. Queste aiutano gli utenti a prendere decisioni informate. \
 
 Un token ha una reputazione Neutra se:
 
 
 1. Ci sono informazioni sufficienti riguardanti il progetto e il suo team. Queste informazioni forniscono trasparenza.
 2. Il codice sorgente del contratto è verificato.
-3. Ci sono sufficienti informazioni fornite (website, logo, official contact email).
+3. Ci sono sufficienti informazioni fornite su website, logo, official contact email.
 4. Sono forniti i profili professionali dei membri dei team e consulenti. Questi profili possono anche essere disponibili sul sito.
 5. Il progetto mantiene un sito web funzionante con profili social attivi e canali di comunicazione.
-6. Non ci sono 'red' flags significative nel momento in cui il puntaggio è stato assegnato.
+6. Non ci sono 'red' flags significative nel momento in cui il punteggio è stato assegnato.
 7. Il token è quotato sulle principali piattaforme di aggregazioni di prezzi (Coingecko e Coinmarketcap).
 
 
@@ -103,7 +103,7 @@ Un token ha reputazione OK se :
 1. Rispetta le condizioni per essere considerato Neutro.
 2. Fornisce informazioni accurate e sufficienti.
 3. Ci sono chiari obiettivi di progetto e informazioni accurate.
-4. Profili visibili per i principali fondatori, sostenitori, consulenti del progetto.
+4. I profili dei principali fondatori, sostenitori, consulenti del progetto sono visibili.
 5. Il token è quotato sulle principali piattaforme di exchange che usano controlli AML (Anti Money Laundering) o KYC (Know Your Customer).
 6. Ha raggiunto milestones significative.
 [@reputation]
@@ -122,13 +122,13 @@ Il link *Latest Transfers* propone un elenco dei trasferimenti più recenti di N
 *Resources* offre link a vari servizi come le chat e la newsletter. \
 ![](images\Etherscan_menu_4.png){height=60%, width=60%}
 
-Il link *Charts And Stats* propone una serie di interfacce nelle quali sono proposti grafi e dashboard interattive. Ci sono sei gruppi di interfacce: *Market Data*, *Blockchain Data*, *Dashboards*, *Network Data*, *Top Statistics*, *Contracts*. \
+Il link *Charts And Stats* propone una serie di interfacce interattive nelle quali sono proposti grafi e dashboard. Ci sono sei gruppi di interfacce: *Market Data*, *Blockchain Data*, *Dashboards*, *Network Data*, *Top Statistics*, *Contracts*. \
 
 ![](images\Etherscan_chart_stats.png){height=60%, width=60%}
 
 
-Il link *Top Statistics* propone un riassunto dei dati disponibili sulla piattaforma. Questa ha sei voci: *Overview*, *Transactions*, *Tokens*, *Network*, *Hot Contracts*. \
-*Overview* propone un riassunto dei dati riguardanti transazioni, token e network disponibili su Etherscan. *Transactions* propone un elenco ordinato dei mittenti di ETH, dei destinatari di ETH, del numero di transazioni inviate, del numero di transazioni ricevute. \
+Il link *Top Statistics* propone un riassunto dei dati disponibili sulla piattaforma. Questo ha sei voci: *Overview*, *Transactions*, *Tokens*, *Network*, *Hot Contracts*. \
+*Overview* propone un riassunto dei dati riguardanti transazioni, token e network. *Transactions* propone un elenco ordinato dei mittenti di ETH, dei destinatari di ETH, del numero di transazioni inviate, del numero di transazioni ricevute. \
 *Token* propone elenchi ordinati dei token in base ai mittenti, ai destinatari, e al numero di transazioni. *Network* propone elenchi ordinati degli account in base alla quantità di gas usato e al numero di transazioni. \
 *Hot Contracts* propone elenchi ordinati dei contratti. Il link *Leaderboard* propone un elenco ordianto dei filtri creati dagli utenti. Etherscan permette agli utenti di creare filtri per raffinare i risultati di ricerca [@advfilter]. L'interfaccia per creare filtri viene discussa più avanti. \
 **Come si può vedere, Etherscan fornisce una grandissima ricchezza di informazioni anche rielaborate, come classifiche, grafi e reputazione.** \
@@ -143,12 +143,12 @@ Il link *Knowledge Base* propone link alla documentazione disponibile riguardo E
 *Developers* offre link a risorse che possono essere utili per gli sviluppatori. \
 ![](images\Etherscan_menu_5.png){height=60%, width=60%}
 
-*API Plans* riporta i possibili piani tariffari e link alla documentazione dell'API. *API Documentation* propone link alla documentazione dell'API. *Code Reader* propone un AI che interpreta il codice di uno smart contract e risponde a domande su di esso. Le AI disponibili sono GPT-3.5, GPT-4 e Groq. A momento (11/03/2025) questo strumento è ancora relativamente nuovo e prima di accedere viene proposta una finestra con un elenco di avvertenze. *Code Reader* richiede un account e una chiave API attiva. 
+*API Plans* riporta i possibili piani tariffari e link alla documentazione dell'API. *API Documentation* propone link alla documentazione dell'API. *Code Reader* propone un AI che interpreta il codice di uno smart contract e risponde a domande su di esso. Le AI disponibili sono GPT-3.5, GPT-4 e Groq. Al momento (11/03/2025) questo strumento è ancora relativamente nuovo e prima di accedere viene proposta una finestra con un elenco di avvertenze. *Code Reader* richiede un account e una chiave API attiva. 
 
 ![](images\Etherscan_code_reader.png){height=20%, width=20%} 
 ![](images\Etherscan_code_reader2.png){height=70%, width=70%}
 
-*Verify Contracts* permette di verificare e pubblicare codice sorgente di un smart contract. I linguaggi supportati sono Solidity e Vyper. &Egrave; possibile selezionare la versione da utilizzare. Bisogna specificare il tipo di licenza Open Source. \
+*Verify Contracts* permette di verificare e pubblicare codice sorgente di un smart contract. I linguaggi supportati sono Solidity e Vyper. &Egrave; possibile selezionare la versione da utilizzare.
 
 ![](images\Etherscan_verify_contract.png){height=40%, width=40%}
 
@@ -164,7 +164,7 @@ Il link *Knowledge Base* propone link alla documentazione disponibile riguardo E
 
 ![](images\Etherscan_contract_diff_checker.png){height=60%, width=60%}
 
-La pagina *Vyper Online Compiler* propone un compilatore online di linguaggio Vyper. &Egrave; possibile specificare la versione da utilizzare. La pagina *Bytecode to Opcode* propone una pagina dove è possibile decodificare il bytecode di basso livello a opcode. La pagina *Broadcast Transaction* propone una pagina dove è possibile trasmettere una Signed Raw Transaction su Ethereum. La transazione deve essere specificata in formato esadecimale. Il link *More* offre link a servizi miscellanei. La voce *More* ha tre voci principali : *Tools*, *Explore*, *Services*. \
+La pagina *Vyper Online Compiler* propone un compilatore online di linguaggio Vyper. &Egrave; possibile specificare la versione da utilizzare. La pagina *Bytecode to Opcode* propone una pagina dove è possibile tradurre il bytecode di basso livello a opcode. La pagina *Broadcast Transaction* propone una pagina dove è possibile trasmettere una Signed Raw Transaction su Ethereum. La transazione deve essere specificata in formato esadecimale. Il link *More* offre link a servizi miscellanei. La voce *More* ha tre voci principali : *Tools*, *Explore*, *Services*. \
 
 ![](images\Etherscan_menu_6.png){height=70%, width=70%}
 
@@ -187,9 +187,9 @@ La pagina *Advanced Filter* permette di creare i filtri avanzati accennati in pr
 ![](images\Etherscan_filter1.png){height=70%, width=70%}
  
 Come risultati del filtro viene proposto un barplot e un elenco delle transazioni che rispettano i filtri. A sinistra, sopra il barplot, esiste la voce *Filter By* che elenca i filtri in uso. A destra esiste la voce *Display Chart*, che permette di chiudere e aprire il barplot. \
-La voce *Additional Filter* permette di specificare un *Event Log* da aggiungere ai filti, specificando *Address* e *Topic 0*.
+La voce *Additional Filter* permette di specificare un *Event Log* da aggiungere ai filtri, specificando *Address* e *Topic 0*.
 La voce *Presets* permette di specificare gli *Swap* e *Bridge* su cui avvengono le transazioni. La voce *Columns* permette di selezionare quali colonne visualizzare.\
-Il filtro *Type* permette di specificare che tipo di transazione visualizzare. Il filtro *Method* permette di specificare il tipo di operazione. Il filtro *Age* permette di specificare l'intervallo di tempo di interesse. Il filtro *From* permette di filtrare l'indirizzo del mittente. Il filtro *OR/AND* specifica la relazione tra la coppia dei valori *From* e *To*. Il filtro *To* permette di filtrare l'indirizzo del destinatario. Il filtro *Amount* permette di specificare l'intervallo della quantità trasferita. Il filtro *Asset* permette di specificare il tipo di asset. \
+Il filtro *Type* permette di specificare che tipo di transazione visualizzare. Il filtro *Method* permette di specificare il tipo di operazione. Il filtro *Age* permette di specificare l'intervallo di tempo di interesse. Il filtro *From* permette di filtrare in base all'indirizzo del mittente. Il filtro *OR/AND* specifica la relazione tra la coppia dei valori *From* e *To*. Il filtro *To* permette di filtrare in base all'indirizzo del destinatario. Il filtro *Amount* permette di specificare l'intervallo della quantità trasferita. Il filtro *Asset* permette di filtrare in base all'asset. \
 \
 &Egrave; stato creato un filtro per i token USTC e LUNC durante i primi sei mesi del 2022. \
 
@@ -206,7 +206,7 @@ La pagina *Ether Mining Calculator* permette di ottenere una stima dei guadagni 
 ### Etherscan API : una blockchain API
 
 Le Blockchain API forniscono interfacce che permettono di interrogare la Blockchain in modo programmatico. L'API studiata è Etherscan API. Etherscan API estende le funzionalità di Etherscan. Richiede la creazione di un account. Mediante il proprio account è possibile generare delle chiavi che consentono di effettuare query all'API tramite richieste HTTPS. \
-Accedendo all'area personale, viene proposto un overview delle risorse utilizzate dall'utente. \
+Accedendo all'area personale, viene proposto un overview delle risorse utilizzate dall'utente e di quelle disponibili. \
 
 ![](images\Etherscan_myaccount.png){height=60%, width=60%}
 
@@ -264,10 +264,10 @@ L'endpoint *Transactions* permette di:
 L'endpoint *Blocks* permette di ottenere informazioni riguardo ai blocchi. Più precisamente:
 
 
-- il reward di un blocco, anche uncle, in base al numero.
-- una stima del tempo rimasto prima che un blocco venga minato, in base al numero.
+- il reward di un blocco, anche uncle, in base al numero del blocco.
+- una stima del tempo rimasto prima che un blocco venga minato, in base al numero del blocco.
 - il numero di un blocco conoscendo il timestamp.
-- la dimesione media di un blocco in un intervallo di tempo specificato.
+- la dimensione media di un blocco in un intervallo di tempo specificato.
 - il numero di blocchi giornalieri e il reward.
 - la quantità di reward distribuita ai miner nell'intervallo di tempo specificato.
 - il tempo medio impiegato per includere un blocco nella blockchain Ethereum.
@@ -290,23 +290,23 @@ Un esempio è : \
     &action=eth_blockNumber
     &apikey=YourApiKeyToken 
 
-Le possibili action sono:
+Con le action è possibile ottenere:
 
 
-- **eth_blockNumber** : restituisce il numero del blocco più recente.
-- **eth_getBlockByNumber** : ottiene informazioni riguardo un blocco dato il suo numero.
-- **eth_getUncleByBlockNumberAndIndex** : ottiene informazioni di un blocco Uncle in base al suo numero.
-- **eth_getBlockTransactionCountByNumber** : restituisce il numero di transazioni in un blocco.
-- **eth_getTransactionByHash** : restituisce le informazioni riguardo una transazione dato il suo hash.
-- **eth_getTransactionByBlockNumberAndIndex** : restituisce le informazioni riguardo una transazione dato il numero del suo blocco e l'indice di posizione della transazione.
-- **eth_getTransactionCount** : restituisce il numero di transazioni effettuate da un indirizzo.
-- **eth_sendRawTransaction** : invia una transazione pre firmata per broadcast sulla rete Ethereum.
-- **eth_getTransactionReceipt** : restituisce il receipt di una transazione dato il hash della transazione.
-- **eth_call** : esegue una nuova message call immediatamente senza creare una transazione sulla blockchain.
-- **eth_getCode** : restituisce il codice ad un dato indirizzo. 
-- **eth_getStorageAt** : restituisce il valore archiviato ad un dato indirizzo.
-- **eth_gasPrice** : restituisce il prezzo attuale del gas espresso in wei.
-- **eth_estimateGas** : effettua una chiamata o transazione che non sarà aggiunta alla blockchain e restituisce il gas utilizzato.
+- **eth_blockNumber** : il numero del blocco più recente.
+- **eth_getBlockByNumber** : informazioni riguardo un blocco dato il suo numero.
+- **eth_getUncleByBlockNumberAndIndex** : informazioni di un blocco Uncle in base al suo numero.
+- **eth_getBlockTransactionCountByNumber** : il numero di transazioni in un blocco.
+- **eth_getTransactionByHash** : le informazioni riguardo una transazione dato il suo hash.
+- **eth_getTransactionByBlockNumberAndIndex** : le informazioni riguardo una transazione dato il numero del suo blocco e l'indice di posizione della transazione.
+- **eth_getTransactionCount** : il numero di transazioni effettuate da un indirizzo.
+- **eth_sendRawTransaction** : l'invio di una transazione pre firmata per broadcast sulla rete Ethereum.
+- **eth_getTransactionReceipt** : il receipt di una transazione dato il hash della transazione.
+- **eth_call** : l'immediata esecuzione di una nuova message call senza la creazione di una transazione sulla blockchain.
+- **eth_getCode** : il codice ad un dato indirizzo. 
+- **eth_getStorageAt** : il valore archiviato ad un dato indirizzo.
+- **eth_gasPrice** : il prezzo attuale del gas espresso in wei.
+- **eth_estimateGas** : l'esecuzione di una chiamata o transazione che non sarà aggiunta alla blockchain e la restituzione del gas utilizzato.
 
 L'endpoint *Tokens* permette di ottenere informazioni riguardo ai token, con maggiore attenzione ai token ERC20. \
 In base all'indirizzo:
@@ -340,7 +340,7 @@ L'endpoint *Gas Tracker* permette di ottenere informazioni riguardo al gas:
 - il consumo giornaliero di gas utilizzato.
 - il prezzo giornaliero medio dei gas.
 
-L'endpoint *Stats* permette di ottenere informazioni riguardo ai stats. Più precisamente:
+L'endpoint *Stats* permette di ottenere statistiche. Più precisamente:
 
 
 - la fornitura totale di Ether.
@@ -361,7 +361,7 @@ Come si vede, Etherscan API mette a dispozione un'ampia quantità di informazion
 Richiede alcune competenze minime per accedere ai dati. \
 Può essere una valida piattaforma complementare per sviluppatori, minatori, validatori.
 
-
+<!-- da qua -->
 ### Dune Analytics : una piattaforma SQL
 
 Le piattaforme SQL permettono di interrogare la Blockchain con comandi SQL. Un esempio di piattaforma SQL è Dune Analytics. \
@@ -2042,7 +2042,7 @@ Web3.py fornisce delle funzioni per ottenere informazioni riguardanti un wallet.
 Per ottenere le singole transazioni che coinvolgono un wallet non esiste una funzione che estrae direttamente tutte le transazioni: bisogna esaminare i blocchi della catena uno ad uno. \
 Le transazioni già viste con Etherscan sono state confermate ma, dato che Web3.py non permette di visitare la catena Bitcoin, non è stato possibile confermare la vendita del 10 Maggio 2022.
 
-#### Considerazioni finali
+#### Confronto
 
 Etherscan propone informazioni complete riguardo i trasferimenti e i wallet. I prezzi delle valute sono riportati con precisione giornaliera. Questa è risultata troppo grossolana per il caso di studio. Non è stato possibile verificare tutti gli eventi di interesse.
 
@@ -2056,14 +2056,32 @@ Per uno studio completo quindi risulta convienente combinare i risultati di più
 
 ## Conclusioni
 
-In questo progetto sono stati studiati quattro strumenti per interagire con le blockchain. Ogni strumento rappresenta un approcio differente: Etherscan rappresenta i Blockchain Explorer, Etherscan API rappresenta le Blockchain API, Dune Analytics rappresenta le piattaforme SQL, Web3.py rappresenta le librerie Web3. \
+In questo progetto sono stati studiati quattro strumenti per interagire con le blockchain. Gli strumenti analizzati sono: Etherscan, che è un Blockchain Explorer; Etherscan API, che è una Blockchain API; Dune Analytics, che è una piattaforma SQL; e Web3.py, che è una libreria Web3. \
 
-Queste piattaforme sono state descritte una ad una. Esse sono state valutate in base a usabilità, risorse disponibili, e costi. Per ogni parametro di valutazione le piattaforme sono state confrontate. \
+Queste piattaforme sono state descritte una ad una. Esse sono state valutate in base ad usabilità, risorse disponibili, e costi ed è stato fatto un confronto. \
 Infine le piattaforme sono state applicate ad un piano di studio.
+
+Etherscan è una piattaforma dotata di un'interfaccia grafica che risulta accessibile e facile da utilizzare.
+Offre molte informazioni riguardo l'universo Ethereum.
+Inoltre fornisce strumenti per interagire, verificare, cercare e consultare gli smart contracts.
+&Egrave; adatta ad un'utenza non tecnica.
+
+Etherscan API fornisce endpoints per ottenere i dati in modo programmatico da svariate catene.
+&Egrave; adatta ad un'utenza tecnica.
+
+Dune è dotata di un'interfaccia grafica che risulta intuitiva. Offre accesso a numerose catene.
+Per poter accedere ai dati sono richieste competenze di SQL.
+Propone strumenti per creare grafi e visualizzare i dati.
+Richiede competenze tecniche minime.
+
+Web3.py è una libreria Python che richiede competenze di programmazione per essere utilizzata. &Egrave; possibile accedere solo alla catena Ethereum.
+&Egrave; l'unica delle quattro piattaforme che permette di svolgere operazioni sulla catena, come ad esempio transazioni. Consente anche di lanciare smart contract sulla catena.
+Permette di controllare il Middleware.
+Richiede un'utenza tecnica con conoscenze di programmazione.
 
 Complessivamente, quello che emerge è che Etherscan e Dune sono i metodi più accessibili agli utenti, mentre Web3 e Etherscan API sono pensati per un utilizzo più orientato alla programmazione.
 
-Usando gli strumenti separatamente è stato possibile ricostruire solo parte degli eventi legati al crollo del sistema Terra-Luna. Per ottenere un quadro completo che comprende tutti gli eventi sarebbe necessario combinare i risultati di più piattaforme. Questo permette di compensare le lacune delle singole piattaforme.
+Usando gli strumenti separatamente è stato possibile ricostruire solo parte degli eventi legati al crollo del sistema Terra-Luna. Per ottenere un quadro completo è necessario combinare i risultati delle quattro piattaforme. Questo permette di compensare le lacune delle singole piattaforme.
 
 
 ## Appendice

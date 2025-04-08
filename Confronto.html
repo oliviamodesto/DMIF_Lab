@@ -1624,7 +1624,7 @@ ordinati in base al proprio bilancio in ETH.<br />
 Il link <em>Verified Contracts</em> propone l’elenco dei smart contracts
 verificati. Su Ethereum esistono due forme di verifica: la source code
 verification e la formal verification. La source code verification
-verifica se il code sorgente di uno smart contract produce lo stesso
+verifica se il codice sorgente di uno smart contract produce lo stesso
 bytecode prensente all’indirizzo del smart contract. La formal
 verification verifica la correttezza dello smart contract, ovvero se il
 contratto si comporta come previsto. In questo caso per verifica si
@@ -1637,22 +1637,22 @@ popolari.<br />
 con reputazione OK oppure Neutra. ERC-20 (Ethereum Request for Comment
 20) è uno standard tecnico per gli asset su catena Ethereum <span class="citation">(<a href="#ref-erc20">2025j</a>)</span>. Le reputazioni
 sono delle valutazioni fatte da Etherscan. Queste aiutano gli utenti a
-predere decisioni informate.<br />
+prendere decisioni informate.<br />
 </p>
 <p>Un token ha una reputazione Neutra se:</p>
 <ol style="list-style-type: decimal">
 <li>Ci sono informazioni sufficienti riguardanti il progetto e il suo
 team. Queste informazioni forniscono trasparenza.</li>
 <li>Il codice sorgente del contratto è verificato.</li>
-<li>Ci sono sufficienti informazioni fornite (website, logo, official
-contact email).</li>
+<li>Ci sono sufficienti informazioni fornite su website, logo, official
+contact email.</li>
 <li>Sono forniti i profili professionali dei membri dei team e
 consulenti. Questi profili possono anche essere disponibili sul
 sito.</li>
 <li>Il progetto mantiene un sito web funzionante con profili social
 attivi e canali di comunicazione.</li>
 <li>Non ci sono ‘red’ flags significative nel momento in cui il
-puntaggio è stato assegnato.</li>
+punteggio è stato assegnato.</li>
 <li>Il token è quotato sulle principali piattaforme di aggregazioni di
 prezzi (Coingecko e Coinmarketcap).</li>
 </ol>
@@ -1661,8 +1661,8 @@ prezzi (Coingecko e Coinmarketcap).</li>
 <li>Rispetta le condizioni per essere considerato Neutro.</li>
 <li>Fornisce informazioni accurate e sufficienti.</li>
 <li>Ci sono chiari obiettivi di progetto e informazioni accurate.</li>
-<li>Profili visibili per i principali fondatori, sostenitori, consulenti
-del progetto.</li>
+<li>I profili dei principali fondatori, sostenitori, consulenti del
+progetto sono visibili.</li>
 <li>Il token è quotato sulle principali piattaforme di exchange che
 usano controlli AML (Anti Money Laundering) o KYC (Know Your
 Customer).</li>
@@ -4376,8 +4376,8 @@ che Web3.py non permette di visitare la catena Bitcoin, non è stato
 possibile confermare la vendita del 10 Maggio 2022.</p>
 </div>
 </div>
-<div id="considerazioni-finali" class="section level4">
-<h4>Considerazioni finali</h4>
+<div id="confronto-3" class="section level4">
+<h4>Confronto</h4>
 <p>Etherscan propone informazioni complete riguardo i trasferimenti e i
 wallet. I prezzi delle valute sono riportati con precisione giornaliera.
 Questa è risultata troppo grossolana per il caso di studio. Non è stato
@@ -4400,18 +4400,41 @@ risultati di più piattaforme, come Etherscan e Dune.</p>
 <div id="conclusioni" class="section level2">
 <h2>Conclusioni</h2>
 <p>In questo progetto sono stati studiati quattro strumenti per
-interagire con le blockchain. Ogni strumento rappresenta un approcio
-differente: Etherscan rappresenta i Blockchain Explorer, Etherscan API
-rappresenta le Blockchain API, Dune Analytics rappresenta le piattaforme
-SQL, Web3.py rappresenta le librerie Web3.<br />
+interagire con le blockchain. Gli strumenti analizzati sono: Etherscan,
+che è un Blockchain Explorer; Etherscan API, che è una Blockchain API;
+Dune Analytics, che è una piattaforma SQL; e Web3.py, che è una libreria
+Web3.<br />
 </p>
 <p>Queste piattaforme sono state descritte una ad una. Esse sono state
-valutate in base a usabilità, risorse disponibili, e costi. Per ogni
-parametro di valutazione le piattaforme sono state confrontate.<br />
+valutate in base ad usabilità, risorse disponibili, e costi ed è stato
+fatto un confronto.<br />
 Infine le piattaforme sono state applicate ad un piano di studio.</p>
+<p>Etherscan è una piattaforma dotata di un’interfaccia grafica che
+risulta accessibile e facile da utilizzare. Offre molte informazioni
+riguardo l’universo Ethereum. Inoltre fornisce strumenti per interagire,
+verificare, cercare e consultare gli smart contracts. È adatta ad
+un’utenza non tecnica.</p>
+<p>Etherscan API fornisce endpoints per ottenere i dati in modo
+programmatico da svariate catene. È adatta ad un’utenza tecnica.</p>
+<p>Dune è dotata di un’interfaccia grafica che risulta intuitiva. Offre
+accesso a numerose catene. Per poter accedere ai dati sono richieste
+competenze di SQL. Propone strumenti per creare grafi e visualizzare i
+dati. Richiede competenze tecniche minime.</p>
+<p>Web3.py è una libreria Python che richiede competenze di
+programmazione per essere utilizzata. È possibile accedere solo alla
+catena Ethereum. È l’unica delle quattro piattaforme che permette di
+svolgere operazioni sulla catena, come ad esempio transazioni. Consente
+anche di lanciare smart contract sulla catena. Permette di controllare
+il Middleware. Richiede un’utenza tecnica con conoscenze di
+programmazione.</p>
 <p>Complessivamente, quello che emerge è che Etherscan e Dune sono i
 metodi più accessibili agli utenti, mentre Web3 e Etherscan API sono
 pensati per un utilizzo più orientato alla programmazione.</p>
+<p>Usando gli strumenti separatamente è stato possibile ricostruire solo
+parte degli eventi legati al crollo del sistema Terra-Luna. Per ottenere
+un quadro completo è necessario combinare i risultati delle quattro
+piattaforme. Questo permette di compensare le lacune delle singole
+piattaforme.</p>
 </div>
 <div id="appendice" class="section level2">
 <h2>Appendice</h2>
