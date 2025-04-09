@@ -361,7 +361,7 @@ Come si vede, Etherscan API mette a dispozione un'ampia quantità di informazion
 Richiede alcune competenze minime per accedere ai dati. \
 Può essere una valida piattaforma complementare per sviluppatori, minatori, validatori.
 
-<!-- da qua -->
+
 ### Dune Analytics : una piattaforma SQL
 
 Le piattaforme SQL permettono di interrogare la Blockchain con comandi SQL. Un esempio di piattaforma SQL è Dune Analytics. \
@@ -369,7 +369,7 @@ Dune Analytics mette a disposizione i dati sotto forma di tabelle consultabili t
 \
 La pagina home fornisce link ai diversi servizi e informazioni di interesse. In alto è presente un menu a tendina: *Products*, *Chains*, *Enterprise*, *Resources*, *Company*, *Pricing*, *Launch App*. \
 Il menu *Products* propone i tre prodotti *Catalyst*, *Echo*, *Datashare*. *Dune Catalyst* è uno strumento per facilitare il caricamento di dati dalla blockchain alla piattaforma *Dune Analytics*. La pagina *Echo* permette di creare chiavi API. *Datashare* permette di contattare supporto.\
-Il menu *Chains* elenca le catene supportate da Dune Analytics. Il menu *Enterprise* porta alla pagina per iscriversi ai servizi Enterprise. Il menu *Resources* propone la documentazione e le risorse disponibili. Il menu *Company* propone link riguardanti gli eventi organizzati da Dune e le offerte di lavoro. Il menu *Pricing* propone la pagina con i diversi piani tariffari. Il menu *Launch App* porta allo spazio di lavoro dove creare e elaborare query.
+Il menu *Chains* elenca le catene supportate da Dune Analytics. Il menu *Enterprise* porta alla pagina per iscriversi ai servizi Enterprise. Il menu *Resources* propone la documentazione e le risorse disponibili. Il menu *Company* propone link riguardanti gli eventi organizzati da Dune e le offerte di lavoro. Il menu *Pricing* propone la pagina con i diversi piani tariffari. Il menu *Launch App* porta allo spazio di lavoro dove creare ed elaborare query.
 
 ![](images\dune_home.png){height=60%, width=60%}
 
@@ -383,7 +383,7 @@ La voce *New query* propone la pagina per creare una nuova query. *New dashboard
 
 Nella dashboard di esempio i grafi e la tabella visibile sono gli output di alcune query. &Egrave; possibile ottenere output aggiornati rieseguendo le query direttamente sulla pagina. Queste dashboard si possono esportare su GitHub e il loro url si può condividere su altre piattaforme.\
 La voce *Upload a dataset* propone la pagina per caricare dati sulla piattaforma Dune. La voce *Submit a contract* propone la pagina per decodificare i contratti. Bisogna specificare la blockchain di interesse e l'indirizzo hash del contratto. \
-La voce *API endpoints* propone la pagina per creare dei custom endpoint API. \
+La voce *API endpoints* propone la pagina per creare dei custom endpoints. \
 
 ![](images\dune_custom_endpoint.png){height=40%, width=40%}
 
@@ -395,9 +395,9 @@ Dune propone 6 endpoints predefiniti:
 
 
 - *Farcaster Endpoints* : consente di ottenere informazioni riguardo Farcaster, un protocollo per social media decentralizzate.
-- *Eigenlayer* : fornisce informazioni riguardo i metadati di AVS, gli operatori e la mappatura di metadati agli operatori.
+- *Eigenlayer* : fornisce informazioni riguardo i metadati di AVS (Actively Validated Service), gli operatori e la mappatura degli operatori ad AVS.
 - *Projects* : fornisce dati riguardanti Linea LXP.
-- *Contracts*: fornisce informazioni riguardo i contratti lanciati su una catena EVM basata sull'attività degli ultimi 30 giorni.
+- *Contracts*: fornisce informazioni riguardo i contratti lanciati su una catena EVM in base all'attività degli ultimi 30 giorni.
 - *DEX*:  consente di ottenere metatdati e dati statistici per coppie di token.
 - *Markets*:  consente di ottenere la quota di mercato in termini di USD e numero di scambi per DEX oppure NFT.
 
@@ -412,17 +412,17 @@ La pagina *Discover* propone un elenco di query e dashboard create da altri uten
 
 ![](images\dune_menu_discovery.png){height=60%, width=60%}
 
-La pagina *Metrics* propone dati riguardanti le transazioni e i consumi sulle blockchain documentate da Dune Analytics.\
+La pagina *Metrics* propone dati riguardanti le transazioni e i consumi sulle blockchain.\
 
 ![](images\dune_menu_metrics.png){height=60%, width=60%}
 
 La pagina *Dune Index* propone un grafo rappresentante l'adozione della blockchain nel tempo. Viene indicato il Dune Index per ogni blockchain. In fondo alla pagina viene descritta la metodologia utilizzata per il calcolo dell'Index. \
 \
-La pagina *Transaction fees* propone un grafo rappresentante gli USD spesi in gas. Inoltre, viene indicato il transaction fee per ogni blockchain. In fondo alla pagina viene descritta la metodologia utilizzata per il calcolo. \
+La pagina *Transaction fees* propone un grafo rappresentante gli USD complessivamente spesi in gas. Inoltre, viene indicato il transaction fee per ogni blockchain. In fondo alla pagina viene descritta la metodologia utilizzata per il calcolo. \
 \
 La pagina *Transfer Volume* propone un grafo rappresentante gli USD trasferiti su blockchian. Inoltre, vengono indicati gli USD trasferiti per ogni blockchain. 
 \
-La pagina *Transaction Count* propone un grafo rappresentante il numero di transazioni su blockchain. &Egrave; riportata una tabella con il numero di transazioni per ogni blockchain.
+La pagina *Transaction Count* propone un grafo rappresentante il numero di transazioni su tutte le blockchain. &Egrave; anche riportata una tabella con il numero di transazioni per ogni blockchain.
 
 In alto al centro c'è la barra di ricerca per navigare le query, le dashboard e gli account Dune. \
 
@@ -434,7 +434,7 @@ A sinistra sono sempre presenti le opzioni *Categories*, *Feeds* e *Show*. \
 
 ![](images\dune_left.png){height=60%, width=60%}
 
-Queste voci permettono di fare ricerche all'interno di Dune Analytics. *Categories* permette di scelgliere cosa cercare. *Feeds* permette di filtrare i risultati in qualche modo. *Show* permette di scegliere se vedere query, dashboard o entrambe. \
+Queste voci permettono di fare ricerche all'interno di Dune Analytics. *Categories* permette di scegliere cosa cercare. *Feeds* permette di filtrare i risultati in qualche modo. *Show* permette di scegliere se vedere query, dashboard o entrambe. \
 Al centro ci sono i risultati visualizzati. 
 
 ![](images\dune_homepage.png){height=60%, width=60%}
@@ -452,19 +452,19 @@ Per creare una nuova query bisogna accedere alla voce *new query* sotto *Create*
 
 ![](images\dune_workspace_example_5.png){height=60%, width=60%}
 
-Dune fornisce un'AI per assistere con la creazione o modifica delle query. Se qualcosa non va a buon fine, l'interfaccia produce dei messaggi di errore comprensibili. \
+Dune fornisce un'AI per aiutare nella creazione o modifica delle query. Se qualcosa non va a buon fine, l'interfaccia produce dei messaggi di errore comprensibili. \
 Dune permette di visualizzare i dati in diverse forme grafiche. &Egrave; possibile manipolare i grafi così ottenuti modificando i parametri messi a disposizione. \
 
 ![](images\dune_workspace_example_2.png){height=60%, width=60%}
 
 
-Dune propone un'interfaccia intuitiva e facile da usare. Per formulare le query sono richieste competenze di SQL. Le dashboard permettono di creare delle panoramiche interattive e aggiornate su argomenti di interesse. La piattaforma fornisce dati riguardanti un elevato numero di blockchain diverse.
+Dune propone un'interfaccia grafica intuitiva e facile da usare. Per formulare le query sono richieste competenze di SQL. Le dashboard permettono di creare delle panoramiche interattive e aggiornate su argomenti di interesse. La piattaforma fornisce un gran numero di dati riguardanti un elevato numero di blockchain diverse.
 
 
 ### Web3.py : una libreria Web3
 
 La libreria Web3.py è una libreria Python che permette di interagire con la Blockchain. Richiede un provider per accedere alla blockchain. Come provider è stato utilizzato Infura. Infura è una blockchain API, simile a Etherscan API. Per utilizzare Infura è richiesta la creazione di un account per generare chiavi API. Infura impone un limite al numero massimo di operazioni giornaliere.\
-Il progetto si riferisce alla versione v7.10.0 della libreria. 
+Il progetto si riferisce alla versione v7.10.0 della libreria Web3.py. 
 
 ##### Web3.py
 
@@ -483,7 +483,7 @@ Gli approcci più comuni sono IPC, WebSocket, HTTP. IPC utilizza il filesystem l
 
 La sintassi è Web3(Web3.function(URL)). &Egrave; possibile verificare lo stato della connessione con la funzione w3.is_connected(). Inoltre è possibile scrivere un proprio provider.
 
-&Egrave; possibile configurare il middleware. Per middleware si intende uno strato di software che sta tra i provider e Web3. In particolare è possibile aggiungere, rimuovere, modificare e cancellare strati di middleware a runtime.
+&Egrave; possibile configurare il middleware. Per middleware si intende uno strato di software che sta tra il provider e Web3. In particolare è possibile aggiungere, rimuovere, modificare e cancellare strati di middleware a runtime.
 Web3.py utilizza i seguenti strati di middleware di default : gas_price_strategy, ens_name_to_address, attrdict, validation, gas_estimate.
 
 Esiste un ulteriore strato di middleware chiamato Managers: questo fornisce thread safety e primitive per permettere un utilizzo asincrono del Web3.
@@ -492,13 +492,13 @@ Oltre ad ottenere informazioni dalle catene di interesse, è possibile svolgere 
 
 Riguardo gli Account, è possibile creare una propria chiave privata. Ad ogni chiave generata è associato un indirizzo Ethereum. Con questa chiave privata è possibile firmare o verificare un messaggio, preparare un messaggio per erecover in Solidity, verificare un messaggio per erecover in Soldity, firmare una transazione, firmare una transazione per invocare un contratto. 
 
-Riguardo i contratti, Web3.py fornisce una funzionalità molto completa. &Egrave; possibile compilare un contratto Solidity e fare il deploy. &Egrave; possibile creare le Contract Factories, ovvero oggetti che permettono di interfacciarsi con i smart contracts oppure fare il deploy di smart contract. Inoltre, è possibile interagire con gli eventi dei contratti. Infine, Web3.py fornisce un'API per invocare le funzioni di un contratto.
+Riguardo i contratti, Web3.py fornisce una funzionalità molto completa. &Egrave; possibile compilare un contratto Solidity e farne il deploy. &Egrave; possibile creare le Contract Factories, ovvero oggetti che permettono di interfacciarsi con i smart contracts e di farne il deploy. Inoltre, è possibile interagire con gli eventi dei contratti. Infine, Web3.py fornisce un'API per invocare le funzioni di un contratto.
 
 Riguardo gli eventi e i logs, è possibile ottenere informazioni riguardo specifici eventi e log.
 
 Web3.py fornisce i cosiddetti Event Subscriptions: questi permettono di rimanere in ascolto per specifici eventi sulla blockchain. &Egrave; possibile ascoltare solo determinati eventi: nuovi block headers, lo stato di sincronizzazione di un nodo, nuove transazioni in attesa e i log emessi dagli smart contract.
 
-La libreria Web3.py è uno strumento molto potente per chi sviluppa dApp. Essa richiede competenze avanzate e non è adatta ad un utente casuale.
+La libreria Web3.py è uno strumento molto potente per chi sviluppa dApp. Essa richiede competenze avanzate e non è adatta ad un utente non tecnico.
 
 ##### Infura
 
@@ -527,17 +527,17 @@ Nella parte a sinistra della pagina ci sono i seguenti campi, che portano ad alt
 
 Il link *Home* punta alla pagina home.
 
-Il link *Stats* porta ad una pagina con dettagli riguardo i consumi:
+Il link *Stats* porta ad una pagina con dettagli riguardo i consumi, ovvero:
 
 
-- *Requests Volume* : volume complessivo delle richieste mandate ad Infura nel periodo di tempo indicato.
-- *Method Request Volume* : analisi dei volumi dei primi 5 metodi su ogni rete utilizzata per questo progetto.
-- *Network Request Volume* : analisi dei volumi delle prime 5 reti utilizzate per questo progetto.
+- *Requests Volume* : volume complessivo delle richieste mandate ad Infura nel periodo di tempo indicato
+- *Method Request Volume* : analisi dei volumi dei primi 5 metodi utilizzati su ogni rete
+- *Network Request Volume* : analisi dei volumi delle prime 5 reti utilizzate
 - *Requests Activity* : analisi dei volumi delle richieste riuscite e fallite in base alle reti oppure ai metodi utilizzati.
 - *Eth_call activity* : analisi delle attività svolte sul metodo eth_call
 
 Per alcuni campi è possibile specificare la chiave di interesse e l'intervallo di tempo di interesse: 15 minuti, 1 ora (gratuiti), ultime 24 ore, ultimi 7 giorni, ultimi 30 giorni (solo a pagamento). \
-La pagina *Infura RPC* propone dettagli riguardo le chiavi API generate. Oltre alla chiave scritta in chiaro, ci sono i seguenti campi: \
+La pagina *Infura RPC* propone dettagli riguardo le chiavi API generate. Oltre alla chiave scritta in chiaro, ci sono i seguenti campi: 
 
 
 - *Active Endpoints*: elenco dei endpoint attivi (sia http che websocket)
@@ -556,9 +556,9 @@ Infura non è adatto a tutte le utenze. Mette a disposizione risorse utili per g
 Per esaminare e confrontare i diversi strumenti disponibili sono stati scelti i seguenti parametri di confronto: \
 
 
-- l'**usabilità** del metodo e i prerequisiti richiesti per utilizzare lo strumento
-- le **risorse** che ciascun strumento mette a disposizione
-- i **costi** ovvero i piani tariffari
+- **usabilità** del metodo e i prerequisiti richiesti per utilizzare lo strumento
+- **risorse** che ciascun strumento mette a disposizione
+- **costi** ovvero i piani tariffari
 
 ### Usabilità
 
@@ -566,21 +566,21 @@ Definiamo l'usabilità come la misura con cui un prodotto può essere usato da s
 Esistono più modi di valutare l'usabilità. I due metodi principali sono la valutazione euristica e la valutazione empirica. La valutazione euristica si basa su delle regole. La valutazione empirica coinvolge gli utenti [@cognitivegroup]. \
 In questa analisi è utilizzato un approcio euristico. La valutazione si basa in parte sulle dieci euristiche di Nielsen definite negli anni 90.
 Le euristiche di Nielsen nascono per valutare la progettazione e l'implementazione delle interfaccie utente. Con ogni euristica si valuta un aspetto diverso del sistema [@gamberini]. \ 
-Le dieci euristiche per il design delle interfaccie utente sono [@nngroup]: \
+Le dieci euristiche per il design delle interfaccie utente valutano [@nngroup]: \
 
 
-1. **Visibilità dello stato del sistema**: si valuta se il sistema comunica chiaramente all'utente qual'è il suo stato, e se il feedback arriva all'utente nel minor tempo possibile.
-2. **Corrispondenza tra il sistema e il mondo reale**: si valuta se il sistema utilizza un linguaggio familiare agli utenti.
-3. **Libertà e controllo dell'utente**: si valuta se il sistema permette agli utenti di fare passi indietro in caso di errori.
-4. **Standard e consistenza**: si valuta se il sistema segue convenzioni ed è consistente
-5. **Prevenzione degli errori**: si valuta se il sistema ha delle misure per prevenire errori.
-6. **Riconoscimento piuttosto che richiamo**: si valuta se il sistema aiuta a ridurre il carico cognitivo dell'utente.
-7. **Flessibilità e efficienza d'uso**: si valuta se il sistema ha delle scorciatoie.
-8. **Estetica e design minimalistico**: si valuta se l'interfaccia contiene informazioni irrilevanti.
+1. **Visibilità dello stato del sistema**: se il sistema comunica chiaramente all'utente qual'è il suo stato, e se il feedback arriva all'utente nel minor tempo possibile.
+2. **Corrispondenza tra il sistema e il mondo reale**: se il sistema utilizza un linguaggio familiare agli utenti.
+3. **Libertà e controllo dell'utente**: se il sistema permette agli utenti di fare passi indietro in caso di errori.
+4. **Standard e consistenza**: se il sistema segue convenzioni ed è consistente
+5. **Prevenzione degli errori**: se il sistema ha delle misure per prevenire errori.
+6. **Riconoscimento piuttosto che richiamo**: se il sistema aiuta a ridurre il carico cognitivo dell'utente.
+7. **Flessibilità e efficienza d'uso**: se il sistema ha delle scorciatoie.
+8. **Estetica e design minimalistico**: se l'interfaccia contiene informazioni irrilevanti.
 9. **Aiuta gli utenti a riconoscere, diagnosticare e gestire gli errori**
-10. **Supporto e documentazione**: si valuta se il sistema ha della documentazione disponibile.
+10. **Supporto e documentazione**: se il sistema ha della documentazione disponibile.
 
-Come accennato nell'introduzione, la blockchain ha un'utenza diversificata e i diversi strumenti soddisfano le esigenze di utenze diverse. Oltre alle euristiche di Nielsen sono state identificate alcune figure che potrebbero utilizzare le piattaforme analizzate. Sono state formulate delle domande specifiche per inquadrare in modo preciso gli strumenti. L'obbiettivo è identificare a che tipo di utenza è rivolta ciascuna piattaforma.
+Come accennato nell'introduzione, la blockchain ha un'utenza diversificata. Oltre alle euristiche di Nielsen sono state identificate alcune figure che potrebbero utilizzare le piattaforme analizzate. Sono state formulate delle domande per capire quali strumenti sono adatti a quali utenze.
 
 
 - **Utenti individuali**: un individuo, che gestisce la sua finanzia personale e fa piccoli investimenti. Questo utente vorrà poter monitorare le sue attività, prendere decisioni di inverstimento, portare avanti piccole operazioni. \
@@ -639,7 +639,7 @@ Come accennato nell'introduzione, la blockchain ha un'utenza diversificata e i d
   - *Un team può monitorare la distribuzione dei token ?* \
   - *Un team può verificare le interazioni con gli smart contract?* \
   - *Un team può gestire la tokenomica del progetto ?* \
-  Per tokenomica si intende lo studio e l’analisi di aspetti economici di una criptovaluta o progetto blockchain. Esempi di informazioni sono il numero totale di token in circolazione, i meccanismi di distribuzione, i meccanismi di minting e burning. \
+  Per tokenomica si intende lo studio e l’analisi di aspetti economici di una criptovaluta o progetto blockchain. Esempi di informazioni sono il numero totale di token in circolazione, i meccanismi di distribuzione, i meccanismi di minting e burning. Per gestione della tokenomica si intende la pianificazione, l'implementazione e il monitoraggio di tutto ciò che riguarda l'economia dei token. \
 
 #### Etherscan
 
@@ -694,11 +694,11 @@ Complessivamente, Etherscan ha un'ottima usabilità.
   - *Un team può lanciare i token o airdrop ?* No. \
   - *Un team può monitorare la distribuzione dei token ?* Sì, si possono visualizzare i trasferimenti dei token. \
   - *Un team può verificare le interazioni con gli smart contract?* Sì. \
-  - *Un team può gestire la tokenomica del progetto ?* &Egrave; possibile conoscere il numero di tokens in circolazione.\
+  - *Un team può gestire la tokenomica del progetto ?* &Egrave; possibile solo conoscere il numero di tokens in circolazione.\
 
 #### Etherscan API
 
-&Egrave; possibile creare facilmente le chiavi API necessarie per utilizzare gli url. Gli url si possono invocare direttamente nel browser. I risultati sono proposti su una pagina web. Per scaricare e manipolare i dati è stato necessario creare un codice Python. L'output è salvato come JSON. \
+&Egrave; possibile creare facilmente le chiavi API necessarie per utilizzare gli url. Gli url si possono invocare direttamente dal browser. I risultati sono proposti su una pagina web. Per scaricare e manipolare i dati è stato necessario creare un codice Python. L'output è salvato come JSON. \
 I campi degli url utilizzano nomi semplici e descrittivi. I messaggi di errore sono chiari ed efficaci. 
 Una volta inviata una chiamata non è possibile interromperla. Sono consumati crediti solo se la chiamata va a buon fine. I crediti consumati non si possono recuperare. \
 
@@ -710,7 +710,7 @@ Una volta inviata una chiamata non è possibile interromperla. Sono consumati cr
 
 
 - **Sviluppatori**: \
-  - *Uno sviluppatore può creare una dApp ?* Non direttemente, come visto prima Etherscan non fornisce un ambiente di sviluppo, però gli url possono essere utilizzati all'interno di un programma. \
+  - *Uno sviluppatore può creare una dApp ?* Non direttemente, come visto prima Etherscan non fornisce un ambiente di sviluppo, però gli endpoint si possono chiamare all'interno di un programma. \
   - *Uno sviluppatore può lanciare la propria dApp ?* No. \
   - *Uno sviluppatore può fare auditing/valutazione della propria dApp ?* No. \
   - *Uno sviluppatore può scrivere uno smart contract ?* No. \
@@ -747,12 +747,11 @@ Una volta inviata una chiamata non è possibile interromperla. Sono consumati cr
   - *Un team può lanciare i token o airdrop ?* No. \
   - *Un team può monitorare la distribuzione dei token ?* Sì. \
   - *Un team può verificare le interazioni con gli smart contract?* Sì. \
-  - *Un team può gestire la tokenomica del progetto ?* Sì. \
+  - *Un team può gestire la tokenomica del progetto ?* Può solo conoscere informazioni sulla tokenomica. \
 
 #### Dune
 
-Complessivamente, l'interfaccia di Dune Analytics è risultata intuitiva da utilizzare. \
-
+Complessivamente, l'interfaccia di Dune Analytics è risultata intuitiva da utilizzare.
 L'interfaccia comunica chiaramente dove si trova l'utente utilizzando breadcrumbs. Il sistema utilizza un linguaggio chiaro, le tabelle sono etichettate con i termini corretti. \
 La dashboard riduce il carico cognitivo dell'utente, senza presentare ridondanze. Quando si esegue una query, lo stato di elaboarzione è comunicato chiaramente. &Egrave; possibile interrompere la richiesta con il bottone *Cancel*. Se una query non va a buon fine, viene proposto un messaggio di errore chiaro e comprensibile. \
 &Egrave; stato riscontrato un problema visualizzando gli output di una query: la tabella con i risultati risultava compressa e non era possibile leggere le righe. La pagina propone un handle di ridimensionamento, ma è stato necessario prima fare zoom out per ridimensionare la finestra. \
@@ -781,10 +780,10 @@ Dune offre una documentazione ufficiale completa.
   *Un minatore o validatore può stimare la reward e la difficulty ?* &Egrave; possibile tracciare l'andamento della reward se questa è stata documentata. \
   *Un minatore o validatore ha accesso a strumenti per effettuare lo staking ?* No. \
   *Un minatore o validatore ha accesso a strumenti per effettuare il mining ?* No. \
-  *Un minatore o validatore può stimare il slashing risk ?* Sì, se i dati sono messi a disposizione. \
+  *Un minatore o validatore può stimare il slashing risk ?* Sì, ma solo per alcune catene. \
   *Un minatore o validatore può conoscere la validator uptime ?* No. \
-  *Un minatore o validatore può stimare la reward rate ?* Sì, se questa è stata documentata.\
-  *Un minatore o validatore può ottenere informazioni sulla liquidity ?* Sì, se questa è stata documentata.\
+  *Un minatore o validatore può stimare la reward rate ?* Sì, ma solo per alcune catene.\
+  *Un minatore o validatore può ottenere informazioni sulla liquidity ?* Sì, ma solo per alcune catene.\
 
 
 - **Analisti e ricercatori di cryptovalute** : \
@@ -804,7 +803,7 @@ Dune offre una documentazione ufficiale completa.
   *Un team può lanciare i token o airdrop ?* No. \
   *Un team può monitorare la distribuzione dei token ?* Sì. \
   *Un team può verificare le interazioni con gli smart contract?* Sì. \
-  *Un team può gestire la tokenomica del progetto ?* &Egrave; possibile ottenere informazioni riguardo la tokenomica del progetto. \
+  *Un team può gestire la tokenomica del progetto ?* &Egrave; solo possibile ottenere informazioni riguardo la tokenomica. \
 
 
 #### Web3.py
@@ -814,12 +813,12 @@ La libreria richiede capacità di programmazione. Infatti, per ottenere le infor
 
 - **Utenti individuali**: \
   *Questo utente può monitorare le sue attività ?* Sì, si possono ottenere dati di un wallet. &Egrave; possibile ottenere il numero di transazioni, il codice e il bilancio di un wallet conoscendo il suo indirizzo hash. \
-  *Un utente può ricercare informazioni utili per prendere decisioni di inverstimento ?* Prima di svolgere una transazione è possibile ottenere la stima del costo del gas [@aaron]. &Egrave; possibile interagire con i contratti esistenti. Per fare ciò è necessario definire un ABI per il contratto di interesse. Le informazioni sono disponibili, ma l'utente deve interpretarle e decidere da solo. Inoltre deve scrivere codice direttamente.\
+  *Un utente può ricercare informazioni utili per prendere decisioni di inverstimento ?* Prima di svolgere una transazione è possibile ottenere la stima del costo del gas [@aaron]. Inoltre è possibile interagire con i contratti esistenti. Per fare ciò è necessario definire un ABI per il contratto di interesse. Le informazioni sono disponibili, ma l'utente deve interpretarle e decidere da solo. Inoltre deve scrivere codice.\
   *Un utente può utilizzare lo strumento per svolgere operazioni ?* Sì. \ 
 
 
 - **Sviluppatori**: \
-  *Uno sviluppatore può creare una dApp ?* Non direttamente, è possibile creare una dApp con il linguaggio Python e utilizzare al suo interno la libreria Web3.py. \
+  *Uno sviluppatore può creare una dApp ?* &Egrave; possibile creare una dApp con il linguaggio Python e utilizzare al suo interno la libreria Web3.py. \
   *Uno sviluppatore può lanciare la propria dApp ?* Sì. \
   *Uno sviluppatore può fare auditing/valutazione della propria dApp ?* Sì. \
   *Uno sviluppatore può scrivere uno smart contract ?* No. \
@@ -828,7 +827,7 @@ La libreria richiede capacità di programmazione. Infatti, per ottenere le infor
   
 
 - **Minatori e Validatori** : \
-  *Un minatore o validatore può monitorare la produzione di blocchi ?* Sì, si possono invocare singoli blocchi, utilizzando il loro  numero oppure una parola chiave (*latest*, *earliest*, *pending*, *safe*, *finalized*). \
+  *Un minatore o validatore può monitorare la produzione di blocchi ?* Sì, utilizzando il loro  numero oppure una parola chiave (*latest*, *earliest*, *pending*, *safe*, *finalized*). \
   *Un minatore o validatore può accedere alla mining pool ?* No. \
   *Un minatore o validatore può stimare la reward e la difficulty ?* Non esiste una funzione di libreria per ottenere l'informazione direttamente. \
   *Un minatore o validatore ha accesso a strumenti per effettuare lo staking ?* No. \
@@ -860,7 +859,8 @@ La libreria richiede capacità di programmazione. Infatti, per ottenere le infor
 #### Infura
 
 Il sistema comunica in modo chiaro ed esaustivo il suo stato, non ci sono ridondanze e ha un carico cognitivo contenuto. Il sistema utilizza una terminologia corretta e mette a disposizione della documentazione.
-Non è fornito controllo diretto sulle singole chiamate dalla pagina. \
+
+<!-- da qua -->
 
 #### Confronto
 <!--
