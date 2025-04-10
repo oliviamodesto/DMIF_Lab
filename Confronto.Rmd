@@ -949,17 +949,17 @@ cat(team) # output the table in a format good for HTML/PDF/docx conversion
 -->
 
 Come affermato nell'introduzione, le diverse piattaforme sono pensate per utenze diverse. \
-Etherscan è la piattaforma più accessibile e facile da utilizzare. &Egrave; anche quella più ricca di informazioni riguardo l'ecosistema Ethereum. Permette attività di monitoraggio tramite la creazione di filtri. &Egrave; la più adatta ad un utente che svolge attività sulla catena Ethereum. Non permette di svolgere mining e staking direttamente, ma può fornire risorse utili ai minatori oppure ai stakers. \
+Etherscan è la piattaforma più accessibile e facile da utilizzare. Un utente generico può tracciare le proprie transazioni, verficare i saldi, verficare lo status delle proprie transazioni. Permette il monitoraggio delle attività sulle catene. Consente di stimare la liquidity e la reward rate. Permette di monitorare la liquidità dei token. Non permette di svolgere mining e staking direttamente, ma può fornire risorse utili ai minatori oppure agli stakers. \
 La piattaforma non fornisce molto supporto agli sviluppatori. Invece offre supporto adeguato ai team.\
 \
 Etherscan API invece risulta meno accessibile ad un utente senza competenze informatiche. Si limita a fornire degli endpoint. Gli utenti individuali, i minatori e i team potrebbero preferire Etherscan. Per gli sviluppatori invece l'output in formato JSON può risultare molto utile per ottenere dati importabili direttamente nelle loro applicazioni.\
 \
-Su Dune sono disponibili informazioni su decine di catene, non solo quelle legate all'ecosistema Ethereum. Non richiede competenze di programmazione, ma richiede la capacità di scrivere query SQL. &Egrave; fornito supporto sotto forma di AI. Inoltre, è possibile utilizzare le query create da altri utenti.\
+Dune da accesso alle informazioni riguardanti decine di catene, non solo quelle legate all'ecosistema Ethereum. Non richiede competenze di programmazione, ma richiede la capacità di scrivere query SQL. &Egrave; fornito supporto sotto forma di AI. Inoltre, è possibile utilizzare le query create da altri utenti.\
 Questa potrebbe essere una buona opzione per chi si occupa di analisi e ricerca, per chi fa mining e per i team. In particolare, la creazione di dashboard e di custom endpoints permette di monitorare parametri facilmente. I dati disponibili sono di interesse anche per gli utenti individuali.
 \
-C'è una grossa differenza nel supporto fornito da Web3 e quello fornito dalle piattaforme. Web3 può essere uno strumento molto potente per chi ha competenze avanzate di programmazione in tutti i gruppi. Un limite è che si occupa solo dell'ecosistema Ethereum. \
+C'è una grossa differenza nel supporto fornito da Web3 e quello fornito dalle altre piattaforme. Web3 può essere uno strumento molto potente per chi ha competenze avanzate di programmazione. Un limite è che si occupa solo dell'ecosistema Ethereum. \
 La libreria Web3.py sembra essere più che sufficiente per chi programma dApp. \
-Web3.py è l'unica piattaforma che permette di svolgere la transazione direttamente, ma si occupa solo di alcune catene.
+Web3.py è l'unica piattaforma che permette di svolgere transazioni direttamente.
 
 ### Risorse
 
@@ -996,7 +996,7 @@ Le funzionalità di interesse sono :
 *Le catene blockchain a cui la piattaforma da accesso.* \
 Etherscan fornisce accesso a quattro catene blockchain. Le catene sono: **Ethereum Mainnet**, **Beaconscan ETH2**, **Sepolia Testnet**, **Holesky Testnet**. \
 
-*Le informazioni disponibili.* \
+*Le informazioni disponibili sono:* \
 
 
 - **transazioni** : Sì
@@ -1020,13 +1020,13 @@ Le pagine di Etherscan propongono i dati sotto forma di tabelle. Esistono i filt
 Ogni blocco della catena ha una pagina dedicata con informazioni dettagliate.\
 Ogni token ha una sua pagina dedicata con informazioni dettagliate. 
 
-*Gli strumenti per la ricerca dei dati.* \
+*Gli strumenti per la ricerca dei dati sono:* \
 
 
 - la *barra di ricerca*, presente in ogni pagina. 
 - il *Similar Contract Search*, che permette di cercare smart contract con codice simile a quello di un contratto specifico.
 - il *Smart Contract Search*, che permette di cercare il codice sorgente di smart contract in base al contratto e all’indirizzo del deployer, la data di creazione, il numero del blocco e altro.
-- il *Account Balance Checker*, che permette di consultare lo storico del bilancio Ether oppure Token di un account.
+- il *Account Balance Checker*, che permette di consultare lo storico del bilancio Ether oppure il token di un account.
 - il *Domain Name Lookup*, che permette di cercare un indirizzo utilizzando il Domain Name Lookup.
   
 *Gli strumenti per il download dei dati.* \
@@ -1057,7 +1057,7 @@ Come visto prima, Etherscan fornisce una vasta gamma di strumenti per visualizza
 *Le catene blockchain a cui la piattaforma da accesso.* \
 Etherscan API ha accesso a circa sessanta catene. Queste sono elencate in appendice. Attualmente (01/04/2025) esistono due versioni di Etherscan API (V1 e V2) che differiscono per quali catene supportano.
 
-*Le informazioni disponibili.*
+*Le informazioni disponibili sono:*
 
 
 - **transazioni** : Sì
@@ -1107,7 +1107,7 @@ Etherscan API si limita a fornire dei endpoint da cui scaricare dati aggiornati.
 *Le catene blockchain a cui la piattaforma da accesso.* \
 Dune Analytics raccoglie i dati di 82 catene. L'elenco dettagliato è in appendice.
 
-*Le informazioni disponibili.*
+*Le informazioni disponibili sono:*
 
 
 - **transazioni** : Sì
@@ -1132,22 +1132,22 @@ Dune Analytics mette a disposizione gli *Alerts*, notifiche riguardanti le query
 *Gli strumenti per visualizzare i dati.* \
 Gli output delle query sono visualizzabili come tabelle oppure grafi. Gli output di più query si possono organizzare in una dashboard.
   
-*Gli strumenti per la ricerca dei dati.*
+*Gli strumenti per la ricerca dei dati sono:*
   
   
 - la **barra di ricerca**, presente in ogni pagina
 - il **Data Explorer**, per cercare tra le tabelle disponibili
-- è possibile creare dei custom endpoints
+- la possibilità di creare dei custom endpoints
   
 *Gli strumenti per il download dei dati.* \
 &Egrave; possibile scaricare dati in formato csv solo con alcuni piani tariffari.
 
 *Gli strumenti per rielaborare i dati.* \
-Oltre a creare grafi, non è possibile rielaborare gli output delle query direttamente sulla piattaforma.
+&Egrave; possibile creare grafi, ma non è possibile rielaborare gli output delle query direttamente sulla piattaforma.
 
-*Gli strumenti che permettono l'interazione con gli smart contracts.* No.\
+*Gli strumenti che permettono l'interazione con gli smart contracts.* Non esistono.\
   
-*L'accesso alle risorse esterne.* Sì. \
+*L'accesso alle risorse esterne.* Sono disponibili dei link a risorse esterne. \
 
 Dune fornisce dati completi e aggiornati riguardanti numerose catene. Richiede conoscenze di SQL.
 
@@ -1156,9 +1156,9 @@ Dune fornisce dati completi e aggiornati riguardanti numerose catene. Richiede c
 
 
 **Le catene blockchain a cui la piattaforma da accesso.** \
-Web3.py ha accesso alla catena Etherscan.
+Web3.py da accesso alla catena Etherscan.
 
-**Le informazioni disponibili.**
+**Le informazioni disponibili sono:**
 
 
 - **transazioni** : Sì
@@ -1178,12 +1178,12 @@ Web3.py non rielabora le informazioni.
 **Gli strumenti per visualizzare i dati.** \
 Gli output delle funzioni sono solo in formato testuale.
 
-**Gli strumenti per la ricerca dei dati.** Sì. \
+**Gli strumenti per la ricerca dei dati.** Sì, sono presenti. \
 **Gli strumenti per il download dei dati.** \
-Non direttamente, tutti gli output funzioni si possono scaricare.
+Si possono scaricare gli output delle funzioni.
 
-**Gli strumenti per rielaborare i dati.** Sì. \
-**Gli strumenti che permettono l'interazione con gli smart contracts.** Sì. \
+**Gli strumenti per rielaborare i dati.** Sì, sono presenti. \
+**Gli strumenti che permettono l'interazione con gli smart contracts.** Sì, sono presenti. \
 
 **L'accesso alle risorse esterne. **\
 Web3.py non fornisce link a risorse esterne.
@@ -1197,9 +1197,9 @@ Infura mette a disposizione servizi backend. Permette di collegarsi con diverse 
 
 Tutti i metodi forniscono dati completi e aggiornati. Ci sono alcune differenze per quanto riguarda le risorse e gli strumenti messi a disposizione.
 
-Oltre a fornire i dati, Etherscan li interpreta per renderli più comprensibili agli utenti.
+Oltre a fornire molti dati, Etherscan li interpreta per renderli più comprensibili agli utenti.
 Come visto vengono proposte valutazioni e classifiche dei token e statistiche dei dati. 
-Esistono strumenti di ricerca per navigare le risorse messe a disposizione sulla piattaforma, come ad esempio la barra di ricerca. 
+Esistono strumenti per navigare le risorse messe a disposizione sulla piattaforma, come ad esempio la barra di ricerca. 
 Inoltre sono forniti molti strumenti riguardanti gli smart contract. &Egrave; possibile ricercare, verificare, interagire con e confrontare smart contract.
 L'unico limite di Etherscan è che si occupa solo di quattro catene.
 
@@ -1212,7 +1212,7 @@ Dune propone alcune pagine dedicate a interpretare e rappresentare i dati riguar
 Sono forniti strumenti di ricerca per navigare le risorse messe a disposizione.
 Complessivamente, Dune dedica meno attenzione agli smart contracts rispetto a Etherscan. 
 
-La libreria Web3.py riguarda solo la catena Ethereum. Ha funzionalità molto potenenti, dato che permette di accedere ai dati, svolgere operazioni sulla catena e gestire il *Middleware*.
+La libreria Web3.py riguarda solo la catena Ethereum. Ha funzionalità molto potenti, dato che permette di accedere ai dati, svolgere operazioni sulla catena e gestire il *Middleware*.
 La rielaborazione, visualizzazione e interpretazione dei dati è interamente affidata agli utenti che devono avere competenze di programmazione.
 
 
@@ -1240,13 +1240,13 @@ Esiste un set di API endpoints sempre disponibile. Questo viene esteso con ulter
 
 #### Dune
 
-Dune offre quattro piani tariffari (aggiornato al 05/03/2025), che riguardano l'API: \
+Dune offre quattro piani tariffari (aggiornato al 05/03/2025): \
 
 ![](images\Dune_plan.png){height=70%, width=70%}
 
 Come si può vedere, ci sono differenze significative tra le risorse, la quantità di risorse e i servizi messi a disposizione da ogni piano.
 
-Esistono quattro piani. Sono sempre disponibili crediti, memoria e un certo numero di datapoints per credito. Per datapoints si intende il numero di righe nelle tabelle di output.
+Sono sempre disponibili crediti, memoria e un certo numero di datapoints per credito. Per datapoints si intende il numero di righe nelle tabelle di output.
 Il piano *Analyst* incrementa il numero di crediti, la memoria disponibile e aggiunge il Query Management Endpoints.
 Questi ultimi sono dei endpoint che permettono di creare e gestire le query SQL in modo programmato tramite un endpoint API.
 Il piano *Plus* aggiunge un query engine più grande e permette di scaricare i dati in formato csv.
@@ -1254,7 +1254,9 @@ Il piano *Premium* aggiunge la possibilità di accedere alle query private, ai m
 
 #### Infura
 
-La libreria Web3.py è completamente gratuita. Su Infura è possibile creare un account gratuitamente, ma esistono anche dei piani tariffari. Esistono tre piani: *Developer*, *Team*, *Enterprise*. \
+La libreria Web3.py è completamente gratuita. 
+
+Su Infura è possibile creare un account gratuitamente, oppure scegliere un piano tariffario. Esistono tre piani: *Developer*, *Team*, *Enterprise*. \
 
 ![](images\Infura_cost.png){height=70%, width=70%}
 
@@ -1268,26 +1270,10 @@ Ci sono differenze in termini di risorse e funzionalità messe a disposizione. P
 #### Confronto
 
 Si confrontano le offerte disponibili con Etherscan, Dune Analytics e Infura. Dato che le tre piattaforme contano il numero di chiamate in modo differente, sono state fatte alcune approssimazioni. \
-Etherscan fornisce direttamente il numero di chiamate. Questo è stato utilizzato per l'analisi.\
-Dune e Infura invece forniscono un numero di crediti: questi crediti sono consumati effettuando chiamate. Diverse chiamate hanno costi diversi. \
-Per Dune il costo di default di una esecuzione programmata di una query è fissato a 10 crediti. Questo è stato scelto come approssimazione del costo di una chiamata.
-<!--
-```{r table9, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
-
-dune_free <- "
-| APP | API | API export |
-|-----------------------:|-----------------------:|------------------------------------------------:|
-| Boost query execution | Programmatic execution | On free and analyst 1 credit = 1 000 data points |
-| Medium = 10 credits | Default = Medium = 10 credits | On plus 1 credit = 5 000 data points |
-| Large = 20 credits | Large = 20 credits | On premium 1 credit = 25 000 data points |
-"
-
-cat(dune_free)
-
-```
--->
-
-
+Etherscan conta direttamente il numero di chiamate.\
+Dune e Infura invece contano il numero di crediti: questi crediti sono consumati effettuando chiamate. Diverse chiamate hanno costi diversi. \
+Per stimare il numero di chiamate possibili con un account Dune oppure Infura, è stimato il costo di una singola chiamata in crediti. Il totale dei crediti disponibili è diviso per questo valore.
+Per Dune il costo di default di una esecuzione programmata di una query è fissato a 10 crediti. Questo è stato scelto come approssimazione del costo di una chiamata. \
 Sulla sua pagina, Infura specifica i costi in crediti per quattro funzioni :
 
 
@@ -1296,7 +1282,7 @@ Sulla sua pagina, Infura specifica i costi in crediti per quattro funzioni :
 - eth_sendRawTransaction: 720 crediti
 - eth_getLogs: 255 crediti
 
-Il costo di una chiamata è stato approssimato a quello di una eth_call.
+Il costo di una chiamata su Infura è stato approssimato a quello di una eth_call.
 
 ##### Versioni gratuite
 
@@ -1578,7 +1564,9 @@ Nelle pagine dedicate a Wrapped LUNC e a Wrapped USCT Etherscan fornisce dei lin
 <!-- Etherscan -->
 ##### Pressione di vendita
 
-Per dimostrare la forte e persistente pressione di vendita l'articolo *Anatomy of a Stablecoin Failure* utilizza i prezzi di chiusura di LUNA, UST e BTC con cadenza oraria. Si concentra sui prezzi dal 1 Maggio al 17 Maggio 2022, mettendo particolare attenzione su alcuni momenti specifici :\
+Per dimostrare la forte e persistente pressione di vendita l'articolo *Anatomy of a Stablecoin Failure* utilizza i prezzi di chiusura di LUNA, UST e BTC con cadenza oraria. Si concentra sui prezzi dal 1 Maggio al 17 Maggio 2022, mettendo particolare attenzione su alcuni momenti specifici :
+
+
  - 05 May 2022 12:00 \
  - 07 May 2022 22:00 \
  - 09 May 2022 14:00 \
@@ -1600,7 +1588,9 @@ Questi dati riguardano solo le attività sulla blockchain Ethereum. Di conseguen
 ##### Informazioni riguardo i trasferimenti
 
 I dati di interesse riguardanti i trasferimenti sono contenuti nei log. &Egrave; stato possibile scaricare i dati dei log e produrre dei grafi simili a quelli visti con Etherscan. \
-Le query formulate per questi dati hanno nove campi: \
+Le query formulate per questi dati hanno nove campi: 
+
+
  - **module** specifica l'API endpoint. In questo caso si tratta dei log.\
  - **action** specifica il tipo di operazione. La action getLogs restituisce i log riguardanti l'indirizzo nel campo address. \
  - **address** specifica l'indirizzo presso cui cercare i log. &Egrave; di tipo stringa. Nel progetto a questo campo è stata assegnata la hash di USTC. Questa è stata ottenuta da Etherscan.\
@@ -2074,14 +2064,14 @@ Per poter accedere ai dati sono richieste competenze di SQL.
 Propone strumenti per creare grafi e visualizzare i dati.
 Richiede competenze tecniche minime.
 
-Web3.py è una libreria Python che richiede competenze di programmazione per essere utilizzata. &Egrave; possibile accedere solo alla catena Ethereum.
+Web3.py è una libreria Python che richiede competenze di programmazione. &Egrave; possibile accedere solo alla catena Ethereum.
 &Egrave; l'unica delle quattro piattaforme che permette di svolgere operazioni sulla catena, come ad esempio transazioni. Consente anche di lanciare smart contract sulla catena.
 Permette di controllare il Middleware.
 Richiede un'utenza tecnica con conoscenze di programmazione.
 
 Complessivamente, quello che emerge è che Etherscan e Dune sono i metodi più accessibili agli utenti, mentre Web3 e Etherscan API sono pensati per un utilizzo più orientato alla programmazione.
 
-Usando gli strumenti separatamente è stato possibile ricostruire solo parte degli eventi legati al crollo del sistema Terra-Luna. Per ottenere un quadro completo è necessario combinare i risultati delle quattro piattaforme. Questo permette di compensare le lacune delle singole piattaforme.
+Usando gli strumenti separatamente è stato possibile ricostruire solo parte degli eventi legati al crollo del sistema Terra-Luna. Per ottenere un quadro completo è stato necessario combinare i risultati delle quattro piattaforme. Questo ha permesso di compensare le lacune delle singole piattaforme.
 
 
 ## Appendice
