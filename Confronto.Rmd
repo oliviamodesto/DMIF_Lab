@@ -1,7 +1,7 @@
 ---
 title: "Un'analisi comparativa di quattro piattaforme Etherscan"
 author: "Olivia Modesto"
-date: "2025-04-06"
+date: "2025-04-11"
 output:
   html_document:
     toc: true
@@ -2258,58 +2258,5 @@ cat(dune_supported)
 ```
 
 <!-- https://dune.com/product/data-catalog -->
-
-
-<!--
-## Appendice
-
-le domande \
-
-
-
-- **Utenti individuali**:
-  - *Un utente può monitorare le sue attività ?* \
-  - *Un utente può ricercare informazioni utili per prendere decisioni di inverstimento ?* \
-  - *Un utente può utilizzare lo strumento per svolgere operazioni ?* \
-
-
-- **Sviluppatori**:
-  - *Uno sviluppatore può creare una dApp ?* \
-  - *Uno sviluppatore può lanciare la propria dApp ?* \
-  - *Uno sviluppatore può fare auditing/valutazione della propria dApp ?* \
-  - *Uno sviluppatore può scrivere uno smart contract ?* \
-  - *Uno sviluppatore può lanciare il proprio smart contract sulla blockchain ?* \
-  - *Uno sviluppatore può verificare il codice del proprio smart contract ?* \
-  
-- **Minatori e Validatori** :
-  - *Un minatore o validatore può monitorare la produzione di blocchi ?* \
-  - *Un minatore o validatore può accedere alla mining pool ?* \
-  - *Un minatore o validatore può stimare la reward e la difficulty ?* \
-  - *Un minatore o validatore ha accesso a strumenti per effettuare lo staking ?* \
-  - *Un minatore o validatore ha accesso a strumenti per effettuare il mining ?* \
-  - *Un minatore o validatore può stimare il slashing risk ?* \
-  - *Un minatore o validatore può conoscere la validator uptime ?* \
-  - *Un minatore o validatore può stimare la reward rate ?* \
-  - *Un minatore o validatore può ottenere informazioni sulla liquidity ?* \
-  
-- **Analisti e ricercatori di cryptovalute** : 
-  - *Un analista può conoscere lo storico e il numero di incidenti o attacchi ?* \
-  - *Un analista può conoscere le dApp attive sulla blockchain ?* \
-  - *Un analista può conoscere gli smart contracts attivi sulla blockchain ?* \
-  - *Un analista può conoscere strategic partnerships, collaborations, announcements, ?* \
-  - *Un analista può interagire con soluzioni layer 2 ?* \
-  - *Un analista può conoscere i governance models utilizzati sulla blockchain ?* \
-
-- **Team di progetti (DeFi, NFT, Progetti Token)** :
-  - *Un team può monitorare la liquidità dei token ?* \
-  - *Un team può conoscere le transazioni e le statistiche dei pool di liquidità ?* \
-  - *Un team può creare l'NFT ?* \
-  - *Un team può fare minting di NFT ?* \
-  - *Un team può lanciare i token o airdrop ?* \
-  - *Un team può monitorare la distribuzione dei token ?* \
-  - *Un team può verificare le interazioni con gli smart contract?* \
-  - *Un team può gestire la tokenomica del progetto ?* \
-  
--->
 
 ## Bibliografia
