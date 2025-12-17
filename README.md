@@ -1,6 +1,7 @@
 # Un'analisi comparativa di quattro piattaforme Ethereum
 
 Elaborato per l'attività di laboratorio del corso di Advanced Data Science.
+
 Data consegna originale: 11 Aprile 2025
 
 ## Introduzione
