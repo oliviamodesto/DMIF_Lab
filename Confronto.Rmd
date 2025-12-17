@@ -3,10 +3,8 @@ title: "Un'analisi comparativa di quattro piattaforme Ethereum"
 author: "Olivia Modesto"
 date: "2025-04-11"
 output:
-  html_document:
-    toc: true
-    toc_float: true
-    toc_depth: 4
+  md_document:
+    variant: markdown_github
 bibliography: references.bib
 nocite: '@*'
 link-citations: yes
